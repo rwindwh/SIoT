@@ -1,4 +1,4 @@
 ## test
 --------------
-``nihao``
-..image:: ..image/eason/test.png
+``nihao``  <br>
+..image:: ../test.png
