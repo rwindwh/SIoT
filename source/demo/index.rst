@@ -15,3 +15,7 @@ SIoT为标准的MQTT服务器，支持绝大多数的客户端程序连接；
     04_mPython
     05_Arduino
     06_microbit
+    07_Appinventor
+    08_Python
+
+    
