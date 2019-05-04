@@ -1,8 +1,11 @@
 # SIoT简介
 
-SIoT为一个为教育定制的跨平台的MQTT服务器程序，S指科学（Science）、简单（simple）的意思。SIoT支持Win10、Win7、Mac、Linux等操作系统，一键启动，无需注册即可使用。
+SIoT为一个为中小学STEM教育定制的跨平台的开源MQTT服务器程序，S指科学（Science）、简单（simple）的意思。SIoT支持Win10、Win7、Mac、Linux等操作系统，一键启动，无需注册和设置即可使用。
+
+SIoT为“虚谷计划”的子项目“虚谷物联“项目的核心软件，除了软件外，还提供了丰富的教程和完善的课程。
 
 项目发起人：“虚谷计划”组委会
+
 
 
 # SIoT使用手册
@@ -23,6 +26,8 @@ SIoT为一个为教育定制的跨平台的MQTT服务器程序，S指科学（Sc
 - 3.4 掌控板
 - 3.5 Arduino+OBloq
 - 3.6 micro:bit+OBloq
+- 3.7 App inventor
+- 3.8 Python
 
 典型应用案例:
 - 4.1 定时测量温度
@@ -34,4 +39,5 @@ SIoT为一个为教育定制的跨平台的MQTT服务器程序，S指科学（Sc
 高级操作技巧:
 - 5.1 安全设置
 - 5.2 数据导出
-- 5.3 扩展插件
+- 5.3 WebAPI
+- 5.4 扩展插件
