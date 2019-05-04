@@ -18,7 +18,7 @@ SIoT既可以作为教师教学物联网课程的教学支持平台，也可以�
 
 .. image:: https://github.com/vvlink/SIoT/blob/master/source/image/eason/login.PNG    
 
-默认用户名（usr）为：df_admin     
+默认用户名（user）为：siot    
 
 默认密码（pwd）为：dfrobot  
 
@@ -72,7 +72,7 @@ SIoT既可以作为教师教学物联网课程的教学支持平台，也可以�
 
 通过点击上方菜单栏的“发送消息”访问。
 
-- Topic的各式为：项目ID/设备名。例如：Seifer/light1
+- Topic的格式为：项目ID/设备名。例如：Seifer/light1
 
 - 消息发送成功后，系统会自动根据topic建立“项目”和“设备”。如果项目和设备已经存在则在此设备上追加数据。
 
