@@ -18,14 +18,16 @@ SIoT既可以作为教师教学物联网课程的教学支持平台，也可以�
 
 .. image:: https://github.com/vvlink/SIoT/blob/master/source/image/eason/login.PNG    
 
-用户名（usr）为：df_admin     
+默认用户名（usr）为：df_admin     
 
-密码（pwd）为：dfrobot  
+默认密码（pwd）为：dfrobot  
 
 
 
 查看项目
 -----------------
+“项目列表”可以修改项目备注和查看设备。
+
 登录成功之后，默认界面就是查看项目界面，你也可以通过点击上方菜单栏的“项目列表”访问。   
 
 .. image:: https://github.com/vvlink/SIoT/blob/master/source/image/eason/list_html.PNG
@@ -34,6 +36,8 @@ SIoT既可以作为教师教学物联网课程的教学支持平台，也可以�
 
 查看设备
 -----------------
+平台提供一个简单的管理界面，能够输入自己的Topic和最大消息数量，查询到该Topic对应的消息。根据活动时间（最后一次使用时间）进行排序。
+
 通过通过点击上方菜单栏的“设备列表”访问。
 
 .. image:: https://github.com/vvlink/SIoT/blob/master/source/image/eason/devices.PNG
@@ -43,7 +47,18 @@ SIoT既可以作为教师教学物联网课程的教学支持平台，也可以�
 
 查看数据
 -----------------
+设备的管理功能分为查看消息，清空消息，删除设备，添加备注等。
+
+- 查看消息。可以根据Topic查看历史消息，并且可以全部下载。
+
+- 清空消息。清空对应Topic的所有消息。
+
+
 在“设备列表”界面找到需要查看的设备，在操作这一栏中点击“查看消息”访问。
+
+默认可以看到近期100条消息（倒序），以及折线图。
+
+你可以点击“导出查询结果”按钮，在线生成Excel文件，默认名称为“消息数据.xls”。
 
 .. image:: https://github.com/vvlink/SIoT/blob/master/source/image/eason/topicMsg.PNG
 
@@ -53,7 +68,13 @@ SIoT既可以作为教师教学物联网课程的教学支持平台，也可以�
 
 发送消息
 -------------------
+可以发送255字符内的字符串。
+
 通过通过点击上方菜单栏的“发送消息”访问。
+
+- Topic的各式为：项目ID/设备名。例如：Seifer/light1
+
+- 消息发送成功后，系统会自动根据topic建立“项目”和“设备”。如果项目和设备已经存在则在此设备上追加数据。
 
 .. image:: https://github.com/vvlink/SIoT/blob/master/source/image/eason/SendMsg.PNG
 
