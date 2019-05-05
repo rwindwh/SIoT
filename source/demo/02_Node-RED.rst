@@ -10,7 +10,7 @@ Node-RED是IBM开发的一个开源项目，能够通过拖动代码块实现可
 | 进入Node.js官网，跳转至下载界面
 | http://nodejs.cn/download/
 
-【】
+.. image:: ../image/linmiaoyan/02-Node-RED-01.png
 
 在该界面中选择相应的操作系统，下载.msi文件，运行后就能完成Node.js的安装，Node.js是用于运行JavaScript的网页编辑运行器，而Node-RED则是在其基础之上建立的。
 
