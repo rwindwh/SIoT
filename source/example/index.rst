@@ -13,4 +13,5 @@
     02_Remotecontrol
     03_dataview
     04_Remotechat
-    05_subtitles
+    05_play
+    06_subtitles
