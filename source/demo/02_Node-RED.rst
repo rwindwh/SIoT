@@ -71,4 +71,4 @@ Dashboard模块的安装：在右上角设置菜单中，选择节点管理，�
 
 就能得到一张简单图表。
 
-.. image:: ../image/linmiaoyan/02-Node-RED-08.png
+.. image:: ../image/linmiaoyan/02-Node-RED-09.png
