@@ -18,7 +18,7 @@
 掌控板的MQTT代码（基于Mind）
 -------------------------------------
 Mind+是一款基于Scratch3.0开发的青少年编程软件，让大家轻松体验创造的乐趣。
-`title <rul>`_http://mindplus.cc/
+`title<http://mindplus.cc/>'_
 
 **发送消息**
 
