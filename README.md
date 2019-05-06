@@ -6,6 +6,16 @@ SIoT为“虚谷计划”的子项目“虚谷物联“项目的核心软件，�
 
 项目发起人：“虚谷计划”组委会
 
+本文档阅读地址：https://siot.readthedocs.io/
+
+# 项目指南
+
+- software，提供SIoT软件下载
+- MQTT tools，提供常见的MQTT调试、应用工具
+- examples，提供各种应用范例
+- essay，与物联网应用、科学测量相关的案例、论文
+- build，已经生成的使用手册文档（Html格式）
+- source，本使用手册的源码
 
 
 # SIoT使用手册
