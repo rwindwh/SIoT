@@ -38,6 +38,7 @@ linux版本：
 -------------------
 
 参考命令：nohup ./SIoT_linux &
+
 其中“SIoT_linux”为程序的路径。
 
 
