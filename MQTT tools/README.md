@@ -30,8 +30,15 @@ Mind+不仅自身可以连接MQTT服务器，还能够给掌控板（mPython）�
 - GitHub地址：https://github.com/labplus-cn/mPython
 - 文档地址（下载地址）：https://mpython.readthedocs.io/zh/latest/board/mpythonX.html
 
+### Processing
+
+简介：Processing是一款专为设计师和艺术家使用的编程语言，由美国麻省理工学院媒体实验室（MIT）美学与运算小组创立的。Processing的出现，被视为艺术设计创作的一场革命。利用Processing，艺术家可以将抽象的数据呈现为生动的视觉形象。它不仅可以生成唯美的图形，还能编写出功能强大的互动艺术作品。
+
+- Processing下载地址：https://processing.org/
+
 ### MQTTool（手机）
 
 简介：运行在手机上的MQTT客户端程序。
-下载：苹果手机直接通过App Store安装。
+
+- 安装方式：苹果手机直接通过App Store安装。
 
