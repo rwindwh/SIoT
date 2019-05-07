@@ -23,7 +23,7 @@ Mac版本：
 
 打开终端运行，转到相应目录然后执行命令，如“./SIoT_mac”。
 
-.. image:: ../image/setup/02_run_02.PNG 
+.. image:: ../image/setup/02_run_02.png
 
 **注意：** 新版本已经支持双击运行，如果提示没有权限，先添加“执行”权限。
 
