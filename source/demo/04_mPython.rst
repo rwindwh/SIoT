@@ -40,18 +40,20 @@ Mind+是一款基于Scratch3.0开发的青少年编程软件，让大家轻松�
 掌控板的MQTT代码（基于BXY）
 ----------------------------------------------
 
+BXY是一款运行于Windows平台的MicroPython编程IDE，界面简洁，操作便利。BXY是浙教版普通高中信息技术教材的为众多micro:bit和掌控板爱好者提供了一个简洁实用的平台。
+
+下载地址：http://docs.dfrobot.com.cn/bxy/
+
 **代码说明：**
 
 这个实验需要2个掌控板，一个发布光线数据一个订阅光线数据，MQTT服务器既可以用EasyIot物联网，也可以用SIoT。
 
-使用BXY下载代码，需要添加一个库文件Iot.py
+**注意**：使用BXY下载下面的代码，还需要另外添加一个库文件Iot.py。本代码已经整合在BXY的范例中，将BXY升级到最新即可看到。
 
-代码链接：https://github.com/vvlink/SIoT/tree/master/examples/%E6%8E%8C%E6%8E%A7%E6%9D%BF%E4%BB%A3%E7%A0%81/Bxy
+代码下载链接：https://github.com/vvlink/SIoT/tree/master/examples/%E6%8E%8C%E6%8E%A7%E6%9D%BF%E4%BB%A3%E7%A0%81/Bxy
+
 
 **发送消息**
-
-
-
 
 ::
 
@@ -116,7 +118,7 @@ Mind+是一款基于Scratch3.0开发的青少年编程软件，让大家轻松�
 **订阅消息**
 
 ::
-
+      # 功能：订阅光线数据
       from mpython import *
       from Iot import Iot
       from umqtt.simple import MQTTClient
@@ -201,6 +203,8 @@ Mind+是一款基于Scratch3.0开发的青少年编程软件，让大家轻松�
 
 掌控板的MQTT代码（基于mPythonX）
 ----------------------------------------------
+
+
 
 **发送消息**
 
