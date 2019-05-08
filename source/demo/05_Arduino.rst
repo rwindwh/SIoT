@@ -13,6 +13,8 @@ OBloq模块简介
       1.Arduino读取温度传感器的数据，通过OBLOQ模块发送温度数据到物联网设备。
       2.物联网设备发送数据，OBLOQ接收数据并发送给Arduino,Arduino再通过串口显示接收的数据。
 
+.. image:: ../image/zhangyu/05-Arduino-01.png
+
 Arduino+OBloq
 ---------------------
 将Arduino UNO主控板与OBloq模块结合，就等于搭建了一个智能设备。
