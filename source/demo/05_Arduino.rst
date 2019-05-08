@@ -13,12 +13,14 @@ OBloq模块简介
       1.Arduino读取温度传感器的数据，通过OBLOQ模块发送温度数据到物联网设备。
       
       2.物联网设备发送数据，OBLOQ接收数据并发送给Arduino,Arduino再通过串口显示接收的数据。
+      
+      OBloq模块通过wifi连接上网，收发数据。联网后，当检测到有最新版固件时，Obloq会自动升级。
 
-OBloq模块通过wifi连接上网，收发数据。联网后，当检测到有最新版固件时，Obloq会自动升级。
-当OBloq处于正常工作时，Obloq上LED灯为绿色常亮，升级时为白色；
-当Obloq升级结束后，指示灯由白色变成红色，此时需要重启主控版，使得Obloq最新固件生效。
-其端口连接如下：
+ 当OBloq处于正常工作时，Obloq上LED灯为绿色常亮，升级时为白色；当Obloq升级结束后，指示灯由白色变成红色，此时需要重启主控版，使得Obloq最新固件生效。
+ 其端口连接如下：
+
 .. image:: ../image/zhangyu/05-Arduino-01.png
+
 
 Arduino+OBloq
 ---------------------
