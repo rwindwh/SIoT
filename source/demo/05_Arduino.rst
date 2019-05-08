@@ -19,6 +19,9 @@ OBloq模块简介
  当OBloq处于正常工作时，Obloq上LED灯为绿色常亮，升级时为白色；当Obloq升级结束后，指示灯由白色变成红色，此时需要重启主控版，使得Obloq最新固件生效。
  其端口连接如下：
 
+
+
+ 
 .. image:: ../image/zhangyu/05-Arduino-01.png
 
 
