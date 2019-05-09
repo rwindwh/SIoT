@@ -42,6 +42,41 @@
             
   <div class="section" id="mqtt">
 <h1>1. 常见MQTT客户端<a class="headerlink" href="#mqtt" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="mqttbox-pc">
+<h2>1.1. MQTTBox（PC端）<a class="headerlink" href="#mqttbox-pc" title="Permalink to this headline">¶</a></h2>
+<p>MQTTBox是一款很好用的MQTT客户端调试工具，支持在Windows、Mac和Linux上面运行。</p>
+<p>GitHub地址：<a class="reference external" href="https://github.com/workswithweb/MQTTBox">https://github.com/workswithweb/MQTTBox</a></p>
+<p>首先要设置MQTT服务器信息，如图所示，除了服务器地址、用户名、密码和Protocol外，其他的地方都可以用默认值。</p>
+<img alt="../_images/01_mqttbox_01.png" src="../_images/01_mqttbox_01.png" />
+<p>在这个界面中，连接服务器后，就可以给名称为“xzr/003”的Topic发送消息和订阅消息了。</p>
+<img alt="../_images/01_mqttbox_01.png" src="../_images/01_mqttbox_01.png" />
+<p>在Web管理界面中，就能看到自动建立的项目中多了“xzr”，设备中多了“003”，通过网页就可以查看所有的消息记录。</p>
+<img alt="../_images/01_mqttbox_03.png" src="../_images/01_mqttbox_03.png" />
+<p><strong>注意</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li>客户端发送的消息，所有订阅了这一主题的客户端都能收到，包括自己；</li>
+<li>“xzr/003”这个Topic不需要事先设置，只要发过一次消息，SIoT会根据这一Topic自动建立项目名称和设备名称，方便管理；</li>
+<li>通过Web给Topic发送消息，如果不想将这一消息记录在数据库中，可以在前面加上“-&gt;”的标志。</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="mqttool-iphone">
+<h2>1.2. MQTTool（iPhone手机）<a class="headerlink" href="#mqttool-iphone" title="Permalink to this headline">¶</a></h2>
+<p>MQTTool是运行在iPhone上的MQTT客户端软件，也是一个MQTT测试工具。通过App Store即可安装MQTTool。</p>
+<img alt="../_images/01-mqtt-01.png" src="../_images/01-mqtt-01.png" />
+<p>首先要确认计算机和手机连接的是同一个无线路由器，或者在同一个局域网中，相互之间可以访问。输入计算机的IP地址和用户名、密码，点击“Connenct”即可连接。</p>
+<img alt="../_images/01-mqtt-02.png" src="../_images/01-mqtt-02.png" />
+<p>点击“Stats”，可以查看服务器的连接状态。</p>
+<img alt="../_images/01-mqtt-03.png" src="../_images/01-mqtt-03.png" />
+<p>在“Topic”（主题）中输入“xzr/001”（表示项目id为xzr，设备id为001），点击“Publish”（发送）即可发送消息。在SIoT的Web页面可以看到这一消息。</p>
+<img alt="../_images/01-mqtt-04.png" src="../_images/01-mqtt-04.png" />
+<p>同样，在Web端给Topic“xzr/001”发送消息，手机端即可收到信息，在“Subscribe”（订阅）。</p>
+<p>多个手机同时连接这个MQTT服务器，只要Topic相同，相互之间都能收到。</p>
+</div>
+<div class="section" id="mqttool">
+<h2>1.3. MQTTool（安卓手机）<a class="headerlink" href="#mqttool" title="Permalink to this headline">¶</a></h2>
+</div>
 </div>
 
 
@@ -66,10 +101,13 @@
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">客户端连接范例</a><ul class="current">
 <li class="toctree-l2 current"><a class="current reference internal" href="#">1. 常见MQTT客户端</a></li>
 <li class="toctree-l2"><a class="reference internal" href="02_Node-RED.html">2. Node-RED</a></li>
-<li class="toctree-l2"><a class="reference internal" href="03_mind+.html">3. Mind+</a></li>
+<li class="toctree-l2"><a class="reference internal" href="03_Mindplus.html">3. Mind plus</a></li>
 <li class="toctree-l2"><a class="reference internal" href="04_mPython.html">4. 掌控板（mPython）</a></li>
 <li class="toctree-l2"><a class="reference internal" href="05_Arduino.html">5. Arduino+OBloq</a></li>
 <li class="toctree-l2"><a class="reference internal" href="06_microbit.html">6. micro:bit+OBloq</a></li>
+<li class="toctree-l2"><a class="reference internal" href="07_Appinventor.html">7. App Inventor2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="08_Python.html">8. Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="09_Processing.html">9. Processing</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../example/index.html">典型应用案例</a></li>

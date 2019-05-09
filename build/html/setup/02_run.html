@@ -53,29 +53,40 @@
 <div class="section" id="window">
 <h2>2.1. Window版本：<a class="headerlink" href="#window" title="Permalink to this headline">¶</a></h2>
 <p>双击运行SIoT_win.exe，将看到一个黑色的CMD窗口，如果你想维持你的计算机作为MQTT服务器的话，请不要关闭它。</p>
+<img alt="https://github.com/vvlink/SIoT/blob/master/source/image/eason/setup.PNG" src="https://github.com/vvlink/SIoT/blob/master/source/image/eason/setup.PNG" />
 </div>
 <div class="section" id="mac">
 <h2>2.2. Mac版本：<a class="headerlink" href="#mac" title="Permalink to this headline">¶</a></h2>
 <p>打开终端运行，转到相应目录然后执行命令，如“./SIoT_mac”。</p>
-<p>注意：直接双击运行会出现错误！程序没有读取配置文件的权限问题，将默认开启的是8082端口。</p>
+<img alt="../_images/02_run_02.png" src="../_images/02_run_02.png" />
+<p><strong>注意：</strong> 新版本已经支持双击运行，如果提示没有权限，先添加“执行”权限。</p>
+<ul class="simple">
+<li>增加执行权限的命令：chmod a+x ./SIoT_mac</li>
+</ul>
 <p>如果担心程序被删除，可以使用nohup命令。</p>
 <p>参考命令：nohup node /Users/xiezuoru/Desktop/iot_test/SIOT_Mac &amp;
 其中“/Users/xiezuoru/Desktop/iot_test/SIOT_Mac”为程序的路径。</p>
 </div>
 <div class="section" id="linux">
 <h2>2.3. linux版本：<a class="headerlink" href="#linux" title="Permalink to this headline">¶</a></h2>
-<p>参考命令：nohup ./SIoT_linux &amp;
-其中“SIoT_linux”为程序的路径。</p>
+<p>参考命令：nohup ./SIoT_linux &amp;</p>
+<p>其中“SIoT_linux”为程序的路径。</p>
 </div>
 <div class="section" id="id2">
 <h2>2.4. 服务器信息<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<p>SIoT启动后，你的计算机就成为了一个标准的MQTT服务器：
-服务器地址：计算机局域网IP地址
-MQTT端口：1883
-用户名：siot（小写）
-默认密码：dfrobot（小写）
-消息主题（Topic）：项目名/设备名（可以自定义，中间的“/”不可缺少。）
-Web管理地址：<a class="reference external" href="http:/">http:/</a>/计算机IP:8080（计算机IP可以是127.0.0.1，也可以是局域网的IP地址。）</p>
+<p>SIoT启动后，你的计算机就成为了一个标准的MQTT服务器，使用任何一款MQTT客户端程序就可以访问。</p>
+<ul class="simple">
+<li>服务器地址：计算机局域网IP地址</li>
+<li>MQTT端口：1883</li>
+<li>用户名：siot（小写）</li>
+<li>默认密码：dfrobot（小写）</li>
+<li>消息主题（Topic）：项目名/设备名（可以自定义，中间的“/”不可缺少。）</li>
+<li>Web管理地址：<a class="reference external" href="http:/">http:/</a>/计算机IP:8080（计算机IP可以是127.0.0.1，也可以是局域网的IP地址，或者用“localhost”。）<ul>
+<li>参考地址1：<a class="reference external" href="http://127.0.0.1:8080">http://127.0.0.1:8080</a></li>
+<li>参考地址2：<a class="reference external" href="http://localhost:8080">http://localhost:8080</a></li>
+</ul>
+</li>
+</ul>
 <p><strong>注</strong>：可以通过config.json文件修改用户名、密码和端口等信息。</p>
 </div>
 </div>
