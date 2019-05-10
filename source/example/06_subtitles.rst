@@ -10,25 +10,50 @@
 
 2）带着对话气泡出来小动物有多个形象，如小猫、兔子、小狗等。
 
+
 准备工作
 -----------------
 
+1.运行SIoT。
 
-步骤
+2.安装Mind+。
+
+
+操作步骤
 -----------
 
+1.打开Mind+，添加”网络服务”中的“MQTT”。
+
+2.编写代码。
+
+1）在“背景”中写如下程序。
+
+.. image:: ../image/example/06_subtitles_1.png
+
+  **说明**：Topic设置为“xzr/001”
+
+2）给角色1选择多个造型。
+
+3）在角色1中写如下代码。
+
+.. image:: ../image/example/06_subtitles_2.png
+
+4）复制出4个角色，修改代码。
 
 
 参考代码
 ---------------
 
-.. image:: ../image/example/06_subtitles_1.png
+代码下载地址：https://github.com/vvlink/SIoT/tree/master/examples/Mind%2B
 
+效果演示
+----------------
 
-.. image:: ../image/example/06_subtitles_2.png
+  通过网页或者另外的程序，给服务器“xzr/010”Topic发送消息，多个小动物就跑出来显示内容了，支持中文弹幕。
 
+运行界面：
 
-代码下载地址：
+视频演示：
 
 拓展思考
 -----------------
