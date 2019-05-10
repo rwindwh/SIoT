@@ -30,14 +30,20 @@ Mind+是一款基于Scratch3.0开发的青少年编程软件，让大家轻松�
 
 `网站：http://mindplus.cc/`
 
+**代码说明：**
+
+这段代码可以提供消息的发送和订阅功能，MQTT服务器既可以用EasyIot物联网，也可以用SIoT。
+
+代码下载链接：https://github.com/vvlink/SIoT/tree/master/examples/%E6%8E%8C%E6%8E%A7%E6%9D%BF%E4%BB%A3%E7%A0%81/mPythonX/%E5%8F%91%E9%80%81%E6%B6%88%E6%81%AF
+
 **发送消息**
 
-.. image:: ../image/linmiaoyan/Mind+Mqtt-01.png
+.. image:: ../image/linmiaoyan/Mind+Mqtt-02.png
 
 
 **订阅消息**
 
-.. image:: ../image/linmiaoyan/Mind+Mqtt-02.png
+.. image:: ../image/linmiaoyan/Mind+Mqtt-01.png
 
 掌控板的MQTT代码（基于BXY）
 -------------------------------------------------------
