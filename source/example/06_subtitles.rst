@@ -21,3 +21,14 @@
 
 参考代码
 ---------------
+
+.. image:: ../image/example/06_subtitles_1.png
+
+
+.. image:: ../image/example/06_subtitles_2.png
+
+
+代码下载地址：
+
+拓展思考
+-----------------
