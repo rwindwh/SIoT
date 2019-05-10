@@ -10,3 +10,4 @@
     01_download
     02_run
     03_view
+    04_quick
