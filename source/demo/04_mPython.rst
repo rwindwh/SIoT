@@ -35,7 +35,7 @@ Mind+是一款基于Scratch3.0开发的青少年编程软件，让大家轻松�
 这段代码可以提供消息的发送和订阅功能，MQTT服务器既可以用EasyIot物联网，也可以用SIoT。
 要实现功能，我们只需修改“发送消息”截图中的红框区域，设定相应的数据即可。
 
-代码下载链接：https://github.com/vvlink/SIoT/tree/master/examples/%E6%8E%8C%E6%8E%A7%E6%9D%BF%E4%BB%A3%E7%A0%81/mPythonX/%E5%8F%91%E9%80%81%E6%B6%88%E6%81%AF
+代码下载链接：mind+中自带范例。
 
 
 **发送消息**
@@ -214,7 +214,7 @@ BXY是一款运行于Windows平台的MicroPython编程IDE，界面简洁，操�
 掌控板的MQTT代码（基于mPythonX）
 ------------------------------------------------------
 
-
+代码下载地址：https://github.com/vvlink/SIoT/tree/master/examples/%E6%8E%8C%E6%8E%A7%E6%9D%BF%E4%BB%A3%E7%A0%81/mPythonX/%E5%8F%91%E9%80%81%E6%B6%88%E6%81%AF
 
 **发送消息**
 
