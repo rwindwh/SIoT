@@ -24,12 +24,17 @@
 
 1.打开Mind+，添加”网络服务”中的“MQTT”。
 
+.. image:: ../image/linmiaoyan/Mind+danmu-00.png
+
+.. image:: ../image/linmiaoyan/Mind+danmu-01.png
 
 2.编写代码。
 
 1）在“背景”中写如下程序。
 
 .. image:: ../image/example/06_subtitles_1.png
+
+并修改MQTT服务器相关的参数
 
   **说明**：Topic设置为“xzr/001”（项目ID/名称）
 
@@ -41,6 +46,7 @@
 
 4）复制出4个角色，修改代码。
 
+5）如果想要确认客户端与服务器间的通讯是否正常，可以在变量中为“消息数量”打勾，实时查看数据的传输情况。
 
 参考代码
 ---------------
@@ -50,7 +56,7 @@
 效果演示
 ----------------
 
-.. image:: ../image/linmiaoyan/Mind+danmu-01.png
+.. image:: ../image/linmiaoyan/Mind+danmu-06.png
 
 
   通过网页或者另外的程序，给服务器“xzr/010”Topic发送消息，多个小动物就跑出来显示内容了，支持中文弹幕。
