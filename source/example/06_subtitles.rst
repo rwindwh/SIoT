@@ -24,6 +24,9 @@
 
 1.打开Mind+，添加”网络服务”中的“MQTT”。
 
+.. image:: ../image/linmiaoyan/Mind+danmu-00.png
+
+.. image:: ../image/linmiaoyan/Mind+danmu-01.png
 
 2.编写代码。
 
@@ -50,7 +53,7 @@
 效果演示
 ----------------
 
-.. image:: ../image/linmiaoyan/Mind+danmu-01.png
+.. image:: ../image/linmiaoyan/Mind+danmu-06.png
 
 
   通过网页或者另外的程序，给服务器“xzr/010”Topic发送消息，多个小动物就跑出来显示内容了，支持中文弹幕。
