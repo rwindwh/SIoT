@@ -53,15 +53,11 @@
 
 代码下载地址：https://github.com/vvlink/SIoT/tree/master/examples/Mind%2B
 
-效果演示
-----------------
-
-.. image:: ../image/linmiaoyan/Mind+danmu-06.png
-
-
   通过网页或者另外的程序，给服务器“xzr/010”Topic发送消息，多个小动物就跑出来显示内容了，支持中文弹幕。
 
 运行界面：
+
+.. image:: ../image/linmiaoyan/Mind+danmu-03.png
 
 视频演示：
 
