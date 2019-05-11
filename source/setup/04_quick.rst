@@ -8,24 +8,31 @@
 
 双击运行SIoT_win.exe，将看到一个黑色的CMD窗口，不要关闭它。
 
-.. image:: https://github.com/vvlink/SIoT/blob/master/source/image/eason/setup.PNG 
+.. image:: ../image/eason/setup.PNG 
 
 
 编写程序（mPythonX）
-------------------------
+--------------------------------
 
 打开mPythonX，编写如下代码。
 
+.. image:: ../image/setup/04_quick_02.png
 
+**说明**：“mpythonx/001”表示项目名称为“mpythonx”，设备名称为“001”。
 
-给掌控板写入程序并且运行，按下A。
+给掌控板写入程序并且运行。
+
+重新启动掌控板，等屏幕显示IP地址后，按下“A”键，看看屏幕下方是否出现了“A”。
 
 
 Web管理
 ----------------------
 
-打开网址：http://127.0.0.1:8080。
+打开网址：http://127.0.0.1:8080（或者使用电脑的IP地址）。
 
-输入用户名和密码，就可以看到掌控板发送过来的信息“A”了。
+输入用户名“siot”和密码“dfrobot”，就可以看到项目列表中多了“mpythonx”。
 
-在网页上输入“”，掌控板将显示出发送过来的文字。
+在名称为“001”设备消息中，可以看到掌控板发送过来的信息“A”了。
+
+.. image:: ../image/setup/04_quick_04.png
+
