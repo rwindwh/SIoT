@@ -25,6 +25,13 @@
 	<link rel="stylesheet" href="js/bootstrap-datetimepicker/css/datetimepicker.css">
 	<script src="js/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js"></script>
 	<script src="js/bootstrap-datetimepicker/js/bootstrap-datetimepicker.zh-CN.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+	  $("button").click(function(){
+	  $("#highcharts").toggle();
+	  });
+	});
+	</script>
 	<title></title>
 	<meta name="description" />
 </head>
@@ -66,11 +73,8 @@
 			</div>
 			<button type="button" class="btn btn-default" @click="sendMsg">发送</button>
 
-
-
 		</form>
-		<p>(为消息加上->前缀代表此消息为纯指令消息，不会被存入数据库。例如"->off")</p>
-
+		<div>(为消息加上->前缀代表此消息为纯指令消息，不会被存入数据库。例如"->off")</div>
 		<div class="line"></div>
 
 		<form class="form-inline" style="margin-top: 20px">
@@ -92,12 +96,11 @@
 					<option value="1000">1000条</option>
 					<option value="10000">10000条</option>
 				</select>
-
-
 			</div>
 
 			<button type="button" class="btn btn-default" @click="search">查询</button>
 			<button type="button" class="btn btn-default" @click="tableToExcel">导出查询结果</button>
+			<button type="button" class="btn btn-default">隐藏/显示图表</button>
 		</form>
 		<!-- 图表 -->
 		<section>
