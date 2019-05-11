@@ -215,6 +215,8 @@ BXY是一款运行于Windows平台的MicroPython编程IDE，界面简洁，操�
 掌控板的MQTT代码（基于mPythonX）
 ------------------------------------------------------
 
+图形化代码拖入后无法正常显示，请先检查左边控件栏中，物联网箭头下是否有MQTT模块，如无该模块请检查软件版本。
+
 代码下载地址：https://github.com/vvlink/SIoT/tree/master/examples/%E6%8E%8C%E6%8E%A7%E6%9D%BF%E4%BB%A3%E7%A0%81/mPythonX/%E5%8F%91%E9%80%81%E6%B6%88%E6%81%AF
 
 **发送消息**
