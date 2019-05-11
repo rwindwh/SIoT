@@ -221,6 +221,8 @@ BXY是一款运行于Windows平台的MicroPython编程IDE，界面简洁，操�
 
 **发送消息**
 
+.. image:: ../image/linmiaoyan/mpythonx-mqtt-01.png
+
 ::
 
       from mpython import *
