@@ -35,7 +35,7 @@ Mind+是一款基于Scratch3.0开发的青少年编程软件，让大家轻松�
 这段代码可以提供消息的发送和订阅功能，MQTT服务器既可以用EasyIot物联网，也可以用SIoT。
 要实现功能，我们只需修改“发送消息”截图中的红框区域，设定相应的数据即可。
 
-代码下载链接：mind+中自带范例。
+代码下载链接：**mind+中自带范例**
 
 
 **发送消息**
@@ -217,6 +217,40 @@ BXY是一款运行于Windows平台的MicroPython编程IDE，界面简洁，操�
 代码下载地址：https://github.com/vvlink/SIoT/tree/master/examples/%E6%8E%8C%E6%8E%A7%E6%9D%BF%E4%BB%A3%E7%A0%81/mPythonX/%E5%8F%91%E9%80%81%E6%B6%88%E6%81%AF
 
 **发送消息**
+
+::
+      from mpython import *
+      import network
+      from umqtt.simple import MQTTClient
+
+      my_wifi = wifi()
+      my_wifi.connectWiFi("makerspace", "m@kersp@ce")
+
+      mqtt = MQTTClient("zhangkong", "192.168.1.135", 1883, "siot", "dfrobot", keepalive=30)
+
+      try:
+          mqtt.connect()
+          print('Connected')
+      except:
+          print('Disconnected')
+
+      def on_button_a_down(_):
+          mqtt.publish("mpythonx/001", "A")
+          oled.DispChar("A", 0, 48, 1)
+          oled.show()
+
+      def on_button_b_down(_):
+          mqtt.publish("mpythonx/001", "B")
+          oled.DispChar("B", 0, 48, 1)
+          oled.show()
+
+      button_a.irq(trigger=Pin.IRQ_FALLING, handler=on_button_a_down)
+
+      button_b.irq(trigger=Pin.IRQ_FALLING, handler=on_button_b_down)
+
+
+      oled.DispChar(my_wifi.sta.ifconfig()[0], 0, 0, 1)
+      oled.show()
 
 
 
