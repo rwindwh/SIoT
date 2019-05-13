@@ -75,4 +75,4 @@ SIoT平台设备每间隔10秒接受一条信息。
 参考代码
 ----------------
 
-代码下载地址：
+代码下载地址：https://github.com/vvlink/SIoT/tree/master/examples/Mind%2B
