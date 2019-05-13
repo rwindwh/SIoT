@@ -16,6 +16,8 @@ SIoT既可以作为教师教学物联网课程的教学支持平台，也可以�
 
 打开浏览器，输入：http://localhost:8080 或者 http://127.0.0.1:8080 进行登录     
 
+- 你在黑框第一行可能会看到8083字样，请忽视它，我们现在统一使用8080端口。
+
 .. image:: https://github.com/vvlink/SIoT/blob/master/source/image/eason/login.PNG    
 
 默认用户名（user）为：siot    
