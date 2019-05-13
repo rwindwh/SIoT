@@ -20,17 +20,17 @@
 
 直接双击点击与系统匹配的SIoT运行文件，屏幕会弹出一个黑色的CMD窗口，在配置中请不要关闭它。
 
-.. image:: ../image/haoqing/Mind+yuancheng-01.png
+.. image:: ../image/haoqing/Mind+yuancheng-02.png
 
 2.登录SIoT平台
 
 打开浏览器，输入url：http://localhost:8082。
 
-.. image:: ../image/haoqing/Mind+yuancheng-01.png
+.. image:: ../image/haoqing/Mind+yuancheng-03.png
 
 3.打开Mind+ V1.5.3编写程序
 
-.. image:: ../image/haoqing/Mind+yuancheng-01.png
+.. image:: ../image/haoqing/Mind+yuancheng-04.png
 
 步骤
 ------------------
@@ -38,39 +38,39 @@
  
 将掌控板通过数据线连接到电脑，驱动安装完成后，点击“连接设备”中“COMxx-CP210x”即可。
 
-.. image:: ../image/haoqing/Mind+yuancheng-01.png
+.. image:: ../image/haoqing/Mind+yuancheng-05.png
 
 （一）参考程序
 
-.. image:: ../image/haoqing/Mind+yuancheng-01.png
+.. image:: ../image/haoqing/Mind+yuancheng-06.png
 
 1.其中WiFi连接的热点名与密码需要手动修改成可以连接的热点信息。
 
-.. image:: ../image/haoqing/Mind+yuancheng-01.png
+.. image:: ../image/haoqing/Mind+yuancheng-07.png
 
 2.设置MQTT初始化参数。选择SIoT物联网平台，服务器地址为本地IP地址，账号密码即SIoT使用的账号密码，Topic_0为“项目ID/名称”。
 
-.. image:: ../image/haoqing/Mind+yuancheng-01.png
+.. image:: ../image/haoqing/Mind+yuancheng-08.png
 
 3.当MQTT接收到on时，全部灯泡亮白光；当MQTT接收到off时，全部灯泡亮红光。接收信息内容可以进行修改。
 
 4.将程序“上传到设备”进行测试。
 
-.. image:: ../image/haoqing/Mind+yuancheng-01.png
+.. image:: ../image/haoqing/Mind+yuancheng-09.png
 
 （二）运行结果
 
 掌控板屏幕上显示以下内容。
 
-.. image:: ../image/haoqing/Mind+yuancheng-01.png
+.. image:: ../image/haoqing/Mind+yuancheng-10.png
 
 SIoT平台设备每间隔10秒接受一条信息。
 
-.. image:: ../image/haoqing/Mind+yuancheng-01.png
+.. image:: ../image/haoqing/Mind+yuancheng-11.png
 
 在SIoT平台给掌控板发送消息“on”。掌控板的小灯全部变成了白色灯。相同操作，发送消息“off”，灯泡变色。测试成功。
 
-.. image:: ../image/haoqing/Mind+yuancheng-01.png
+.. image:: ../image/haoqing/Mind+yuancheng-12.png
 
 参考代码
 ----------------
