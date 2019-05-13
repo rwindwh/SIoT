@@ -12,13 +12,13 @@ SIoT既可以作为教师教学物联网课程的教学支持平台，也可以�
 启动软件后请不要关闭这个黑窗口，它将维持你的计算机（电脑）作为MQTT服务器。  
   
   
-.. image:: https://github.com/vvlink/SIoT/blob/master/source/image/eason/setup.PNG    
+.. image:: ../image/eason/setup.PNG    
 
 打开浏览器，输入：http://localhost:8080 或者 http://127.0.0.1:8080 进行登录     
 
 - 你在黑框第一行可能会看到8083字样，请忽视它，我们现在统一使用8080端口。
 
-.. image:: https://github.com/vvlink/SIoT/blob/master/source/image/eason/login.PNG    
+.. image:: ../image/eason/login.PNG    
 
 默认用户名（user）为：siot    
 
@@ -32,7 +32,7 @@ SIoT既可以作为教师教学物联网课程的教学支持平台，也可以�
 
 登录成功之后，默认界面就是查看项目界面，你也可以通过点击上方菜单栏的“项目列表”访问。   
 
-.. image:: https://github.com/vvlink/SIoT/blob/master/source/image/eason/list_html.PNG
+.. image:: ../image/eason/list_html.PNG
 
 地址：http://localhost:8080/html/
 
@@ -42,7 +42,7 @@ SIoT既可以作为教师教学物联网课程的教学支持平台，也可以�
 
 通过点击上方菜单栏的“设备列表”访问。
 
-.. image:: https://github.com/vvlink/SIoT/blob/master/source/image/eason/devices.PNG
+.. image:: ../image/eason/devices.PNG
 
 地址：http://localhost:8080/html/devices.html
 
@@ -62,7 +62,7 @@ SIoT既可以作为教师教学物联网课程的教学支持平台，也可以�
 
 - 你可以点击“导出查询结果”按钮，在线生成Excel文件，默认名称为“消息数据.xls”。
 
-.. image:: https://github.com/vvlink/SIoT/blob/master/source/image/eason/topicMsg.PNG
+.. image:: ../image/eason/topicMsg.PNG
 
 地址：http://localhost:8080/html/messages.html?topic=PROGRAM_ID/TOPIC_ID
 
@@ -78,6 +78,6 @@ SIoT既可以作为教师教学物联网课程的教学支持平台，也可以�
 
 - 消息发送成功后，系统会自动根据topic建立“项目”和“设备”。如果项目和设备已经存在则在此设备上追加数据。
 
-.. image:: https://github.com/vvlink/SIoT/blob/master/source/image/eason/SendMsg.PNG
+.. image:: ../image/eason/SendMsg.PNG
 
 地址：http://localhost:8080/html/sendMsg.html
