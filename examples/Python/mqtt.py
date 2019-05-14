@@ -11,8 +11,8 @@ import time
 
 
 SERVER = "127.0.0.1"	#MQTT服务器IP
-CLIENT_ID = "79afcb3bdb44b7aa"	#在SIoT上，CLIENT_ID可以留空
-TOPIC = 'xzr/001'	#“topic”为“项目名称/设备名称”
+CLIENT_ID = " "	#在SIoT上，CLIENT_ID可以留空
+TOPIC = 'DFRobot/linmy'	#“topic”为“项目名称/设备名称”
 username='siot'		#用户名
 password='dfrobot'	#密码
 
