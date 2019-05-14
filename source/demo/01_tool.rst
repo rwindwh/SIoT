@@ -58,7 +58,7 @@ MQTTool是运行在iPhone上的MQTT客户端软件，也是一个MQTT测试工�
 MQTT Client（安卓手机）
 ---------------------------
 
-MQTT Client 是一款安卓环境的MQTT客户端软件，也是一个MQTT测试工具。可以在http://www.mdpda.com/app/apk7623192.html下载。
+MQTT Client 是一款安卓环境的MQTT客户端软件，也是一个MQTT测试工具。可以在http://www.mdpda.com/app/apk7623192.html 下载。
 
 .. image:: ../image/demo/01-mqtt-client-01-icon.jpg
 
