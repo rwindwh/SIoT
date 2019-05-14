@@ -19,6 +19,9 @@ App Inventor2简介
 编程步骤
 -----------------------
     编程准备：
+        1.注册一个物联网平台账号，本案例以DFrobot公司搭建的EasyIot平台（网址：http://iot.dfrobot.com.cn）为例进行示范。
+        
+        2.在广州市教育技术中心的App Inventor2服务器上注册一个账号，服务器网址为：http://app.gzjkw.net。
         
     手机App端编程：
         Step1：
