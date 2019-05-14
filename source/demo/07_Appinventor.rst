@@ -23,8 +23,14 @@ App Inventor2简介
         
         2.在广州市教育技术中心的App Inventor2服务器上注册一个账号，服务器网址为：http://app.gzjkw.net。
         
+        3.下载安装mind+1.5.5版本的编程软件或mpythonX 0.3.1以上的版本。
+             
+        4.准备一块掌控板、一根micro口数据线、一台电脑。
+        
     手机App端编程：
-        Step1：
+        step1：新建项目，命名为“ColorLight”。
+        step2：添加屏幕，并重命名屏幕名称为“setting”。
+        step3：
     
     掌控板端编程：
     
