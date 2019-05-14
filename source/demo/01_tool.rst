@@ -60,9 +60,13 @@ MQTT Client（安卓手机）
 
 MQTT Client 是一款安卓环境的MQTT客户端软件，也是一个MQTT测试工具。可以在http://www.mdpda.com/app/apk7623192.html下载。
 
+.. image:: ../image/demo/01-mqtt-client-01-icon.jpg
+
 首先要确认计算机和手机连接的是同一个无线路由器，或者在同一个局域网中，相互之间可以访问。
 
 打开软件，点击右上角的Settings，点击Server。
+
+.. image:: ../image/demo/01-mqtt-client-02-settings.jpg
 
 - 在URL处输入计算机的IP地址，后面跟上“：8080”
 
@@ -76,10 +80,18 @@ MQTT Client 是一款安卓环境的MQTT客户端软件，也是一个MQTT测试
 
 发送消息需要在主页面点击右下角的紫色按钮，进入发送消息界面。
 
+.. image:: ../image/demo/01-mqtt-client-03-publish.jpg
+
 在“Topic”（主题）中输入“xzr/001”（表示项目id为xzr，设备id为001），在“Message”（消息）中输入想要发送的消息内容，点击“PUBLISH”（发送）即可发送消息。在SIoT的Web页面可以看到这一消息。
 
 同样，在Web端给Topic“xzr/001”发送消息，手机端即可收到信息，这一消息在主页面可以订阅。
 
 在主页面下方输入想要订阅的主题“xzr/001”，就可以获取实时消息了。
+
+.. image:: ../image/demo/01-mqtt-client-04-main-subscribe.jpg
+
+想要看具体的消息收发详情，可以点击相应的栏目查看，例如点击上图中的“xzr/001”就可以出现如下画面。
+
+.. image:: ../image/demo/01-mqtt-client-05-received-msg.jpg
 
 多个手机同时连接这个MQTT服务器，只要Topic相同，相互之间都能收到。
