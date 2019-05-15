@@ -15,10 +15,23 @@ micro:bit简介
 硬件连接
 ------------------------
 
+
+.. image:: ../image/zhangyu/microbit相关代码/06-microbit-01.jpg
+
+   从左到右依次为：数据线、micro:bit、Micro:Mate多功能I/O扩展板（还有两个螺母）、OBLOQ物联网模块、LED模块。
+   
+.. image:: ../image/zhangyu/microbit相关代码/06-microbit-02.jpg
+
+   LED灯如图接在12号口。12号口高电平，LED灯亮；12号口低电平，LED灯灭。
     
 
 使用MakeCode（Js代码）
 ---------------------------------
+
+.. image:: ../image/zhangyu/microbit相关代码/06-microbit-03.png
+
+
+.. image:: ../image/zhangyu/microbit相关代码/06-microbit-04.png
 
 
 使用BXY（MicroPython代码）
