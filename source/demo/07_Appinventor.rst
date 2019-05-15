@@ -18,6 +18,26 @@ App Inventor2简介
 
 编程步骤
 -----------------------
+    编程准备：
+        1.注册一个物联网平台账号，本案例以DFrobot公司搭建的EasyIot平台（网址：http://iot.dfrobot.com.cn）为例进行示范。
+        
+        2.在广州市教育技术中心的App Inventor2服务器上注册一个账号，服务器网址为：http://app.gzjkw.net。
+        
+        3.下载安装mind+1.5.5版本的编程软件或mpythonX 0.3.1以上的版本。
+             
+        4.准备一块掌控板、一根micro口数据线、一台电脑。
+        
+    手机App端编程：
+        step1：新建项目，命名为“ColorLight”。
+        
+        step2：添加新屏幕“setting”。
+        
+        step3：screen1屏幕组件与逻辑设计
+        
+    
+    掌控板端编程：
+    
+
 
 参考代码
 ------------------------------

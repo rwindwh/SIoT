@@ -84,7 +84,11 @@ MQTT Client 是一款安卓环境的MQTT客户端软件，也是一个MQTT测试
 
 在“Topic”（主题）中输入“xzr/001”（表示项目id为xzr，设备id为001），在“Message”（消息）中输入想要发送的消息内容，点击“PUBLISH”（发送）即可发送消息。在SIoT的Web页面可以看到这一消息。
 
+.. image:: ../image/demo/01-mqtt-client-06-msg.PNG
+
 同样，在Web端给Topic“xzr/001”发送消息，手机端即可收到信息，这一消息在主页面可以订阅。
+
+.. image:: ../image/demo/01-mqtt-client-07-send.PNG
 
 在主页面下方输入想要订阅的主题“xzr/001”，就可以获取实时消息了。
 
