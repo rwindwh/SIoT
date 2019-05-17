@@ -27,15 +27,13 @@ App Inventor2简介
              
         4.准备一块掌控板、一根micro口数据线、一台电脑。
         
-    手机App端编程：
-        step1：新建项目，命名为“ColorLight”。
+    案例：手机App控制掌控板全彩LED灯。
+        1.手机APP端编程(工具平台：AppInventor2)：
         
-        step2：添加新屏幕“setting”。
         
-        step3：screen1屏幕组件与逻辑设计
         
     
-    掌控板端编程：
+        2.掌控板端编程(工具平台：mind+1.5.5)：
     
 
 
