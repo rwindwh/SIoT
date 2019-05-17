@@ -76,7 +76,13 @@ App Inventor2简介
 
     
 2.掌控板端编程(工具平台：mind+1.5.5)：
-    
+
+.. image:: ../image/demo/07_appInventor-15.png
+
+.. image:: ../image/demo/07_appInventor-16.png
+
+.. image:: ../image/demo/07_appInventor-17.png
+
 
 
 参考代码
