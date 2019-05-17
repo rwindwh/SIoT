@@ -30,7 +30,8 @@ App Inventor2简介
         
 **案例：手机App控制掌控板全彩LED灯**  
     
-1.手机APP端编程(工具平台：AppInventor2)：
+手机APP端编程(工具平台：AppInventor2)：
+
 组件设计-setting屏幕组件设计图
                 
 .. image:: ../image/demo/07_appInventor-01.png
