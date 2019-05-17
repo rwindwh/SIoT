@@ -32,13 +32,15 @@ App Inventor2简介
     
         1.手机APP端编程(工具平台：AppInventor2)：
             1）组件设计
-                setting屏幕组件设计图
+                **setting屏幕组件设计图**
                 
 .. image:: ..image/demo/07_appInventor-01.png
                 
-                screen1屏幕组件设计图
+                **screen1屏幕组件设计图**
                 
 .. image:: ..image/demo/07_appInventor-02.png
+
+
             2）逻辑设计
                 setting屏幕逻辑设计图
                 
