@@ -55,8 +55,25 @@ App Inventor2简介
 
                 
 逻辑设计-screen1屏幕逻辑设计图
-        
-        
+
+.. image:: ../image/demo/07_appInventor-07.png
+
+.. image:: ../image/demo/07_appInventor-08.png
+
+.. image:: ../image/demo/07_appInventor-09.png
+
+.. image:: ../image/demo/07_appInventor-10.png
+
+.. image:: ../image/demo/07_appInventor-11.png
+
+.. image:: ../image/demo/07_appInventor-12.png
+
+.. image:: ../image/demo/07_appInventor-13.png
+
+.. image:: ../image/demo/07_appInventor-14.png
+
+
+
     
 2.掌控板端编程(工具平台：mind+1.5.5)：
     
