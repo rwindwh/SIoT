@@ -24,7 +24,7 @@
 
 2.登录SIoT平台
 
-打开浏览器，输入url：http://localhost:8082。
+打开浏览器，输入url：http://localhost:8080。
 
 .. image:: ../image/haoqing/Mind+yuancheng-03.png
 
