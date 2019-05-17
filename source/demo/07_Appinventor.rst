@@ -34,11 +34,11 @@ App Inventor2简介
     1）组件设计
                 **setting屏幕组件设计图**
                 
-
+.. image:: ../image/linmiaoyan/Mind+Mqtt-02.png
                 
                 **screen1屏幕组件设计图**
                 
-.. image:: ..image/demo/07_appInventor-02.png
+
 
 
             2）逻辑设计
