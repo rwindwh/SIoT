@@ -6,7 +6,7 @@ SIoT为“虚谷计划”的子项目“虚谷物联“项目的核心软件，�
 
 项目发起人：“虚谷计划”组委会
 
-本文档阅读地址：https://siot.readthedocs.io/
+SIoT文档的阅读地址：https://siot.readthedocs.io/
 
 # 项目的浏览指南
 
