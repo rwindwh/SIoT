@@ -38,19 +38,15 @@ App Inventor2简介
 组件设计-setting屏幕组件设计图
                 
 .. image:: ../image/demo/07_appInventor-01.png
-
                 
 组件设计-screen1屏幕组件设计图
 
 .. image:: ../image/demo/07_appInventor-02.png
+
+逻辑设计-setting屏幕逻辑设计图
+
                 
-
-
-
-            2）逻辑设计
-                setting屏幕逻辑设计图
-                
-                screen1屏幕逻辑设计图
+逻辑设计-screen1屏幕逻辑设计图
         
         
     
