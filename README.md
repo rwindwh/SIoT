@@ -21,8 +21,8 @@
 - MQTT tools，提供常见的MQTT调试、应用工具
 - examples，提供各种应用范例
 - essay，与物联网应用、科学测量相关的案例、论文
-- build，已经生成的使用手册文档（Html格式）
-- source，本使用手册的源码
+- build，已经生成的SIoT文档（Html格式）
+- source，SIoT文档（使用手册）的源码
 
 ## SIoT文档的阅读地址
 
