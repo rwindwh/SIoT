@@ -20,7 +20,8 @@ Mind plus（Mind+）支持两种编程模式，一是实时交互模式，二是
 2）在MQTT中，找到相应的语句开始编程。
 
 .. image:: ../image/demo/03-mind-03.png
-
+    
+    
     **代码功能简介**
 
     当Topic_0（在MQTT服务器中设置）收到一条消息，小机器人就开始说话，将消息显示在对话气泡中。
@@ -36,11 +37,11 @@ Mind plus（Mind+）支持两种编程模式，一是实时交互模式，二是
 
     **代码功能简介**
     
-    发送端：
+    发送端：当与服务器成功连接后，不断发送信息到服务器
     
+.. image:: ../image/linmiaoyan/Mind+Mqtt-03.png
     
-    
-    接受端：
+    接受端：根据收到的不同的信息，做出对应的操作
 
 .. image:: ../image/linmiaoyan/Mind+Mqtt-01.png
 
