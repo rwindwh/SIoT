@@ -39,7 +39,7 @@
 
 **系统流程图**
 
-.. image:: ../image/haoqing/Mind+yuancheng-30.jpg
+.. image:: ../image/haoqing/Mind+yuancheng-30.png
 
 **（一）受控制端（掌控板）**
 
