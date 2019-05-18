@@ -1,4 +1,4 @@
-Mind plus
+﻿Mind plus
 =========================
 
 简介与安装
@@ -49,6 +49,8 @@ Mind plus（Mind+）支持两种编程模式，一是实时交互模式，二是
 参考代码
 ----------------------
 
-更多代码下载地址：
+1）可以在示例代码中寻找
+
+2）更多代码下载地址：
 
 https://github.com/vvlink/SIoT/tree/master/examples/Mind+
