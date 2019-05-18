@@ -14,3 +14,4 @@
     04_Remotechat
     05_play
     06_subtitles
+    07_Appinventor
