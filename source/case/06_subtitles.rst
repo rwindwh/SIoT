@@ -24,9 +24,9 @@
 
 1.打开Mind+，添加”网络服务”中的“MQTT”。
 
-.. image:: ../image/linmiaoyan/Mind+danmu-00.png
-
 .. image:: ../image/linmiaoyan/Mind+danmu-01.png
+
+.. image:: ../image/linmiaoyan/Mind+danmu-02.png
 
 2.编写代码。
 
