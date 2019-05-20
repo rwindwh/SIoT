@@ -54,8 +54,7 @@
 （二）具体操作
 1.首先打开Mind+软件，在“上传模式”下，在“扩展”中选择“主控板-掌控板”与“网络服务-WiFi、MQTT”进行安装。将掌控板通过数据线连接到电脑，驱动安装完成后，点击“连接设备”中“COMxx-CP210x”即可。
 
-.. image:: ../image/haoqing/Mind+temperature-08.jpg
-.. image:: ../image/haoqing/Mind+temperature-09.jpg
+.. image:: ../image/haoqing/Mind+yuancheng-05.png
 
 2.手动修改可连接的WiFi热点名与密码。
 
