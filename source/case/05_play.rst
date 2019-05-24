@@ -3,9 +3,12 @@
 
 基于SIoT和和掌控板，可以设计一些多人竞赛的游戏，然后借助Mind+实时呈现出来。
 
-**案例1：双人足球联机对战**
 
-.. vedio:: ../image/case/05_play_00.mp4
+案例1：双人足球联机对战
+
+.. image:: ../image/case/05_play_001.png
+
+.. image:: ../image/case/05_play_002.png
 
 
 原理介绍
