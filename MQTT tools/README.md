@@ -18,6 +18,7 @@ Mind+是一款基于Scratch3.0开发的青少年编程软件，支持arduino、m
 
 Mind+不仅自身可以连接MQTT服务器，还能够给掌控板（mPython）、Arduino、micro:bit等智能硬件编写与MQTT相关的代码。
 
+推荐使用1.55以上版本。
 
 - 下载地址：http://mindplus.cc/
 
@@ -37,6 +38,10 @@ BXY是一款运行于Windows平台的MicroPython编程IDE，界面简洁，操�
 
 - GitHub地址：https://github.com/labplus-cn/mPython
 - 文档地址（下载地址）：https://mpython.readthedocs.io/zh/latest/board/mpythonX.html
+
+  http://static.steamaker.cn/files/mpythonx-0.3.2-b1-win.exe
+
+  http://static.steamaker.cn/files/mpythonx-0.3.2-b1-mac.zip
 
 ### Processing
 
