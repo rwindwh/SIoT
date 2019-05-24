@@ -45,9 +45,11 @@
 步骤
 --------------
 1、绘制足球
+
 .. image:: ../image/case/05_play_01.png
 
 2、绘制边界线
+
 .. image:: ../image/case/05_play_02.png
 
 .. image:: ../image/case/05_play_03.png
@@ -74,9 +76,18 @@
 
 1、足球角色程序代码
 
+.. image:: ../image/case/05_play_09.png
+
+.. image:: ../image/case/05_play_10.png
+
 2、击球光标角色程序代码
 
+.. image:: ../image/case/05_play_08.png
+
+
 3、结束角色程序代码
+
+.. image:: ../image/case/05_play_11.png
 
 **player2端**
 
