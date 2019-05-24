@@ -102,6 +102,6 @@ player2端的程序代码与player1端的基本相同，就足球角色程序代
 
 参考代码下载：
 
-
+https://github.com/vvlink/SIoT/tree/master/examples/Mind%2B
 
 
