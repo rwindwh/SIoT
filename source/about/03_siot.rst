@@ -51,7 +51,11 @@ SIoT下载地址
 
 最新版本1.0。
 
-1.Win64位，支持Win10，Win8，Win7等64位系统。
-2.Win32位，支持Win10，Win8，Win7等32位系统。
-3.Mac64，支持Mac的64位系统。
-4.Linux64，支持MLinux的64位系统。
+    1.Win64位，支持Win10，Win8，Win7等64位系统。
+
+    2.Win32位，支持Win10，Win8，Win7等32位系统。
+
+    3.Mac64，支持Mac的64位系统。
+
+    4.Linux64，支持MLinux的64位系统。
+
