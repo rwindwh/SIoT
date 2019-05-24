@@ -23,7 +23,7 @@
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="客户端连接范例" href="../demo/index.html" />
+    <link rel="next" title="4. 快速入门" href="04_quick.html" />
     <link rel="prev" title="2. 安装运行" href="02_run.html" />
    
   <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
@@ -49,9 +49,12 @@
 <h2>3.1. 登录Web页面<a class="headerlink" href="#web" title="Permalink to this headline">¶</a></h2>
 <p>如果你是Windows用户，请运行SIot_win.exe。类似的，如果你是Linux用户，请运行SIoT_linux，如果你是Mac用户，请运行SIoT_mac。
 启动软件后请不要关闭这个黑窗口，它将维持你的计算机（电脑）作为MQTT服务器。</p>
-<img alt="https://github.com/vvlink/SIoT/blob/master/source/image/eason/setup.PNG" src="https://github.com/vvlink/SIoT/blob/master/source/image/eason/setup.PNG" />
+<img alt="../_images/setup.PNG" src="../_images/setup.PNG" />
 <p>打开浏览器，输入：<a class="reference external" href="http://localhost:8080">http://localhost:8080</a> 或者 <a class="reference external" href="http://127.0.0.1:8080">http://127.0.0.1:8080</a> 进行登录</p>
-<img alt="https://github.com/vvlink/SIoT/blob/master/source/image/eason/login.PNG" src="https://github.com/vvlink/SIoT/blob/master/source/image/eason/login.PNG" />
+<ul class="simple">
+<li>你在黑框第一行会看到1883字样，那是MQTT协议的默认端口。Web管理方面，默认使用的是8080端口。</li>
+</ul>
+<img alt="../_images/login.PNG" src="../_images/login.PNG" />
 <p>默认用户名（user）为：siot</p>
 <p>默认密码（pwd）为：dfrobot</p>
 </div>
@@ -59,14 +62,14 @@
 <h2>3.2. 查看项目<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <p>“项目列表”可以修改项目备注和查看设备。</p>
 <p>登录成功之后，默认界面就是查看项目界面，你也可以通过点击上方菜单栏的“项目列表”访问。</p>
-<img alt="https://github.com/vvlink/SIoT/blob/master/source/image/eason/list_html.PNG" src="https://github.com/vvlink/SIoT/blob/master/source/image/eason/list_html.PNG" />
+<img alt="../_images/list_html.PNG" src="../_images/list_html.PNG" />
 <p>地址：<a class="reference external" href="http://localhost:8080/html/">http://localhost:8080/html/</a></p>
 </div>
 <div class="section" id="id3">
 <h2>3.3. 查看设备<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 <p>平台提供一个简单的管理界面，能够输入自己的Topic和最大消息数量，查询到该Topic对应的消息。根据活动时间（最后一次使用时间）进行排序。</p>
 <p>通过点击上方菜单栏的“设备列表”访问。</p>
-<img alt="https://github.com/vvlink/SIoT/blob/master/source/image/eason/devices.PNG" src="https://github.com/vvlink/SIoT/blob/master/source/image/eason/devices.PNG" />
+<img alt="../_images/devices.PNG" src="../_images/devices.PNG" />
 <p>地址：<a class="reference external" href="http://localhost:8080/html/devices.html">http://localhost:8080/html/devices.html</a></p>
 </div>
 <div class="section" id="id4">
@@ -81,19 +84,19 @@
 <ul class="simple">
 <li>你可以点击“导出查询结果”按钮，在线生成Excel文件，默认名称为“消息数据.xls”。</li>
 </ul>
-<img alt="https://github.com/vvlink/SIoT/blob/master/source/image/eason/topicMsg.PNG" src="https://github.com/vvlink/SIoT/blob/master/source/image/eason/topicMsg.PNG" />
+<img alt="../_images/topicMsg.PNG" src="../_images/topicMsg.PNG" />
 <p>地址：<a class="reference external" href="http://localhost:8080/html/messages.html?topic=PROGRAM_ID/TOPIC_ID">http://localhost:8080/html/messages.html?topic=PROGRAM_ID/TOPIC_ID</a></p>
 <p>请把PROGRAM_ID替换成自己的项目名，把TOPIC_ID替换成自己的消息名。</p>
 </div>
 <div class="section" id="id5">
 <h2>3.5. 发送消息<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
-<p>可以发送255字符内的字符串。</p>
+<p>可以发送255字符内的字符串，包括中文。</p>
 <p>通过点击上方菜单栏的“发送消息”访问。</p>
 <ul class="simple">
 <li>Topic的格式为：项目ID/设备名。例如：Seifer/light1</li>
 <li>消息发送成功后，系统会自动根据topic建立“项目”和“设备”。如果项目和设备已经存在则在此设备上追加数据。</li>
 </ul>
-<img alt="https://github.com/vvlink/SIoT/blob/master/source/image/eason/SendMsg.PNG" src="https://github.com/vvlink/SIoT/blob/master/source/image/eason/SendMsg.PNG" />
+<img alt="../_images/SendMsg.PNG" src="../_images/SendMsg.PNG" />
 <p>地址：<a class="reference external" href="http://localhost:8080/html/sendMsg.html">http://localhost:8080/html/sendMsg.html</a></p>
 </div>
 </div>
@@ -120,10 +123,11 @@
 <li class="toctree-l2"><a class="reference internal" href="01_download.html">1. 文件下载</a></li>
 <li class="toctree-l2"><a class="reference internal" href="02_run.html">2. 安装运行</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">3. 界面简介</a></li>
+<li class="toctree-l2"><a class="reference internal" href="04_quick.html">4. 快速入门</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../demo/index.html">客户端连接范例</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../example/index.html">典型应用案例</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../case/index.html">典型应用案例</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../advanced/index.html">高级操作技巧</a></li>
 </ul>
 
@@ -133,7 +137,7 @@
   <li><a href="../index.html">Documentation overview</a><ul>
   <li><a href="index.html">安装和运行</a><ul>
       <li>Previous: <a href="02_run.html" title="previous chapter">2. 安装运行</a></li>
-      <li>Next: <a href="../demo/index.html" title="next chapter">客户端连接范例</a></li>
+      <li>Next: <a href="04_quick.html" title="next chapter">4. 快速入门</a></li>
   </ul></li>
   </ul></li>
 </ul>

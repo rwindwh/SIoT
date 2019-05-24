@@ -1,0 +1,189 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="go">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>2. 远程控制 &#8212; SIoT使用手册 1.0 documentation</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="3. 物联网数据呈现" href="03_dataview.html" />
+    <link rel="prev" title="1. 科学探究之定时测量温度" href="01_temperature.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="id1">
+<h1>2. 远程控制<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>今天我们将分享给大家如何利用物联网平台进行远程控制，发送指令后接收端产生相应的反应。</p>
+<div class="section" id="id2">
+<h2>2.1. 准备工作<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>在Mind+ V1.5.3的物联网模块——MQTT中，可以通过添加扩展掌控后提供的WIFI模块，与物联网平台连接，从而实现掌控板与web端、app端的互联。用户可以根据实际需要选择阿里云、Easy IoT、OneNet和SIoT四个平台物联网平台。我们在这里简单介绍如何使用SIoT平台来远程控制掌控板、Mind+，实现掌控板将数据上传到SIoT，SIoT同时将数据反馈到Mind+界面的效果。SIoT可以同时将消息发送至掌控板与Mind+。</p>
+<p>（一）硬件准备</p>
+<p>掌控板及其连接线</p>
+<img alt="../_images/Mind+yuancheng-01.png" src="../_images/Mind+yuancheng-01.png" />
+<p>（二）软件准备</p>
+<p>1.搭建SIoT服务器</p>
+<p>直接双击点击与系统匹配的SIoT运行文件，屏幕会弹出一个黑色的CMD窗口，在配置中请不要关闭它。</p>
+<img alt="../_images/Mind+yuancheng-02.png" src="../_images/Mind+yuancheng-02.png" />
+<p>2.登录SIoT平台</p>
+<p>打开浏览器，输入url：<a class="reference external" href="http://localhost:8080">http://localhost:8080</a>。</p>
+<img alt="../_images/Mind+yuancheng-03.png" src="../_images/Mind+yuancheng-03.png" />
+<p>3.打开Mind+ V1.5.3编写程序</p>
+<img alt="../_images/Mind+yuancheng-04.png" src="../_images/Mind+yuancheng-04.png" />
+</div>
+<div class="section" id="id3">
+<h2>2.2. 步骤<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p>为了方便大家的理解，我们将远程控制实现的功能用以下系统流程图进行展示。在下方具体的操作中，文档按照**受控制端（掌控板）、控制端（mind+实时模式）**进行划分展示的。</p>
+<p><strong>系统流程图</strong></p>
+<img alt="../_images/Mind+yuancheng-30.png" src="../_images/Mind+yuancheng-30.png" />
+<p><strong>（一）受控制端（掌控板）</strong></p>
+<p>1.参考程序</p>
+<img alt="../_images/Mind+yuancheng-13.jpg" src="../_images/Mind+yuancheng-13.jpg" />
+<p>2.具体操作</p>
+<p>（1）打开Mind+后，在“上传模式”下，在“扩展”中选择“主控板-掌控板”与“网络服务-WiFi、MQTT”进行安装。将掌控板通过数据线连接到电脑，驱动安装完成后，点击“连接设备”中“COMxx-CP210x”即可。</p>
+<img alt="../_images/Mind+yuancheng-05.png" src="../_images/Mind+yuancheng-05.png" />
+<p>（2）手动修改可连接的WiFi热点名与密码。</p>
+<img alt="../_images/Mind+yuancheng-14.jpg" src="../_images/Mind+yuancheng-14.jpg" />
+<p>（3）设置MQTT初始化参数。选择SIoT物联网平台，服务器地址为本地IP地址，账号密码即SIoT使用的账号密码，Topic_0为“项目ID/名称”。</p>
+<img alt="../_images/Mind+yuancheng-15.jpg" src="../_images/Mind+yuancheng-15.jpg" />
+<p>（4）当MQTT接收到消息on时，全部灯泡亮白光；当MQTT接收到off时，全部灯泡亮红光。消息内容可以进行修改。</p>
+<p>（5）将程序“上传到设备”进行测试。</p>
+<img alt="../_images/Mind+yuancheng-16.jpg" src="../_images/Mind+yuancheng-16.jpg" />
+<p>3.运行结果</p>
+<p>掌控板屏幕上显示以下内容。</p>
+<img alt="../_images/Mind+yuancheng-17.jpg" src="../_images/Mind+yuancheng-17.jpg" />
+<p>SIoT平台设备每间隔10秒接受一条信息。</p>
+<img alt="../_images/Mind+yuancheng-18.jpg" src="../_images/Mind+yuancheng-18.jpg" />
+<p>在SIoT平台给掌控板发送消息“on”。掌控板的小灯全部变成了白色灯，显示文字。相同操作，发送消息“off”，灯泡变色。测试成功。</p>
+<img alt="../_images/Mind+yuancheng-19.jpg" src="../_images/Mind+yuancheng-19.jpg" />
+<img alt="../_images/Mind+yuancheng-20.jpg" src="../_images/Mind+yuancheng-20.jpg" />
+<p>当对P、O、H、N、T、Y按键进行触摸时，掌控板发出相应声响。</p>
+<p>当A按钮被按下时，屏幕显示文字“开心快乐每一天”。当B按钮按下时，显示彩灯。当A+B按钮按下时，灯全部灭掉。</p>
+<img alt="../_images/Mind+yuancheng-21.jpg" src="../_images/Mind+yuancheng-21.jpg" />
+<img alt="../_images/Mind+yuancheng-22.jpg" src="../_images/Mind+yuancheng-22.jpg" />
+<p><strong>（二）控制端（Mind+实时模式）</strong></p>
+<p>1.参考程序</p>
+<img alt="../_images/Mind+yuancheng-23.jpg" src="../_images/Mind+yuancheng-23.jpg" />
+<p>2.具体操作</p>
+<p>（1）单击Mind+“实时模式”进行代码编写。</p>
+<p>（2）设置MQTT初始化参数。选择SIoT物联网平台，服务器地址为本地IP地址，账号密码即SIoT使用的账号密码，Topic_0与“上传模式”下Topic_0保持一致。</p>
+<img alt="../_images/Mind+yuancheng-24.jpg" src="../_images/Mind+yuancheng-24.jpg" />
+<p>（3）点击小猫，发送消息“on”至SIoT，对掌控板作出指令。消息内容可以进行修改。</p>
+<p>3.运行结果</p>
+<p>单击绿旗，角色显示“MQTT连接成功”。角色说“哇！现在光照强度是210”，由掌控板测得的数据反馈至SIoT，通过MQTT同步给小猫角色，数据实时更新。</p>
+<img alt="../_images/Mind+yuancheng-25.jpg" src="../_images/Mind+yuancheng-25.jpg" />
+<img alt="../_images/Mind+yuancheng-26.jpg" src="../_images/Mind+yuancheng-26.jpg" />
+<p>当光照强度为0时，舞台背景更换。</p>
+<img alt="../_images/Mind+yuancheng-27.jpg" src="../_images/Mind+yuancheng-27.jpg" />
+<img alt="../_images/Mind+yuancheng-28.jpg" src="../_images/Mind+yuancheng-28.jpg" />
+<p>单击角色，发送消息“on”至Topic_0，掌控板全部灯泡变为白色，测试成功。</p>
+<img alt="../_images/Mind+yuancheng-29.jpg" src="../_images/Mind+yuancheng-29.jpg" />
+</div>
+<div class="section" id="id4">
+<h2>2.3. 参考代码<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<p>代码下载地址：<a class="reference external" href="https://github.com/vvlink/SIoT/tree/master/examples/Mind%2B">https://github.com/vvlink/SIoT/tree/master/examples/Mind%2B</a></p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">SIoT使用手册</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../about/index.html">简介</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../setup/index.html">安装和运行</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../demo/index.html">客户端连接范例</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">典型应用案例</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="01_temperature.html">1. 科学探究之定时测量温度</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">2. 远程控制</a></li>
+<li class="toctree-l2"><a class="reference internal" href="03_dataview.html">3. 物联网数据呈现</a></li>
+<li class="toctree-l2"><a class="reference internal" href="04_Remotechat.html">4. 远程对话</a></li>
+<li class="toctree-l2"><a class="reference internal" href="05_play.html">5. 互动游戏</a></li>
+<li class="toctree-l2"><a class="reference internal" href="06_subtitles.html">6. 弹幕演示</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../advanced/index.html">高级操作技巧</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="index.html">典型应用案例</a><ul>
+      <li>Previous: <a href="01_temperature.html" title="previous chapter">1. 科学探究之定时测量温度</a></li>
+      <li>Next: <a href="03_dataview.html" title="next chapter">3. 物联网数据呈现</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, VVlink.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.6.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      
+      |
+      <a href="../_sources/case/02_Remotecontrol.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

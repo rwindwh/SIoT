@@ -16,7 +16,7 @@ Window版本：
 
 双击运行SIoT_win.exe，将看到一个黑色的CMD窗口，如果你想维持你的计算机作为MQTT服务器的话，请不要关闭它。
 
-.. image:: https://github.com/vvlink/SIoT/blob/master/source/image/eason/setup.PNG 
+.. image:: ../image/eason/setup.PNG 
 
 Mac版本：
 -------------------
