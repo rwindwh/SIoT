@@ -91,10 +91,17 @@
 
 **player2端**
 
+player2端的程序代码与player1端的基本相同，就足球角色程序代码有点不一样。
+
 1、足球角色程序代码
 
-2、击球光标角色程序代码
+.. image:: ../image/case/05_play_12.png
 
-3、结束角色程序代码
+.. image:: ../image/case/05_play_13.png
+
+
+参考代码下载：
+
+
 
 
