@@ -26,14 +26,15 @@
 4）与player2端一样，player1端从MQTT服务器（SIoT）端获取字符串string2，并解析出足球的坐标（x，y）和击球的角度，在屏幕上还原足球的位置和移动方向。
 
 
+.. image:: ../image/case/05_play_15.png
 
 
 
 2、击球角度的计算
 击球角度的计算，是本案例的一个十分关键的部分。本案例中通过已知的光标坐标（x2，y2）、足球坐标（x1，y1）和中学中所学的数学知识反三角函数（反正切函数atan()）即可得出击球角度。
   
-  
-  
+.. image:: ../image/case/05_play_14.png
+
 
 准备工作
 -----------------
@@ -44,15 +45,26 @@
 步骤
 --------------
 1、绘制足球
-
+.. image:: ../image/case/05_play_01.png
 
 2、绘制边界线
+.. image:: ../image/case/05_play_02.png
 
+.. image:: ../image/case/05_play_03.png
+
+.. image:: ../image/case/05_play_04.png
 
 3、绘制击球光标
 
+.. image:: ../image/case/05_play_06.png
 
-4、player2端与player1端的角色基本相同，就光标的颜色须调成其他颜色，如：红色。
+4、结束角色
+
+.. image:: ../image/case/05_play_05.png
+
+5、player2端与player1端的角色基本相同，就光标的颜色须调成其他颜色，如：红色。
+
+.. image:: ../image/case/05_play_07.png
 
 
 
