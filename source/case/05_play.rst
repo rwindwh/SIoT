@@ -5,7 +5,7 @@
 
 **案例1：双人足球联机对战**
 
-.. image:: ../image/case/05_play_00.mp4
+.. vedio:: ../image/case/05_play_00.mp4
 
 
 原理介绍
