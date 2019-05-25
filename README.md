@@ -34,7 +34,7 @@
 
   https://siot.readthedocs.io/
 
-  .. image:: vvlink.png
+  ![avatar](vvlink.png）
 
 ## SIoT使用手册目录
 
