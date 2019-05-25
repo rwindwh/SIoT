@@ -35,9 +35,8 @@
 
   https://siot.readthedocs.io/
 
-![11](https://raw.githubusercontent.com/vvlink/SIoT/master/vvlink_logo.png）
 
-![虚谷物联的LOGO，设计人：邹燕儿](https://github.com/linwh8/ModernWebPrograming/raw/master/My_image/recipe_index.png)
+![虚谷物联的LOGO，设计人：邹燕儿](https://github.com/vvlink/SIoT/blob/master/vvlink_logo.png)
 
 
 ## SIoT使用手册目录
