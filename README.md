@@ -1,4 +1,4 @@
-# “虚谷物联”
+# “虚谷物联”项目
 
 ## 项目简介：
 
@@ -34,7 +34,7 @@
 
   https://siot.readthedocs.io/
 
-  ![虚谷物联的LOGO，设计人：邹燕儿](./vvlink_logo.png）
+  ![虚谷物联的LOGO，设计人：邹燕儿](https://github.com/vvlink/SIoT/blob/master/vvlink_logo.png）
 
 ## SIoT使用手册目录
 
