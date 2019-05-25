@@ -9,6 +9,7 @@
 ## 项目目标：让孩子们学习真正的物联网技术
 
 ## 核心产品：
+
   1. SIoT服务器程序：
 
   一款为中小学STEM教育定制的开源MQTT服务器程序，S指科学（Science）、简单（Simple）的意思。SIoT支持Win10、Win7、Mac和Linux等操作系统，一键启动，无需注册和设置即可使用。
@@ -34,7 +35,10 @@
 
   https://siot.readthedocs.io/
 
-  ![虚谷物联的LOGO，设计人：邹燕儿](https://github.com/vvlink/SIoT/blob/master/vvlink_logo.png）
+![11](https://raw.githubusercontent.com/vvlink/SIoT/master/vvlink_logo.png）
+
+![虚谷物联的LOGO，设计人：邹燕儿](https://github.com/linwh8/ModernWebPrograming/raw/master/My_image/recipe_index.png)
+
 
 ## SIoT使用手册目录
 
