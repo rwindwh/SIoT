@@ -34,7 +34,7 @@
 
   https://siot.readthedocs.io/
 
-  ![avatar](vvlink.png）
+  ![虚谷物联的LOGO，设计人：邹燕儿](./vvlink_logo.png）
 
 ## SIoT使用手册目录
 
