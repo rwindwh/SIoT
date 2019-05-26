@@ -33,11 +33,16 @@ GitHub地址：https://github.com/workswithweb/MQTTBox
 MQTTfx（PC端）
 ---------------------------
 
-MQTTfx是一款很好用的MQTT客户端调试工具，支持在Windows、Mac和Linux上面运行。
+MQTTfx是一款很好用的MQTT客户端调试工具，支持在Windows、Mac和Linux上面运行。设备将当前所处的状态作为MQTT主题发送给IoT Hub，每个MQTT主题topic具有不同等级的名称，如“建筑/楼层/温度。” MQTT代理服务器将接收到的主题topic发送给给所有订阅的客户端。 
 
+下载地址（支持windows，linux，mac):
+http://mqttfx.jensd.de/index.php/download
 
+安装完成后，运行时会提示有更新，最好别点击yes，会报错。 
 
-下载地址：
+打开“配置”，设置MQTT代理 
+
+接着回到主界面，点击connect连接到MQTT 代理服务器上，就可以进行订阅和发布消息测试了。 
 
 
 ------------------------------
