@@ -40,9 +40,13 @@ http://mqttfx.jensd.de/index.php/download
 
 安装完成后，运行时会提示有更新，最好别点击yes，会报错。 
 
-打开“配置”，设置MQTT代理 
+主界面点击左上方的Extras，进入Edit connection Profiles，设置MQTT代理。这里上半部分如图填写（ip地址有时会有不同），下半部分选择User Credentials，填写用户名和密码。 
+
+.. image:: ../image/demo/01-fx-profiles.PNG
 
 接着回到主界面，点击connect连接到MQTT 代理服务器上，就可以进行订阅和发布消息测试了。 
+
+.. image:: ../image/demo/01-fx-main.PNG
 
 
 ------------------------------
