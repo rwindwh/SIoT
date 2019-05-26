@@ -45,3 +45,8 @@
 .. image:: ../image/haoqing/trigger-07.png
 
 .. image:: ../image/haoqing/trigger-08.png
+
+示例代码
+-------------
+
+https://github.com/vvlink/SIoT/blob/master/examples/Python/trigger.xml
