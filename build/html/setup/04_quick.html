@@ -1,0 +1,145 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="go">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>4. 快速入门 &#8212; SIoT使用手册 1.0 documentation</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="客户端连接范例" href="../demo/index.html" />
+    <link rel="prev" title="3. 界面简介" href="03_view.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="id1">
+<h1>4. 快速入门<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>下面以win7系统为例，介绍以SIoT为MQTT服务器，掌控板板为智能终端，搭建一个最简单的物联网数据采集系统。</p>
+<div class="section" id="siot">
+<h2>4.1. 运行SIoT系统：<a class="headerlink" href="#siot" title="Permalink to this headline">¶</a></h2>
+<p>双击运行SIoT_win.exe，将看到一个黑色的CMD窗口，不要关闭它。</p>
+<img alt="../_images/setup.PNG" src="../_images/setup.PNG" />
+</div>
+<div class="section" id="mpythonx">
+<h2>4.2. 编写程序（mPythonX）<a class="headerlink" href="#mpythonx" title="Permalink to this headline">¶</a></h2>
+<p>打开mPythonX，编写如下代码。</p>
+<img alt="../_images/04_quick_02.png" src="../_images/04_quick_02.png" />
+<p><strong>说明</strong>：</p>
+<blockquote>
+<div><ul class="simple">
+<li>请确保掌控板和电脑连接的是同一个无线路由器，可以相互访问。</li>
+<li>“mpythonx/001”表示项目名称为“mpythonx”，设备名称为“001”。</li>
+</ul>
+</div></blockquote>
+<p>给掌控板写入程序并且运行。</p>
+<p>重新启动掌控板，等屏幕显示IP地址后，按下“A”键，看看屏幕下方是否出现了“A”。</p>
+</div>
+<div class="section" id="web">
+<h2>4.3. Web管理<a class="headerlink" href="#web" title="Permalink to this headline">¶</a></h2>
+<p>打开网址：<a class="reference external" href="http://127.0.0.1">http://127.0.0.1</a>:8080（或者使用电脑的IP地址）。</p>
+<p>输入用户名“siot”和密码“dfrobot”，就可以看到项目列表中多了“mpythonx”。</p>
+<p>在名称为“001”设备消息中，可以看到掌控板发送过来的信息“A”了。</p>
+<img alt="../_images/04_quick_04.png" src="../_images/04_quick_04.png" />
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">SIoT使用手册</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../about/index.html">简介</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">安装和运行</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="01_download.html">1. 文件下载</a></li>
+<li class="toctree-l2"><a class="reference internal" href="02_run.html">2. 安装运行</a></li>
+<li class="toctree-l2"><a class="reference internal" href="03_view.html">3. 界面简介</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">4. 快速入门</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../demo/index.html">客户端连接范例</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../case/index.html">典型应用案例</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../advanced/index.html">高级操作技巧</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="index.html">安装和运行</a><ul>
+      <li>Previous: <a href="03_view.html" title="previous chapter">3. 界面简介</a></li>
+      <li>Next: <a href="../demo/index.html" title="next chapter">客户端连接范例</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, VVlink.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.6.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      
+      |
+      <a href="../_sources/setup/04_quick.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

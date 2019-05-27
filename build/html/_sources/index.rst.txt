@@ -13,5 +13,5 @@
     about/index
     setup/index
     demo/index
-    example/index
+    case/index
     advanced/index

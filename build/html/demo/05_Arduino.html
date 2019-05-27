@@ -73,10 +73,54 @@ OBLOQ模块具备的两个基础功能：发送数据到物联网和接收物联
 </div>
 <div class="section" id="id2">
 <h2>5.4. 参考代码<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<dl class="docutils">
-<dt>::</dt>
-<dd>代码写在这里</dd>
-</dl>
+<p>一、Obloq发送消息</p>
+<p>1.定义函数，导入库；</p>
+<img alt="../_images/05-Arduino-11.PNG" src="../_images/05-Arduino-11.PNG" />
+<p>2.利用串口发送消息，并检查串口是否正常进行</p>
+<img alt="../_images/05-Arduino-12.PNG" src="../_images/05-Arduino-12.PNG" />
+<p>3.连接WiFi，连接设备，利用串口返回设备相关状态</p>
+<img alt="../_images/05-Arduino-13.PNG" src="../_images/05-Arduino-13.PNG" />
+<p>4.监听消息的接收，成功则串口返回。</p>
+<img alt="../_images/05-Arduino-14.PNG" src="../_images/05-Arduino-14.PNG" />
+<p>5.创建发送消息设备凭据。</p>
+<img alt="../_images/05-Arduino-15.PNG" src="../_images/05-Arduino-15.PNG" />
+<p>6.串口返回设备凭据的创建成功。</p>
+<img alt="../_images/05-Arduino-16.PNG" src="../_images/05-Arduino-16.PNG" />
+<p>7.分隔存储字符串</p>
+<img alt="../_images/05-Arduino-17.PNG" src="../_images/05-Arduino-17.PNG" />
+<p>8.处理串口消息</p>
+<img alt="../_images/05-Arduino-18.PNG" src="../_images/05-Arduino-18.PNG" />
+<p>9.验证串口是否正常通信</p>
+<img alt="../_images/05-Arduino-19.PNG" src="../_images/05-Arduino-19.PNG" />
+<p>10.根据不同状态发送不同命令，接收到传感器测得数据</p>
+<img alt="../_images/05-Arduino-20.PNG" src="../_images/05-Arduino-20.PNG" />
+<p>11.接收消息</p>
+<img alt="../_images/05-Arduino-21.PNG" src="../_images/05-Arduino-21.PNG" />
+<p>二、Obloq接收信息</p>
+<p>1.导入SoftwareSerial库，定义WiFi</p>
+<img alt="../_images/05-Arduino-21.png" src="../_images/05-Arduino-21.png" />
+<p>2.通过串口发送消息</p>
+<img alt="../_images/05-Arduino-22.png" src="../_images/05-Arduino-22.png" />
+<p>3.成功连接WiFi并返回代码</p>
+<img alt="../_images/05-Arduino-23.png" src="../_images/05-Arduino-23.png" />
+<p>4.监听设备的设置与取消</p>
+<img alt="../_images/05-Arduino-24.png" src="../_images/05-Arduino-24.png" />
+<p>5.消息发送通过串口显示</p>
+<img alt="../_images/05-Arduino-25.png" src="../_images/05-Arduino-25.png" />
+<p>6.打印</p>
+<img alt="../_images/05-Arduino-26.png" src="../_images/05-Arduino-26.png" />
+<p>7.销毁设备凭据</p>
+<img alt="../_images/05-Arduino-27.png" src="../_images/05-Arduino-27.png" />
+<p>8.分隔字符串</p>
+<img alt="../_images/05-Arduino-28.png" src="../_images/05-Arduino-28.png" />
+<p>9.处理串口数据</p>
+<img alt="../_images/05-Arduino-29.png" src="../_images/05-Arduino-29.png" />
+<img alt="../_images/05-Arduino-210.png" src="../_images/05-Arduino-210.png" />
+<p>10.检验串口是否正常</p>
+<img alt="../_images/05-Arduino-211.png" src="../_images/05-Arduino-211.png" />
+<p>11.接收信息字符串</p>
+<img alt="../_images/05-Arduino-212.png" src="../_images/05-Arduino-212.png" />
+<img alt="../_images/05-Arduino-213.png" src="../_images/05-Arduino-213.png" />
 </div>
 </div>
 
@@ -111,7 +155,7 @@ OBLOQ模块具备的两个基础功能：发送数据到物联网和接收物联
 <li class="toctree-l2"><a class="reference internal" href="09_Processing.html">9. Processing</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../example/index.html">典型应用案例</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../case/index.html">典型应用案例</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../advanced/index.html">高级操作技巧</a></li>
 </ul>
 

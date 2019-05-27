@@ -61,11 +61,19 @@
 </ul>
 </div></blockquote>
 </div>
+<div class="section" id="mqttfx-pc">
+<h2>1.2. MQTTfx（PC端）<a class="headerlink" href="#mqttfx-pc" title="Permalink to this headline">¶</a></h2>
+<p>MQTTfx是一款很好用的MQTT客户端调试工具，支持在Windows、Mac和Linux上面运行。</p>
+<p>下载地址：</p>
+</div>
 <div class="section" id="mqttool-iphone">
-<h2>1.2. MQTTool（iPhone手机）<a class="headerlink" href="#mqttool-iphone" title="Permalink to this headline">¶</a></h2>
+<h2>1.3. MQTTool（iPhone手机）<a class="headerlink" href="#mqttool-iphone" title="Permalink to this headline">¶</a></h2>
 <p>MQTTool是运行在iPhone上的MQTT客户端软件，也是一个MQTT测试工具。通过App Store即可安装MQTTool。</p>
 <img alt="../_images/01-mqtt-01.png" src="../_images/01-mqtt-01.png" />
 <p>首先要确认计算机和手机连接的是同一个无线路由器，或者在同一个局域网中，相互之间可以访问。输入计算机的IP地址和用户名、密码，点击“Connenct”即可连接。</p>
+<ul class="simple">
+<li>图中的username应填写siot</li>
+</ul>
 <img alt="../_images/01-mqtt-02.png" src="../_images/01-mqtt-02.png" />
 <p>点击“Stats”，可以查看服务器的连接状态。</p>
 <img alt="../_images/01-mqtt-03.png" src="../_images/01-mqtt-03.png" />
@@ -74,8 +82,31 @@
 <p>同样，在Web端给Topic“xzr/001”发送消息，手机端即可收到信息，在“Subscribe”（订阅）。</p>
 <p>多个手机同时连接这个MQTT服务器，只要Topic相同，相互之间都能收到。</p>
 </div>
-<div class="section" id="mqttool">
-<h2>1.3. MQTTool（安卓手机）<a class="headerlink" href="#mqttool" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="mqtt-client">
+<h2>1.4. MQTT Client（安卓手机）<a class="headerlink" href="#mqtt-client" title="Permalink to this headline">¶</a></h2>
+<p>MQTT Client 是一款安卓环境的MQTT客户端软件，也是一个MQTT测试工具。可以在http://www.mdpda.com/app/apk7623192.html 下载。</p>
+<img alt="../_images/01-mqtt-client-01-icon.jpg" src="../_images/01-mqtt-client-01-icon.jpg" />
+<p>首先要确认计算机和手机连接的是同一个无线路由器，或者在同一个局域网中，相互之间可以访问。</p>
+<p>打开软件，点击右上角的Settings，点击Server。</p>
+<img alt="../_images/01-mqtt-client-02-settings.jpg" src="../_images/01-mqtt-client-02-settings.jpg" />
+<ul class="simple">
+<li>在URL处输入计算机的IP地址，后面跟上“：8080”</li>
+<li>Port填写1883</li>
+<li>Username填写用户名（siot）</li>
+<li>Password填写密码（dfrobot）</li>
+<li>其他内容保持默认就可以了</li>
+</ul>
+<p>发送消息需要在主页面点击右下角的紫色按钮，进入发送消息界面。</p>
+<img alt="../_images/01-mqtt-client-03-publish.jpg" src="../_images/01-mqtt-client-03-publish.jpg" />
+<p>在“Topic”（主题）中输入“xzr/001”（表示项目id为xzr，设备id为001），在“Message”（消息）中输入想要发送的消息内容，点击“PUBLISH”（发送）即可发送消息。在SIoT的Web页面可以看到这一消息。</p>
+<img alt="../_images/01-mqtt-client-06-msg.PNG" src="../_images/01-mqtt-client-06-msg.PNG" />
+<p>同样，在Web端给Topic“xzr/001”发送消息，手机端即可收到信息，这一消息在主页面可以订阅。</p>
+<img alt="../_images/01-mqtt-client-07-send.PNG" src="../_images/01-mqtt-client-07-send.PNG" />
+<p>在主页面下方输入想要订阅的主题“xzr/001”，就可以获取实时消息了。</p>
+<img alt="../_images/01-mqtt-client-04-main-subscribe.jpg" src="../_images/01-mqtt-client-04-main-subscribe.jpg" />
+<p>想要看具体的消息收发详情，可以点击相应的栏目查看，例如点击上图中的“xzr/001”就可以出现如下画面。</p>
+<img alt="../_images/01-mqtt-client-05-received-msg.jpg" src="../_images/01-mqtt-client-05-received-msg.jpg" />
+<p>多个手机同时连接这个MQTT服务器，只要Topic相同，相互之间都能收到。</p>
 </div>
 </div>
 
@@ -110,7 +141,7 @@
 <li class="toctree-l2"><a class="reference internal" href="09_Processing.html">9. Processing</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../example/index.html">典型应用案例</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../case/index.html">典型应用案例</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../advanced/index.html">高级操作技巧</a></li>
 </ul>
 

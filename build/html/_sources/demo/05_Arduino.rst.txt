@@ -38,9 +38,103 @@ OBloq模块简介
 
 参考代码
 ---------------------
+一、Obloq发送消息
 
-::
-    代码写在这里
-    
-    
-    
+1.定义函数，导入库；
+
+.. image:: ../image/zhangyu/ObloqSend/05-Arduino-11.PNG
+
+2.利用串口发送消息，并检查串口是否正常进行
+
+.. image:: ../image/zhangyu/ObloqSend/05-Arduino-12.PNG
+
+3.连接WiFi，连接设备，利用串口返回设备相关状态
+
+.. image:: ../image/zhangyu/ObloqSend/05-Arduino-13.PNG
+
+4.监听消息的接收，成功则串口返回。
+
+.. image:: ../image/zhangyu/ObloqSend/05-Arduino-14.PNG
+
+5.创建发送消息设备凭据。
+
+.. image:: ../image/zhangyu/ObloqSend/05-Arduino-15.PNG
+
+6.串口返回设备凭据的创建成功。
+
+.. image:: ../image/zhangyu/ObloqSend/05-Arduino-16.PNG
+
+7.分隔存储字符串
+
+.. image:: ../image/zhangyu/ObloqSend/05-Arduino-17.PNG
+
+8.处理串口消息
+
+.. image:: ../image/zhangyu/ObloqSend/05-Arduino-18.PNG
+
+9.验证串口是否正常通信
+
+.. image:: ../image/zhangyu/ObloqSend/05-Arduino-19.PNG
+
+10.根据不同状态发送不同命令，接收到传感器测得数据
+
+.. image:: ../image/zhangyu/ObloqSend/05-Arduino-20.PNG
+
+11.接收消息
+
+.. image:: ../image/zhangyu/ObloqSend/05-Arduino-21.PNG
+
+
+二、Obloq接收信息
+
+1.导入SoftwareSerial库，定义WiFi
+
+.. image:: ../image/zhangyu/ObloqReceive/05-Arduino-21.png
+
+2.通过串口发送消息
+
+.. image:: ../image/zhangyu/ObloqReceive/05-Arduino-22.png
+
+3.成功连接WiFi并返回代码
+
+.. image:: ../image/zhangyu/ObloqReceive/05-Arduino-23.png
+
+4.监听设备的设置与取消
+
+.. image:: ../image/zhangyu/ObloqReceive/05-Arduino-24.png
+
+5.消息发送通过串口显示
+
+.. image:: ../image/zhangyu/ObloqReceive/5-6/05-Arduino-25.png
+
+6.打印
+
+.. image:: ../image/zhangyu/ObloqReceive/5-6/05-Arduino-26.png
+
+7.销毁设备凭据
+
+.. image:: ../image/zhangyu/ObloqReceive/05-Arduino-27.png
+
+8.分隔字符串
+
+.. image:: ../image/zhangyu/ObloqReceive/05-Arduino-28.png
+
+9.处理串口数据
+
+.. image:: ../image/zhangyu/ObloqReceive/9-10/05-Arduino-29.png
+
+
+
+.. image:: ../image/zhangyu/ObloqReceive/9-10/05-Arduino-210.png
+
+10.检验串口是否正常
+
+.. image:: ../image/zhangyu/ObloqReceive/05-Arduino-211.png
+
+11.接收信息字符串
+
+.. image:: ../image/zhangyu/ObloqReceive/12-13/05-Arduino-212.png
+
+
+.. image:: ../image/zhangyu/ObloqReceive/12-13/05-Arduino-213.png
+

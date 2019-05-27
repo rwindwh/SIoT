@@ -1,0 +1,151 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="go">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>5. 互动游戏 &#8212; SIoT使用手册 1.0 documentation</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="6. 弹幕演示" href="06_subtitles.html" />
+    <link rel="prev" title="4. 远程对话" href="04_Remotechat.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="id1">
+<h1>5. 互动游戏<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>基于SIoT和和掌控板，可以设计一些多人竞赛的游戏，然后借助Mind+实时呈现出来。</p>
+<p><strong>案例1：双人足球联机对战</strong></p>
+<div class="section" id="id2">
+<h2>5.1. 原理介绍<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>本案例分为两个终端，分别为玩家1（player1）和玩家2（player2）。player1端和player2端通过物联网平台MQTT（SIoT）进行数据的交换，从而完成联机对战的功能。</p>
+<p>1、player1端、player2端与MQTT服务器（SIoT）端的数据交换</p>
+<blockquote>
+<div><p>1）player1端击球后将足球的坐标（x，y）和击球角度调制成一个字符串（后面用“string1”代替）发送至MQTT服务器（SIoT）。</p>
+<p>2）player2端从MQTT服务器（SIoT）端获取字符串string1，并解析出足球的坐标（x，y）和击球的角度，在屏幕上还原足球的位置和移动方向。</p>
+<p>3）与player1端一样，player2端击球后将足球的坐标（x，y）和击球角度调制成一个新的字符串（后面用“string2”代替）发送至MQTT服务器（SIoT）。</p>
+<p>4）与player2端一样，player1端从MQTT服务器（SIoT）端获取字符串string2，并解析出足球的坐标（x，y）和击球的角度，在屏幕上还原足球的位置和移动方向。</p>
+</div></blockquote>
+<dl class="docutils">
+<dt>2、击球角度的计算</dt>
+<dd>击球角度的计算，是本案例的一个十分关键的部分。本案例中通过已知的光标坐标（x2，y2）、足球坐标（x1，y1）和中学中所学的数学知识反三角函数（反正切函数atan()）即可得出击球角度。</dd>
+</dl>
+</div>
+<div class="section" id="id3">
+<h2>5.2. 准备工作<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p>1、下载并安装Mind+1.5.5及以上的版本</p>
+<p>2、注册一个物联网（SIoT）平台的账号，本案例以DFrobot公司搭建的SIoT物联网平台（地址：<a class="reference external" href="http://iot.dfrobot.com.cn">http://iot.dfrobot.com.cn</a>）为例。</p>
+</div>
+<div class="section" id="id4">
+<h2>5.3. 步骤<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<p>1、绘制足球</p>
+<p>2、绘制边界线</p>
+<p>3、绘制击球光标</p>
+</div>
+<div class="section" id="id5">
+<h2>5.4. 参考代码<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">SIoT使用手册</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../about/index.html">简介</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../setup/index.html">安装和运行</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../demo/index.html">客户端连接范例</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">典型应用案例</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="01_temperature.html">1. 科学探究之定时测量温度</a></li>
+<li class="toctree-l2"><a class="reference internal" href="02_Remotecontrol.html">2. 远程控制</a></li>
+<li class="toctree-l2"><a class="reference internal" href="03_dataview.html">3. 物联网数据呈现</a></li>
+<li class="toctree-l2"><a class="reference internal" href="04_Remotechat.html">4. 远程对话</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">5. 互动游戏</a></li>
+<li class="toctree-l2"><a class="reference internal" href="06_subtitles.html">6. 弹幕演示</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../advanced/index.html">高级操作技巧</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="index.html">典型应用案例</a><ul>
+      <li>Previous: <a href="04_Remotechat.html" title="previous chapter">4. 远程对话</a></li>
+      <li>Next: <a href="06_subtitles.html" title="next chapter">6. 弹幕演示</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, VVlink.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.6.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      
+      |
+      <a href="../_sources/case/05_play.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
