@@ -40,7 +40,7 @@
 -----------------
 1、下载并安装Mind+1.5.5及以上的版本
 
-2、注册一个物联网（SIoT）平台的账号，本案例以DFrobot公司搭建的SIoT物联网平台（地址：http://iot.dfrobot.com.cn）为例。
+2、注册一个物联网（easySIoT）平台的账号，本案例以DFrobot公司搭建的SIoT物联网平台（地址：http://iot.dfrobot.com.cn）为例。
 
 步骤
 --------------
