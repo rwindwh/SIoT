@@ -6,6 +6,11 @@
 
 案例1：双人足球联机对战
 
+  游戏规则：
+    1、玩家1player1先发球。
+    2、足球不能超出黑色边界线。
+
+
 .. image:: ../image/case/05_play_001.png
 
 .. image:: ../image/case/05_play_002.png
