@@ -10,7 +10,7 @@
 
 2.完成其中一个掌控板程序代码，图形代码如下。
 
-.. image:: ../image/songda/radio-01.jpg
+.. image:: ../image/songda/radio-01.png
 
 提示：
 
@@ -20,11 +20,19 @@
 
 3.刷入程序，运行效果如下。
 
+（1）两块掌控板分别刷入程序
+
 .. image:: ../image/songda/radio-02.jpg
+
+（2）当按掌控板1的A键时，掌控板2的灯亮起，同时屏幕显示“收到a”
 
 .. image:: ../image/songda/radio-03.jpg
 
+（3）当按掌控板2的A键时，掌控板1的灯亮起，同时屏幕显示“收到b”
+
 .. image:: ../image/songda/radio-04.jpg
+
+（4）当按掌控板的B键时，该掌控板的灯熄灭，如此可实现多块掌控板之间的通讯
 
 示例代码
 -------------
