@@ -26,6 +26,7 @@
 .. image:: ../image/xujingyu/light-03.jpg
 
 注意：此处注意下面的图形块的使用方法
+
 .. image:: ../image/xujingyu/light-04.jpg
 
 （二）具体操作
@@ -48,4 +49,4 @@
 
 代码
 --------------
-代码下载地址：
+代码下载地址：https://github.com/vvlink/SIoT/blob/master/examples/Python/light.xml
