@@ -83,4 +83,4 @@
 
 代码
 --------------
-代码下载地址：https://github.com/vvlink/SIoT/blob/master/examples/Python/sendingandsubscribeofmessage.xml
+代码下载地址：https://github.com/vvlink/SIoT/blob/master/examples/Python/sendingandsubscribe.xml
