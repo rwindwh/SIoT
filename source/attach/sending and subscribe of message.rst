@@ -22,7 +22,7 @@
 
 2.登录SIoT平台
 
-打开浏览器，输入url：http://localhost:8080（超链接）
+打开浏览器，输入url：http://localhost:8080 （超链接）
 
 .. image:: ../image/xujingyu/sasom-03.jpg
 
@@ -83,4 +83,4 @@
 
 代码
 --------------
-代码下载地址：https://github.com/vvlink/SIoT/blob/master/examples/Python/sending and subscribe of message.xml
+代码下载地址：https://github.com/vvlink/SIoT/blob/master/examples/Python/sendingandsubscribeofmessage.xml
