@@ -32,14 +32,15 @@ Mac版本：
 如果担心程序运行后被中止，可以使用nohup命令运行。
 
 ``参考命令：nohup node /Users/xiezuoru/Desktop/iot_test/SIOT_Mac &
-``其中“/Users/xiezuoru/Desktop/iot_test/SIOT_Mac”为程序的路径。
+
+其中“/Users/xiezuoru/Desktop/iot_test/SIOT_Mac”为程序的路径。``
 
 linux版本：
 -------------------
 
 ``参考命令：nohup ./SIoT_linux &
 
-``其中“SIoT_linux”为程序的路径。
+其中“SIoT_linux”为程序的路径。``
 
 
 服务器信息
