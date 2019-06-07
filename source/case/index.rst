@@ -9,6 +9,7 @@
     :numbered: 2
 
     01_temperature
+    01_measure
     02_Remotecontrol
     03_dataview
     04_Remotechat
