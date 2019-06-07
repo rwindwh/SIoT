@@ -1,0 +1,90 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="controls_repeat_forever" id="(XZiJ:,P*4HGrkpsnZpf" x="-827" y="-409">
+    <statement name="DO">
+      <block type="mpython_display_fill" id="Mp_3/?4h|;5BueGfO-[z">
+        <field name="display_fill">fill(0)</field>
+        <next>
+          <block type="mpython_display_DispChar_5lines" id="Nat5[)};:3.u3lX(w,xn">
+            <field name="TEXTMODE">1</field>
+            <value name="DispChar_5lines">
+              <shadow type="mpython_4_lines" id="mREMvrO;iF|}x==T,w,3">
+                <field name="mpython_4_lines">0</field>
+              </shadow>
+            </value>
+            <value name="message">
+              <shadow type="text" id="cQ![JUzoj*0ZAho|+)gK">
+                <field name="TEXT">Hello, world!</field>
+              </shadow>
+              <block type="text_join" id=")V9W%.Jy#1_`jB*Gw(=u">
+                <mutation items="1"></mutation>
+                <value name="ADD0">
+                  <block type="mpython_read_light" id="IQIS_w(pWna!dJGBcc(O"></block>
+                </value>
+              </block>
+            </value>
+            <next>
+              <block type="mpython_display_Show" id="d]rFl!OF8J5qoTb|k^)z">
+                <next>
+                  <block type="controls_if" id="Bbv;wO5MZb!PG{A[V|#Z">
+                    <value name="IF0">
+                      <block type="logic_compare" id="cF@r#uIs?LkQB[tcS#R/">
+                        <field name="OP">GT</field>
+                        <value name="A">
+                          <block type="mpython_read_light" id="1M!h[=TQHvq#O(7HQ`b["></block>
+                        </value>
+                        <value name="B">
+                          <block type="math_number" id="T5=s2CjL#=skgJ$W/wt@">
+                            <field name="NUM">3000</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <statement name="DO0">
+                      <block type="mpython_set_RGB_all" id="6f[O0|,uO|?}lc.1Kvut">
+                        <value name="r">
+                          <shadow type="math_number" id="0=k5(r.:;6!R.ag?eqe-">
+                            <field name="NUM">255</field>
+                          </shadow>
+                        </value>
+                        <value name="g">
+                          <shadow type="math_number" id="[dScJIM#qI[V$U.[v`KK">
+                            <field name="NUM">255</field>
+                          </shadow>
+                        </value>
+                        <value name="b">
+                          <shadow type="math_number" id="X$/]MBP9Lek)VxmAXwe4">
+                            <field name="NUM">255</field>
+                          </shadow>
+                        </value>
+                      </block>
+                    </statement>
+                    <next>
+                      <block type="controls_if" id="elY(_-s{z~V9dQgA_J4]">
+                        <value name="IF0">
+                          <block type="logic_compare" id="q5Y)Jf=]RVRy3@wC]$N|">
+                            <field name="OP">GT</field>
+                            <value name="A">
+                              <block type="mpython_read_sound" id="Asw{vo]:QC8Y=LcSTzWA"></block>
+                            </value>
+                            <value name="B">
+                              <block type="math_number" id="L$y5DE+#XvY23bIOQBs5">
+                                <field name="NUM">2000</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <statement name="DO0">
+                          <block type="mpython_off_RGB" id="Adq#H;aszdQuL/}[DaMq"></block>
+                        </statement>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+</xml>
