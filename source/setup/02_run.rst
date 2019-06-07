@@ -16,7 +16,7 @@ Window版本：
 
 双击运行SIoT_win.exe，将看到一个黑色的CMD窗口，如果你想维持你的计算机作为MQTT服务器的话，请不要关闭它。
 
-.. image:: ../image/eason/setup.PNG 
+.. image:: ../image/eason/setup.PNG
 
 Mac版本：
 -------------------
@@ -31,15 +31,15 @@ Mac版本：
 
 如果担心程序运行后被中止，可以使用nohup命令运行。
 
-参考命令：nohup node /Users/xiezuoru/Desktop/iot_test/SIOT_Mac &
-其中“/Users/xiezuoru/Desktop/iot_test/SIOT_Mac”为程序的路径。
+``参考命令：nohup node /Users/xiezuoru/Desktop/iot_test/SIOT_Mac &
+``其中“/Users/xiezuoru/Desktop/iot_test/SIOT_Mac”为程序的路径。
 
 linux版本：
 -------------------
 
-参考命令：nohup ./SIoT_linux &
+``参考命令：nohup ./SIoT_linux &
 
-其中“SIoT_linux”为程序的路径。
+``其中“SIoT_linux”为程序的路径。
 
 
 服务器信息
@@ -58,4 +58,3 @@ SIoT启动后，你的计算机就成为了一个标准的MQTT服务器，使用
   - 参考地址2：http://localhost:8080
 
 **注**：可以通过config.json文件修改用户名、密码和Web端口等信息。
-
