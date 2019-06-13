@@ -1,4 +1,4 @@
-
+﻿
 文件下载
 =========================
 
@@ -6,6 +6,6 @@
 
 https://github.com/vvlink/SIoT/  
 
-当前软件版本：SIoT v0.9  
+当前软件版本：SIoT v1.1  
 
 直达地址：https://github.com/vvlink/SIoT/tree/master/software
