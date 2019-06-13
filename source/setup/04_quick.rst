@@ -8,7 +8,7 @@
 
 双击运行SIoT_win.exe，将看到一个黑色的CMD窗口，不要关闭它。
 
-.. image:: ../image/eason/setup.PNG 
+.. image:: ../image/setup/02_run_02.png
 
 
 编写程序（mPythonX）
