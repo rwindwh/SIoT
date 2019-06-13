@@ -59,3 +59,12 @@ Processing是一款专为设计师和艺术家使用的编程语言，由美国�
 
 - 安装方式：苹果手机直接通过App Store安装。
 
+### SIoTTool
+
+简介：
+
+针对“虚谷物联”计划中SIoT服务器的调试工具
+
+只具备订阅和发送的最基本功能。
+
+- 下载地址：https://github.com/linmiaoyan/SIoTTool
