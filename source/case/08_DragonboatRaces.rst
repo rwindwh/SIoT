@@ -20,15 +20,21 @@
 准备工作
 -----------------
 
-1.运行SIoT。
+1.运行SIoT
+
+.. image:: ../image/linmiaoyan/。。。.png
 
 2.运行Mind+1.5.5及以上的版本
+
+  mind+下载地址：http://mindplus.cc
+
+*本教程使用的是Mind+1.5.5版本软件
 
 
 操作步骤
 -----------
 
-1.打开Mind+，添加”网络服务”中的“MQTT”。
+1.运行mind+，选择右上角“实时模式”，点击左下角“扩展”，添加”网络服务”中的“MQTT”。
 
 .. image:: ../image/linmiaoyan/Mind+danmu-01.png
 
@@ -36,7 +42,7 @@
 
 2.编写代码。
 
-1）在“背景”中写如下程序。
+1）在终端1的“背景”中写如下程序。
 
 .. image:: ../image/example/06_subtitles_1.png
 
