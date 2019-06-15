@@ -6,7 +6,7 @@
 
   “虚谷物联“项目是“虚谷计划”（中国电子学会现代教育技术分会联合国内高校专家、社会创客和一线教师共同发起）的子项目，由“虚谷计划”组委会发起，除了提供开源的核心软硬件外，还提供了丰富的教程和完善的课程。
 
-  **项目github：https://github.com/vvlink/SIoT/ **
+  **项目github：https://github.com/vvlink/SIoT/**
 
   **项目镜像地址：https://gitee.com/xiezuoru/SIoT**
 
