@@ -8,7 +8,7 @@
 
   **项目github：https://github.com/vvlink/SIoT/ **
 
-  **项目镜像地址：https://gitee.com/xiezuoru/SIoT **
+  **项目镜像地址：https://gitee.com/xiezuoru/SIoT**
 
 ## 项目目标：让孩子们学习并应用真正的物联网技术
 
