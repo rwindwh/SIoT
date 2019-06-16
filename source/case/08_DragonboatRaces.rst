@@ -26,7 +26,7 @@
 
 1.运行SIoT
 
-.. image:: ../image/zhangyu/Mind+/Mind+drag-01.PNG
+.. image:: ../image/zhangyu/Mind+/Mind+drag-01.png
 
 .. image:: ../image/zhangyu/Mind+/Mind+drag-09.PNG
 
@@ -85,14 +85,6 @@
 
 代码下载地址：https://github.com/vvlink/SIoT/tree/master/examples/Mind%2B
 
-
-运行界面：
-
-.. image:: ../image/linmiaoyan/。。。.png
-
-视频演示：
-
-https://github.com/vvlink/SIoT/blob/master/source/image/linmiaoyan/。。。
 
 拓展思考
 -----------------
