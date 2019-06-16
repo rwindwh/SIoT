@@ -26,7 +26,7 @@
 
 1.运行SIoT
 
-.. image:: ../image/zhangyu/Mind+/Mind+drag-01.png
+.. image:: ../image/zhangyu/Mind+/Mind+drag-01.PNG
 
 .. image:: ../image/zhangyu/Mind+/Mind+drag-09.PNG
 
