@@ -1,18 +1,34 @@
 SIOT简介
 =========================
-    SIoT是一个为中小学STEM教育定制的跨平台的开源MQTT服务器程序，S指科学（Science）、简单（Simple）的意思。SIoT重点关注物联网数据的收集和导出，是采集科学数据的最好选择之一。
     
+    SIoT是一个为中小学STEM教育定制的跨平台的开源MQTT服务器程序，S指科学（Science）、简单（Simple）的意思。SIoT重点关注物联网数据的收集和导出，是采集科学数据的最好选择之一。
 
+.. image:: ../image/zhangyu/Arduino/arduino-01.PNG
 
     那什么是物联网？什么又是MQTT呢？
 
 1.1 物联网
 ---------------------
-    Arduino是一款灵活便捷、易于上手的开源硬件，包含硬件部分（各种符合Arduino规范的电路板）和软件部分（一套整合的开发环境软件）两个部分。
-    Arduino既可用来开发独立运作并具有互动性的电子产品，也可开发与PC相连的周边装置，同时能在运行时与PC上的软件进行交互。
+
+    物联网（Internet of Things，缩写IoT）是互联网的一个延伸，互联网的终端是计算机（PC、服务器），而物联网的终端是硬件设备，无论是家电、工业设备、汽车、监测仪器，所有这些终端都可以互联，可以总结为万物互联。
+
+.. image:: ../image/zhangyu/Arduino/arduino-02.PNG 
+
 
 1.2 MQTT
 ---------------------
+
+    MQTT（Message Queuing Telemetry Transport，消息队列遥测传输协议）是一个基于客户端-服务器的消息发布/订阅传输协议。
+    MQTT协议是轻量、简单、开放和易于实现的，这些特点使它适用范围非常广泛。
+
+.. image:: ../image/zhangyu/Arduino/arduino-03.PNG 
+
+1.3 MQTT
+---------------------
+
+    SIoT为“虚谷物联”项目的核心软件，是为了帮助中小学生理解物联网原理，并且能够基于物联网技术开发各种创意应用。
+
+.. image:: ../image/zhangyu/Arduino/arduino-04.PNG 
 
 安装运行
 =========================
@@ -20,18 +36,40 @@ SIOT简介
 2.1 SIOT软件下载
 ---------------------
 
+   下载地址：http://mindplus.dfrobot.com.cn/siot
+   根据自己电脑的系统，对应下载SIoT软件压缩包，例如Windows系统下载win32。
+
 2.2 SIOT软件准备
 ---------------------
 
+    SIoT是一个绿色软件，将下载的压缩包解压并打开。
+
+.. image:: ../image/zhangyu/Arduino/arduino-05.PNG 
+
+   由于Mind+目前只支持Windows下Win7及以上版本，本篇教程将以SIoT_win32为例，讲述如何使用Mind+软件实现SIoT操作。
+   
 2.3 Mind+软件下载
 ---------------------
+
+    Mind+是一款基于Scratch3.0开发的青少年编程软件，支持arduino、micro:bit、Uno板等各种开源硬件，只需要拖动图形化程序块即可完成编程，还可以使用python/c/c++等高级编程语言，让大家轻松体验创造的乐趣。
+   下载地址：http://mindplus.cc
+   
+**本教程使用的是Mind+1.5.5版本软件**
+
+.. image:: ../image/zhangyu/Arduino/arduino-06.PNG 
 
 2.4 Mind+软件安装
 ---------------------
 
 **2.4.1 安装软件**
 
+   双击下载的文件完成软件安装。
+
 **2.4.2 安装驱动**
+
+   STEP1：打开Mind+软件，点击“教程”——“视频教程”打开教程。
+
+.. image:: ../image/zhangyu/Arduino/arduino-07.PNG
 
 快速入门
 =========================
