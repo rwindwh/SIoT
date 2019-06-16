@@ -24,7 +24,14 @@
 
 .. image:: ../image/zhangyu/Mind+drag-01.PNG
 
-2.运行Mind+1.5.5及以上的版本
+.. image:: ../image/zhangyu/Mind+drag-09.PNG
+
+2.将上图中的IP地址输入网页，如下图：
+
+.. image:: ../image/zhangyu/Mind+drag-10.PNG
+
+
+3.运行Mind+1.5.5及以上的版本
 
   mind+下载地址：http://mindplus.cc
 
@@ -45,6 +52,7 @@
 2.编写代码
 
 1）在终端1（代码1）的“背景”中写如下程序；
+**说明**：本操作是
 
 .. image:: ../image/zhangyu/Mind+drag-04.PNG
 
