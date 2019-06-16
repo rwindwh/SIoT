@@ -50,7 +50,6 @@
 选择右上角“实时模式”，点击左下角“扩展”，添加”网络服务”中的“MQTT”；
 
 .. image:: ../image/linmiaoyan/Mind+danmu-01.png
-
 .. image:: ../image/linmiaoyan/Mind+danmu-02.png
 
 2.编写代码
