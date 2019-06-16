@@ -63,19 +63,19 @@ SIOT简介
 
 **2.4.1 安装软件**
 
-   双击下载的文件完成软件安装。
+双击下载的文件完成软件安装。
 
 **2.4.2 安装驱动**
 
-   STEP1：打开Mind+软件，点击“教程”——“视频教程”打开教程。
+STEP1：打开Mind+软件，点击“教程”——“视频教程”打开教程。
 
 .. image:: ../image/zhangyu/Arduino/arduino-07.PNG
 
-   STEP2：打开“安装驱动”视频教程。
+STEP2：打开“安装驱动”视频教程。
    
 .. image:: ../image/zhangyu/Arduino/arduino-08.PNG
 
-   STEP3：根据视频悬浮窗中的教程，一键安装驱动，这一步很重要！安装一次，一劳永逸！
+STEP3：根据视频悬浮窗中的教程，一键安装驱动，这一步很重要！安装一次，一劳永逸！
 
 .. image:: ../image/zhangyu/Arduino/arduino-09.PNG
 
@@ -99,7 +99,7 @@ SIOT简介
 
    项目实现步骤：如下STEP1-STEP9。如果是第一次使用SIoT，请严格按照以下步骤进行操作。
 
-   *STEP1 运行SIoT系统*
+*STEP1 运行SIoT系统*
    
   双击运行SIoT_win.exe，可以看到一个黑色的CMD窗口。
 
@@ -108,13 +108,13 @@ SIOT简介
 .. image:: ../image/zhangyu/Arduino/arduino-11.PNG
 .. image:: ../image/zhangyu/Arduino/arduino-12.PNG
 
-   *STEP2 电脑连接WIFI*
+*STEP2 电脑连接WIFI*
 
   将电脑连接到WIFI。
 
   * 提供WIFI的路由器或手机热点可以不连接互联网，因为使用SIoT实现物联网应用时，只需要使用路由器或手机热点建立一个局域网即可。
 
-   *STEP3 获取电脑IP*
+*STEP3 获取电脑IP*
 
    电脑每次连接WIFI，都会生成一个IP地址，每个IP地址对应的电脑都是唯一的。运行SIOT程序后会在电脑上建立一个SIOT服务器，其他设备要访问这个服务器，需要知道这个SIOT服务器所在电脑的IP地址。
     
@@ -136,7 +136,7 @@ SIOT简介
 
 * 每次连接不同的WIFI，电脑的IP地址都可能会发生变化，需要通过上述方法重新获取。
 
-    *STEP4 打开SIoT网页端*
+*STEP4 打开SIoT网页端*
 
 1、打开电脑浏览器，在网址栏输入在“STEP3”中获得的IP地址加上“:8080”，如：192.168.9.191:8080
 
@@ -156,7 +156,7 @@ SIOT简介
 
 ￭ 关闭网络防火墙
 
-    *STEP5 登陆SIoT网页端*
+*STEP5 登陆SIoT网页端*
 
 账号：siot
 
@@ -168,7 +168,7 @@ SIOT简介
 
 * SIoT网页端账号、密码都是统一的。
 
-    *STEP6 Mind+编程*
+*STEP6 Mind+编程*
 
 实现功能：在SIoT平台输入消息，舞台角色说出消息内容。
 
@@ -192,7 +192,7 @@ SIOT简介
 
 .. image:: ../image/zhangyu/Arduino/arduino-24.PNG
 
-    *STEP7 运行程序*
+*STEP7 运行程序*
 
 点击绿旗或主程序运行程序，可以看到角色会先说“OK”2秒，再说“hello”2秒。
 
@@ -200,7 +200,7 @@ SIOT简介
 
 .. image:: ../image/zhangyu/Arduino/arduino-25.PNG
 
-    *STEP8 在SIoT网页端查看消息*
+*STEP8 在SIoT网页端查看消息*
     
 打开SIoT网页端，点击“设备列表”，可以看到“项目ID”、“名称”对应为程序中自定义Topic_0的信息。
 
@@ -212,7 +212,7 @@ SIOT简介
 
 如上图，为程序中对Topic：“arduino/a”的消息记录，可看到消息内容和发送时间。
 
-    *STEP9 项目功能实现：在SIoT平台输入消息，舞台角色说出消息内容*
+*STEP9 项目功能实现：在SIoT平台输入消息，舞台角色说出消息内容*
 
 例如：在“发送消息”栏发送“你好啊”，舞台角色对应说出“你好啊”。
 
@@ -231,9 +231,9 @@ SIOT简介
 
     项目实现步骤：STEP1-STEP8。
 
-    *STEP1-5与3.1.1相同*
+*STEP1-5与3.1.1相同*
     
-    *STEP6 连接Uno板*
+*STEP6 连接Uno板*
 
    将Uno板通过USB线连接到电脑，在Mind+中“连接设备”下点击对应COM口。
 
@@ -243,7 +243,7 @@ SIOT简介
 
 .. image:: ../image/zhangyu/Arduino/arduino-31.PNG
 
-    *STEP7 修改程序*
+*STEP7 修改程序*
     
 1、在“扩展”中“主控板”下选择“Uno板”：
 
@@ -253,7 +253,7 @@ SIOT简介
 
 .. image:: ../image/zhangyu/Arduino/arduino-33.PNG
 
-    *STEP8 功能实现*
+*STEP8 功能实现*
 
 发送“on”，灯亮；发送“off”，灯灭。
 
@@ -283,9 +283,9 @@ SIOT简介
 
 * 因为Uno板在SIoT需要通过物联网采集数据，但是Uno板不具备物联网通讯功能，因此需要借助OBLOQ物联网模块。
 
-    *STEP1-5与3.1.1相同*
+*STEP1-5与3.1.1相同*
     
-    *STEP6 Mind+软件设置*
+*STEP6 Mind+软件设置*
     
    1、打开Mind+软件（1.5.5及以上版本），选择“上传模式”：
 
@@ -299,7 +299,7 @@ SIOT简介
 
 .. image:: ../image/zhangyu/Arduino/arduino-40.PNG
 
-    *STEP7硬件连线图*
+*STEP7硬件连线图*
 
 OBLOQ模块：TX、RX、GND和VIN引脚分别连接到D10、D11、GND和VCC引脚。
 
@@ -309,7 +309,7 @@ OBLOQ模块：TX、RX、GND和VIN引脚分别连接到D10、D11、GND和VCC引�
 
 .. image:: ../image/zhangyu/Arduino/arduino-41.PNG
 
-    *STEP8编写程序*
+*STEP8编写程序*
 
 .. image:: ../image/zhangyu/Arduino/arduino-42.PNG
 .. image:: ../image/zhangyu/Arduino/arduino-43.PNG
@@ -324,11 +324,11 @@ OBLOQ模块：TX、RX、GND和VIN引脚分别连接到D10、D11、GND和VCC引�
 
    点击“上传到设备”将程序下载到Uno板中。	
 
-    *STEP9功能实现*
+*STEP9功能实现*
 
    Uno板在下载完程序后，OBLOQ物联网模块指示灯显示为绿色，表示成功与Uno板连接成功正常工作。
 
-   * 程序运行时，若无法连接OBLOQ物联网模块（指示灯不为绿色），先检查参数有没有填错，例如ip错误、Topic中有没有斜杠，依旧无法连接的话，可尝试关闭电脑防火墙，重新上传程序；若依旧不成功需要查看OBLOQ模块的接线对应的管脚是否连接正确。
+程序运行时，若无法连接OBLOQ物联网模块（指示灯不为绿色），先检查参数有没有填错，例如ip错误、Topic中有没有斜杠，依旧无法连接的话，可尝试关闭电脑防火墙，重新上传程序；若依旧不成功需要查看OBLOQ模块的接线对应的管脚是否连接正确。
 
    打开SIoT网页端，可以在“设备列表”下看到对应的Topic信息。
    
