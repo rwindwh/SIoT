@@ -8,9 +8,13 @@
 程序描述：
 --------------------
 
-1.有两个玩家：玩家1和玩家2，每个玩家拥有一块掌控版用以摇晃
-2.游戏开始，摇晃掌控版，让舞台上的龙舟开始移动
-3.可以添加多支龙舟进行比拼
+   1.有两个玩家：玩家1和玩家2，每个玩家拥有一块掌控版用以摇晃
+   
+   2.游戏开始，摇晃掌控版，让舞台上的龙舟开始移动
+   
+   3.可以添加多支龙舟进行比拼
+
+.. image:: ../image/linmiaoyan/Longzhou-01.png
 
 原理介绍
 -----------------
@@ -22,13 +26,13 @@
 
 1.运行SIoT
 
-.. image:: ../image/zhangyu/Mind+drag-01.PNG
+.. image:: ../image/zhangyu/Mind+/Mind+drag-01.PNG
 
-.. image:: ../image/zhangyu/Mind+drag-09.PNG
+.. image:: ../image/zhangyu/Mind+/Mind+drag-09.PNG
 
 2.将上图中的IP地址输入网页，如下图：
 
-.. image:: ../image/zhangyu/Mind+drag-10.PNG
+.. image:: ../image/zhangyu/Mind+/Mind+drag-10.PNG
 
 
 3.运行Mind+1.5.5及以上的版本
@@ -46,7 +50,6 @@
 选择右上角“实时模式”，点击左下角“扩展”，添加”网络服务”中的“MQTT”；
 
 .. image:: ../image/linmiaoyan/Mind+danmu-01.png
-
 .. image:: ../image/linmiaoyan/Mind+danmu-02.png
 
 2.编写代码
@@ -55,25 +58,25 @@
 
 **说明**：本操作是将掌控板设备与服务器建立连接，在服务器上能够实时反馈数据。
 
-.. image:: ../image/zhangyu/Mind+drag-04.PNG
+.. image:: ../image/zhangyu/Mind+/Mind+drag-04.PNG
 
 并修改MQTT服务器相关的参数；
 
   **说明**：Topic设置为“xzr/001”（项目ID/名称）
   
-.. image:: ../image/zhangyu/Mind+drag-05.PNG
+.. image:: ../image/zhangyu/Mind+/Mind+drag-05.PNG
 
 2）在终端2（代码2）中创建两个角色，分别为龙舟1和龙舟2；
 
-.. image:: ../image/zhangyu/Mind+drag-06.PNG
+.. image:: ../image/zhangyu/Mind+/Mind+drag-06.PNG
 
 3）点击角色1（龙舟1），写如下代码；
 
-.. image:: ../image/zhangyu/Mind+drag-07.PNG
+.. image:: ../image/zhangyu/Mind+/Mind+drag-07.PNG
 
 4）点击角色2（龙舟2），写如下代码；
 
-.. image:: ../image/zhangyu/Mind+drag-08.PNG
+.. image:: ../image/zhangyu/Mind+/Mind+drag-08.PNG
 
 
 参考代码
@@ -81,14 +84,6 @@
 
 代码下载地址：https://github.com/vvlink/SIoT/tree/master/examples/Mind%2B
 
-
-运行界面：
-
-.. image:: ../image/linmiaoyan/。。。.png
-
-视频演示：
-
-https://github.com/vvlink/SIoT/blob/master/source/image/linmiaoyan/。。。
 
 拓展思考
 -----------------

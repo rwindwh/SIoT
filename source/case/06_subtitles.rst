@@ -15,9 +15,6 @@
 3.主程序用Mind+制作，发送弹幕消息的客户端用各种工具，可以是Python、手机App、MQTT客户端、Web管理端，当然，也可以是Mind+。
 
 
-.. image:: ../image/example/06_subtitles_0.png
-
-
 
 准备工作
 -----------------
@@ -69,7 +66,7 @@
 
 视频演示：
 
-https://github.com/vvlink/SIoT/blob/master/source/image/linmiaoyan/%E4%BA%92%E5%8A%A8%E5%BC%B9%E5%B9%95%E6%95%99%E7%A8%8B.mp4
+https://github.com/linmiaoyan/Lins-video/blob/master/%E4%BA%92%E5%8A%A8%E5%BC%B9%E5%B9%95%E6%95%99%E7%A8%8B.mp4
 
 拓展思考
 -----------------
