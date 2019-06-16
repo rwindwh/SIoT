@@ -14,7 +14,7 @@
    
    3.可以添加多支龙舟进行比拼
 
-.. image:: ../image/linmiaoyan/Longzhou-01.png
+.. image:: ../image/linmiaoyan/Longzhou-01.PNG
 
 原理介绍
 -----------------
