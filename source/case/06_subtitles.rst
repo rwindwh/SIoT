@@ -69,7 +69,7 @@
 
 视频演示：
 
-https://github.com/vvlink/SIoT/blob/master/source/image/linmiaoyan/%E4%BA%92%E5%8A%A8%E5%BC%B9%E5%B9%95%E6%95%99%E7%A8%8B.mp4
+https://github.com/linmiaoyan/Lins-video/blob/master/%E4%BA%92%E5%8A%A8%E5%BC%B9%E5%B9%95%E6%95%99%E7%A8%8B.mp4
 
 拓展思考
 -----------------
