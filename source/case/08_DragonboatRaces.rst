@@ -9,7 +9,7 @@
 --------------------
 
 
-.. image:: ../image/linmiaoyan/。。。.png
+
 
 
 原理介绍
@@ -22,13 +22,13 @@
 
 1.运行SIoT
 
-.. image:: ../image/linmiaoyan/。。。.png
+.. image:: ../image/zhangyu/Mind+drag-01.PNG
 
 2.运行Mind+1.5.5及以上的版本
 
   mind+下载地址：http://mindplus.cc
 
-*本教程使用的是Mind+1.5.5版本软件
+**本教程使用的是Mind+1.5.5版本软件**
 
 
 操作步骤
@@ -42,21 +42,28 @@
 
 2.编写代码。
 
-1）在终端1的“背景”中写如下程序。
+1）在终端1（代码1）的“背景”中写如下程序。
 
-.. image:: ../image/example/06_subtitles_1.png
 
-并修改MQTT服务器相关的参数
+.. image:: ../image/zhangyu/Mind+drag-04.PNG
+
+
+并修改MQTT服务器相关的参数；
 
   **说明**：Topic设置为“xzr/001”（项目ID/名称）
+  
+.. image:: ../image/zhangyu/Mind+drag-05.PNG
 
-2）给角色1选择多个造型。
+2）在终端2（代码2）中创建两个角色，分别为龙舟1和龙舟2；
+
+
 
 3）在角色1中写如下代码。
 
-.. image:: ../image/example/06_subtitles_2.png
+
 
 4）复制出4个角色，修改代码。
+
 
 5）如果想要确认客户端与服务器间的通讯是否正常，可以在变量中为“消息数量”打勾，实时查看数据的传输情况。
 
