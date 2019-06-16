@@ -14,6 +14,8 @@
    
    3.可以添加多支龙舟进行比拼
 
+.. image:: ../image/linmiaoyan/Longzhou-01.png
+
 原理介绍
 -----------------
 本案例分为两个终端，分别为划手1（player1）和划手2（player2）。player1端和player2端通过连接同一物联网平台MQTT（siot）进行数据的交换，从而实现联机比拼的功能。
