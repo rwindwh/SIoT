@@ -28,22 +28,23 @@
 
   mind+下载地址：http://mindplus.cc
 
-**本教程使用的是Mind+1.5.5版本软件**
+**说明**：本教程使用的是Mind+1.5.5版本软件
 
 
 操作步骤
 -----------
 
-1.运行mind+，选择右上角“实时模式”，点击左下角“扩展”，添加”网络服务”中的“MQTT”。
+1.运行mind+
+
+选择右上角“实时模式”，点击左下角“扩展”，添加”网络服务”中的“MQTT”；
 
 .. image:: ../image/linmiaoyan/Mind+danmu-01.png
 
 .. image:: ../image/linmiaoyan/Mind+danmu-02.png
 
-2.编写代码。
+2.编写代码
 
-1）在终端1（代码1）的“背景”中写如下程序。
-
+1）在终端1（代码1）的“背景”中写如下程序；
 
 .. image:: ../image/zhangyu/Mind+drag-04.PNG
 
@@ -56,14 +57,15 @@
 
 2）在终端2（代码2）中创建两个角色，分别为龙舟1和龙舟2；
 
+.. image:: ../image/zhangyu/Mind+drag-06.PNG
 
+3）点击角色1（龙舟1），写如下代码；
 
-3）在角色1中写如下代码。
+.. image:: ../image/zhangyu/Mind+drag-07.PNG
 
+4）点击角色2（龙舟2），写如下代码；
 
-
-4）复制出4个角色，修改代码。
-
+.. image:: ../image/zhangyu/Mind+drag-08.PNG
 
 5）如果想要确认客户端与服务器间的通讯是否正常，可以在变量中为“消息数量”打勾，实时查看数据的传输情况。
 
