@@ -4,10 +4,11 @@ SIOT简介
     SIoT是一个为中小学STEM教育定制的跨平台的开源MQTT服务器程序，S指科学（Science）、简单（Simple）的意思。SIoT重点关注物联网数据的收集和导出，是采集科学数据的最好选择之一。
 
 
+
 .. image:: ../image/zhangyu/Arduino/arduino-01.png
 
 
-    那什么是物联网？什么又是MQTT呢？
+那什么是物联网？什么又是MQTT呢？
 
 1.1 物联网
 ---------------------
@@ -22,7 +23,8 @@ SIOT简介
     MQTT（Message Queuing Telemetry Transport，消息队列遥测传输协议）是一个基于客户端-服务器的消息发布/订阅传输协议。
     MQTT协议是轻量、简单、开放和易于实现的，这些特点使它适用范围非常广泛。
 
-.. image:: ../image/zhangyu/Arduino/arduino-03.PNG 
+.. image:: ../image/zhangyu/Arduino/arduino-03.png
+
 
 1.3 MQTT
 ---------------------
