@@ -1,4 +1,4 @@
-SIOT简介
+﻿SIOT简介
 =========================
     
     SIoT是一个为中小学STEM教育定制的跨平台的开源MQTT服务器程序，S指科学（Science）、简单（Simple）的意思。SIoT重点关注物联网数据的收集和导出，是采集科学数据的最好选择之一。
@@ -31,7 +31,7 @@ SIOT简介
 
     SIoT为“虚谷物联”项目的核心软件，是为了帮助中小学生理解物联网原理，并且能够基于物联网技术开发各种创意应用。
 
-.. image:: ../image/zhangyu/Arduino/arduino-04.PNG 
+.. image:: ../image/zhangyu/Arduino/arduino-04.png 
 
 安装运行
 =========================
@@ -47,7 +47,7 @@ SIOT简介
 
     SIoT是一个绿色软件，将下载的压缩包解压并打开。
 
-.. image:: ../image/zhangyu/Arduino/arduino-05.PNG 
+.. image:: ../image/zhangyu/Arduino/arduino-05.png 
 
    由于Mind+目前只支持Windows下Win7及以上版本，本篇教程将以SIoT_win32为例，讲述如何使用Mind+软件实现SIoT操作。
    
@@ -59,7 +59,7 @@ SIOT简介
    
 **本教程使用的是Mind+1.5.5版本软件**
 
-.. image:: ../image/zhangyu/Arduino/arduino-06.PNG 
+.. image:: ../image/zhangyu/Arduino/arduino-06.png 
 
 2.4 Mind+软件安装
 ---------------------
@@ -72,15 +72,15 @@ SIOT简介
 
 STEP1：打开Mind+软件，点击“教程”——“视频教程”打开教程。
 
-.. image:: ../image/zhangyu/Arduino/arduino-07.PNG
+.. image:: ../image/zhangyu/Arduino/arduino-07.png
 
 STEP2：打开“安装驱动”视频教程。
    
-.. image:: ../image/zhangyu/Arduino/arduino-08.PNG
+.. image:: ../image/zhangyu/Arduino/arduino-08.png
 
 STEP3：根据视频悬浮窗中的教程，一键安装驱动，这一步很重要！安装一次，一劳永逸！
 
-.. image:: ../image/zhangyu/Arduino/arduino-09.PNG
+.. image:: ../image/zhangyu/Arduino/arduino-09.png
 
 快速入门
 =========================
@@ -98,7 +98,7 @@ STEP3：根据视频悬浮窗中的教程，一键安装驱动，这一步很重
    
    项目案例：在SIoT平台输入消息，舞台角色说出消息内容
 
-.. image:: ../image/zhangyu/Arduino/arduino-10.PNG
+.. image:: ../image/zhangyu/Arduino/arduino-10.png
 
    项目实现步骤：如下STEP1-STEP9。如果是第一次使用SIoT，请严格按照以下步骤进行操作。
 
@@ -108,8 +108,8 @@ STEP3：根据视频悬浮窗中的教程，一键安装驱动，这一步很重
 
   * 使用SIoT过程中一定不要关该窗口
 
-.. image:: ../image/zhangyu/Arduino/arduino-11.PNG
-.. image:: ../image/zhangyu/Arduino/arduino-12.PNG
+.. image:: ../image/zhangyu/Arduino/arduino-11.png
+.. image:: ../image/zhangyu/Arduino/arduino-12.png
 
 *STEP2 电脑连接WIFI*
 
@@ -125,17 +125,17 @@ STEP3：根据视频悬浮窗中的教程，一键安装驱动，这一步很重
 
 1、同时按下键盘上“WIN”+“R”，弹出如下运行窗口。
 
-.. image:: ../image/zhangyu/Arduino/arduino-13.PNG
+.. image:: ../image/zhangyu/Arduino/arduino-13.png
 
 2、输入“cmd”，点击确定，弹出小黑框。
 
-.. image:: ../image/zhangyu/Arduino/arduino-14.PNG
+.. image:: ../image/zhangyu/Arduino/arduino-14.png
 
-.. image:: ../image/zhangyu/Arduino/arduino-15.PNG
+.. image:: ../image/zhangyu/Arduino/arduino-15.png
 
 3、在小黑框中输入“ipconfig”，点击键盘“enter”，在小黑框中可以看到IP地址，如下图IP为192.168.9.191。
 
-.. image:: ../image/zhangyu/Arduino/arduino-16.PNG
+.. image:: ../image/zhangyu/Arduino/arduino-16.png
 
 * 每次连接不同的WIFI，电脑的IP地址都可能会发生变化，需要通过上述方法重新获取。
 
@@ -145,11 +145,11 @@ STEP3：根据视频悬浮窗中的教程，一键安装驱动，这一步很重
 
 * “:” 需在在英文输入法下。
 
-.. image:: ../image/zhangyu/Arduino/arduino-17.PNG
+.. image:: ../image/zhangyu/Arduino/arduino-17.png
 
 2、点击键盘enter键，打开即为SIoT网页端，如下图：
 
-.. image:: ../image/zhangyu/Arduino/arduino-18.PNG
+.. image:: ../image/zhangyu/Arduino/arduino-18.png
 
 3、打不开怎么办？
 
@@ -167,7 +167,7 @@ STEP3：根据视频悬浮窗中的教程，一键安装驱动，这一步很重
 
 输入账号、密码后，点击“登陆”，登陆后页面如下：
 
-.. image:: ../image/zhangyu/Arduino/arduino-19.PNG
+.. image:: ../image/zhangyu/Arduino/arduino-19.png
 
 * SIoT网页端账号、密码都是统一的。
 
@@ -177,23 +177,23 @@ STEP3：根据视频悬浮窗中的教程，一键安装驱动，这一步很重
 
 1、打开Mind+软件（1.5.5及以上版本），选择“实时模式”：
 
-.. image:: ../image/zhangyu/Arduino/arduino-20.PNG
+.. image:: ../image/zhangyu/Arduino/arduino-20.png
 
 2、点击“扩展”：
 
-.. image:: ../image/zhangyu/Arduino/arduino-21.PNG
+.. image:: ../image/zhangyu/Arduino/arduino-21.png
 
 3、选择“网络服务”，点选“MQTT服务”后点击“返回”：
 
-.. image:: ../image/zhangyu/Arduino/arduino-22.PNG
+.. image:: ../image/zhangyu/Arduino/arduino-22.png
 
 4、编写程序：
 
-.. image:: ../image/zhangyu/Arduino/arduino-23.PNG
+.. image:: ../image/zhangyu/Arduino/arduino-23.png
 
 5、设置MQTT初始化参数：
 
-.. image:: ../image/zhangyu/Arduino/arduino-24.PNG
+.. image:: ../image/zhangyu/Arduino/arduino-24.png
 
 *STEP7 运行程序*
 
@@ -201,17 +201,17 @@ STEP3：根据视频悬浮窗中的教程，一键安装驱动，这一步很重
 
 说“OK”表示MQTT连接成功，说“hello”表示MQTT成功发送消息“hello”到Topic_0中。
 
-.. image:: ../image/zhangyu/Arduino/arduino-25.PNG
+.. image:: ../image/zhangyu/Arduino/arduino-25.png
 
 *STEP8 在SIoT网页端查看消息*
     
 打开SIoT网页端，点击“设备列表”，可以看到“项目ID”、“名称”对应为程序中自定义Topic_0的信息。
 
-.. image:: ../image/zhangyu/Arduino/arduino-26.PNG
+.. image:: ../image/zhangyu/Arduino/arduino-26.png
 
 点击“查看消息”，在弹出窗口中可以看到设备的MQTT消息记录：
 
-.. image:: ../image/zhangyu/Arduino/arduino-27.PNG
+.. image:: ../image/zhangyu/Arduino/arduino-27.png
 
 如上图，为程序中对Topic：“arduino/a”的消息记录，可看到消息内容和发送时间。
 
@@ -219,8 +219,8 @@ STEP3：根据视频悬浮窗中的教程，一键安装驱动，这一步很重
 
 例如：在“发送消息”栏发送“你好啊”，舞台角色对应说出“你好啊”。
 
-.. image:: ../image/zhangyu/Arduino/arduino-28.PNG
-.. image:: ../image/zhangyu/Arduino/arduino-29.PNG
+.. image:: ../image/zhangyu/Arduino/arduino-28.png
+.. image:: ../image/zhangyu/Arduino/arduino-29.png
 
     至此就完成了在Mind+实时模式下SIoT与舞台的互动啦，但是所谓物联网，不连接外部硬件设备到物联网平台，又怎么能体现出它的优势呢！所以接下来，让我们通过加入Uno板一起来体验SIoT对硬件的控制。
 
@@ -230,7 +230,7 @@ STEP3：根据视频悬浮窗中的教程，一键安装驱动，这一步很重
 
     项目案例：在SIoT平台输入消息，控制点亮或熄灭Uno板的LED灯。
 
-.. image:: ../image/zhangyu/Arduino/arduino-30.PNG
+.. image:: ../image/zhangyu/Arduino/arduino-30.png
 
     项目实现步骤：STEP1-STEP8。
 
@@ -240,33 +240,33 @@ STEP3：根据视频悬浮窗中的教程，一键安装驱动，这一步很重
 
    将Uno板通过USB线连接到电脑，在Mind+中“连接设备”下点击对应COM口。
 
-.. image:: ../image/zhangyu/Arduino/arduino-30.PNG
+.. image:: ../image/zhangyu/Arduino/arduino-30.png
 
 在连接设备前可看到提示“未连接设备”。连接成功后，可看到对应COM口和提示“设备连接成功”。             。
 
-.. image:: ../image/zhangyu/Arduino/arduino-31.PNG
+.. image:: ../image/zhangyu/Arduino/arduino-31.png
 
 *STEP7 修改程序*
     
 1、在“扩展”中“主控板”下选择“Uno板”：
 
-.. image:: ../image/zhangyu/Arduino/arduino-32.PNG
+.. image:: ../image/zhangyu/Arduino/arduino-32.png
 
 2、程序修改如下：
 
-.. image:: ../image/zhangyu/Arduino/arduino-33.PNG
+.. image:: ../image/zhangyu/Arduino/arduino-33.png
 
 *STEP8 功能实现*
 
 发送“on”，灯亮；发送“off”，灯灭。
 
-.. image:: ../image/zhangyu/Arduino/arduino-34.PNG
+.. image:: ../image/zhangyu/Arduino/arduino-34.png
 
-.. image:: ../image/zhangyu/Arduino/arduino-35.PNG
+.. image:: ../image/zhangyu/Arduino/arduino-35.png
 
-.. image:: ../image/zhangyu/Arduino/arduino-36.PNG
+.. image:: ../image/zhangyu/Arduino/arduino-36.png
 
-.. image:: ../image/zhangyu/Arduino/arduino-37.PNG
+.. image:: ../image/zhangyu/Arduino/arduino-37.png
 
 
 
@@ -292,15 +292,15 @@ STEP3：根据视频悬浮窗中的教程，一键安装驱动，这一步很重
     
    1、打开Mind+软件（1.5.5及以上版本），选择“上传模式”：
 
-.. image:: ../image/zhangyu/Arduino/arduino-38.PNG
+.. image:: ../image/zhangyu/Arduino/arduino-38.png
 
    2、点击“扩展”，在“主控板”下选择“Uno板”：
    
-.. image:: ../image/zhangyu/Arduino/arduino-39.PNG
+.. image:: ../image/zhangyu/Arduino/arduino-39.png
    
    3、点击“扩展”，在通信模块下选“OBLOQ物联网模块”：
 
-.. image:: ../image/zhangyu/Arduino/arduino-40.PNG
+.. image:: ../image/zhangyu/Arduino/arduino-40.png
 
 *STEP7硬件连线图*
 
@@ -310,16 +310,16 @@ OBLOQ模块：TX、RX、GND和VIN引脚分别连接到D10、D11、GND和VCC引�
 
 可通过修改程序来自定义相关引脚。
 
-.. image:: ../image/zhangyu/Arduino/arduino-41.PNG
+.. image:: ../image/zhangyu/Arduino/arduino-41.png
 
 *STEP8编写程序*
 
-.. image:: ../image/zhangyu/Arduino/arduino-42.PNG
-.. image:: ../image/zhangyu/Arduino/arduino-43.PNG
+.. image:: ../image/zhangyu/Arduino/arduino-42.png
+.. image:: ../image/zhangyu/Arduino/arduino-43.png
 
    程序中指令中热点的名称、密码需要对应填写与电脑连接的wifi。
 
-.. image:: ../image/zhangyu/Arduino/arduino-44.PNG
+.. image:: ../image/zhangyu/Arduino/arduino-44.png
 
    Uno板：发送消息“ON”和“OFF”到Topic_1，点亮和关闭13口LED。
 
@@ -335,19 +335,19 @@ OBLOQ模块：TX、RX、GND和VIN引脚分别连接到D10、D11、GND和VCC引�
 
    打开SIoT网页端，可以在“设备列表”下看到对应的Topic信息。
    
-.. image:: ../image/zhangyu/Arduino/arduino-45.PNG
+.. image:: ../image/zhangyu/Arduino/arduino-45.png
 
 1、点击上图中“a”后的“查看消息”，可以看到温度传感器实时收集的温度值。
 
-.. image:: ../image/zhangyu/Arduino/arduino-46.PNG
+.. image:: ../image/zhangyu/Arduino/arduino-46.png
 
 2、点击“b”后的查看消息
 
-.. image:: ../image/zhangyu/Arduino/arduino-47.PNG
+.. image:: ../image/zhangyu/Arduino/arduino-47.png
 
 在弹出窗口中发送消息“ON”，可以看到Uno板子的LED被点亮。
 
-.. image:: ../image/zhangyu/Arduino/arduino-48.PNG
+.. image:: ../image/zhangyu/Arduino/arduino-48.png
 
 同理，发送消息“OFF”，可以看到Uno板子的LED被点亮。
 
@@ -360,7 +360,7 @@ OBLOQ模块：TX、RX、GND和VIN引脚分别连接到D10、D11、GND和VCC引�
 4.1 SIOT操作流程汇总
 ---------------------
 
-.. image:: ../image/zhangyu/Arduino/arduino-49.PNG
+.. image:: ../image/zhangyu/Arduino/arduino-49.png
 
 4.2 物联网框图
 ---------------------
@@ -369,7 +369,7 @@ OBLOQ模块：TX、RX、GND和VIN引脚分别连接到D10、D11、GND和VCC引�
 
 在一台电脑上建立SIoT服务器后，其他设备在知道路由器分配给这台电脑的IP地址后，可以利用WIFI访问SIoT服务器。这些设备可以是电脑、手机、Uno板等。
 
-.. image:: ../image/zhangyu/Arduino/arduino-50.PNG
+.. image:: ../image/zhangyu/Arduino/arduino-50.png
 
 
 
@@ -400,7 +400,7 @@ SIoT启动后，你的计算机就成为了一个标准的SIoT服务器，使用
     
 OBLOQ物联网模块引脚说明：
 
-.. image:: ../image/zhangyu/Arduino/arduino-51.PNG
+.. image:: ../image/zhangyu/Arduino/arduino-51.png
 
 OBLOQ物联网模块在使用中的常见问题：
 
