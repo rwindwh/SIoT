@@ -14,8 +14,7 @@ SIOT简介
 
     物联网（Internet of Things，缩写IoT）是互联网的一个延伸，互联网的终端是计算机（PC、服务器），而物联网的终端是硬件设备，无论是家电、工业设备、汽车、监测仪器，所有这些终端都可以互联，可以总结为万物互联。
 
-.. image:: ../image/zhangyu/Arduino/arduino-02.PNG 
-
+.. image:: ../image/zhangyu/Arduino/arduino-02.png
 
 1.2 MQTT
 ---------------------
