@@ -70,15 +70,15 @@
 
 **2.4.2 安装驱动**
 
-STEP1：打开Mind+软件，点击“教程”——“视频教程”打开教程。
+*STEP1：打开Mind+软件，点击“教程”——“视频教程”打开教程。*
 
 .. image:: ../image/zhangyu/Arduino/arduino-07.png
 
-STEP2：打开“安装驱动”视频教程。
+*STEP2：打开“安装驱动”视频教程。*
    
 .. image:: ../image/zhangyu/Arduino/arduino-08.png
 
-STEP3：根据视频悬浮窗中的教程，一键安装驱动，这一步很重要！安装一次，一劳永逸！
+*STEP3：根据视频悬浮窗中的教程，一键安装驱动，这一步很重要！安装一次，一劳永逸！*
 
 .. image:: ../image/zhangyu/Arduino/arduino-09.png
 
