@@ -84,6 +84,7 @@
 
 代码下载地址：https://github.com/vvlink/SIoT/tree/master/examples/Mind%2B
 
+演示视频地址：https://github.com/linmiaoyan/Lins-video/blob/master/Mind%2B%E9%BE%99%E8%88%9F%E7%AB%9E%E8%B5%9B.mp4
 
 拓展思考
 -----------------
