@@ -101,7 +101,7 @@ App Inventor2简介
 .. image:: ../image/demo/07_appInventor-17.png
 
 
-
+4.案例下载地址：https://github.com/vvlink/SIoT/tree/master/examples/Appinventor/%E7%89%A9%E8%81%94%E7%BD%91%E5%85%89%E7%BA%BF%E6%8E%A7%E5%88%B6
 
 
 
