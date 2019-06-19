@@ -77,6 +77,7 @@ App Inventor2简介
 
     
 2.本地物联网平台SIoT的运行并创建设备与主题：
+
 1）运行SIoT本地物联网平台：
 
 2）登录SIoT，并创建项目（App）与主题（lightCtr）：
