@@ -96,7 +96,7 @@ App Inventor2简介
 
 .. image:: ../image/demo/07_appInventor-15.png
 
-.. image:: ../image/demo/07_appInventor-16.png
+.. image:: ../image/demo/07_appInventor-23.png
 
 .. image:: ../image/demo/07_appInventor-17.png
 
