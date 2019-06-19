@@ -20,7 +20,7 @@ App Inventor2简介
 -----------------------
 **编程准备**
 
-1.注册一个物联网平台账号，本案例以DFrobot公司搭建的EasyIot平台（网址：http://iot.dfrobot.com.cn）为例进行示范。
+1.本案例以SIoT本地物联网平台为例进行示范。朋友们也可以注册一个物联网平台账号进行更远距离的控制，在线版物联网平台推荐：DFrobot公司搭建的EasyIot平台（网址：http://iot.dfrobot.com.cn）。
         
 2.在广州市教育技术中心的App Inventor2服务器上注册一个账号，服务器网址为：http://app.gzjkw.net。
         
