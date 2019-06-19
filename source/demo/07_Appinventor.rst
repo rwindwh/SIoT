@@ -80,6 +80,7 @@ App Inventor2简介
 
 1）运行SIoT本地物联网平台：
 
+
 2）登录SIoT，并创建项目（App）与主题（lightCtr）：
 
 3.掌控板端编程(工具平台：mind+1.5.5)：
