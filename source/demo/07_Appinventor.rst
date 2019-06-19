@@ -73,9 +73,11 @@ App Inventor2简介
 .. image:: ../image/demo/07_appInventor-14.png
 
 
-
     
-2.掌控板端编程(工具平台：mind+1.5.5)：
+2.本地物联网平台SIoT的运行：
+
+
+3.掌控板端编程(工具平台：mind+1.5.5)：
 
 .. image:: ../image/demo/07_appInventor-15.png
 
