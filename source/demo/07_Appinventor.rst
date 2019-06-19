@@ -80,8 +80,17 @@ App Inventor2简介
 
 1）运行SIoT本地物联网平台：
 
+.. image:: ../image/demo/07_appInventor-18.png
+
+.. image:: ../image/demo/07_appInventor-19.png
 
 2）登录SIoT，并创建项目（App）与主题（lightCtr）：
+
+.. image:: ../image/demo/07_appInventor-20.png
+
+.. image:: ../image/demo/07_appInventor-21.png
+
+.. image:: ../image/demo/07_appInventor-22.png
 
 3.掌控板端编程(工具平台：mind+1.5.5)：
 
