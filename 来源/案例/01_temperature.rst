@@ -46,7 +46,7 @@
 
 .. image:: ../image/haoqing/Mind+temperature-05.jpg
 
-3.打开Mind+ V1.5.3编写程序
+3.打开Mind+ V1.5.5编写程序
 
 .. image:: ../image/haoqing/Mind+temperature-06.jpg
 
