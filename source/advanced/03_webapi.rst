@@ -9,7 +9,7 @@ API列表：
     - 发布消息
     Http://[SIoT的IP]:8080/publish?topic=xzr/001&msg=on&iname=siot&ipwd=dfrobot
 
-    **说明**：发送topicid（主题）“xzr/001”发送内容为“on”的消息，其中“xzr”是项目id，“001”是设备id。
+    **说明**：向topicid（主题）“xzr/001”发送内容为“on”的消息，其中“xzr”是项目id，“001”是设备id。
 
     返回数据：{"code":1,"msg":"数据已发送"}
 
