@@ -6,7 +6,7 @@
 准备工作
 -----------------
 
-在Mind+ V1.5.3的物联网模块——MQTT中，可以通过添加扩展掌控后提供的WIFI模块，与物联网平台连接，从而实现掌控板与web端、app端的互联。用户可以根据实际需要选择阿里云、Easy IoT、OneNet和SIoT四个平台物联网平台。我们在这里简单介绍如何使用SIoT平台来远程控制掌控板、Mind+，实现掌控板将数据上传到SIoT，SIoT同时将数据反馈到Mind+界面的效果。SIoT可以同时将消息发送至掌控板与Mind+。
+在Mind+ V1.5.5的物联网模块——MQTT中，可以通过添加扩展掌控后提供的WIFI模块，与物联网平台连接，从而实现掌控板与web端、app端的互联。用户可以根据实际需要选择阿里云、Easy IoT、OneNet和SIoT四个平台物联网平台。我们在这里简单介绍如何使用SIoT平台来远程控制掌控板、Mind+，实现掌控板将数据上传到SIoT，SIoT同时将数据反馈到Mind+界面的效果。SIoT可以同时将消息发送至掌控板与Mind+。
     
 （一）硬件准备
 
@@ -28,7 +28,7 @@
 
 .. image:: ../image/haoqing/Mind+yuancheng-03.png
 
-3.打开Mind+ V1.5.3编写程序
+3.打开Mind+ V1.5.5编写程序
 
 .. image:: ../image/haoqing/Mind+yuancheng-04.png
 
