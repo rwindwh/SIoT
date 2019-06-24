@@ -121,26 +121,7 @@
   * 提供WIFI的路由器或手机热点可以不连接互联网，因为使用SIoT实现物联网应用时，只需要使用路由器或手机热点建立一个局域网即可。
 
 *STEP3 获取电脑IP*
-
-   电脑每次连接WIFI，都会生成一个IP地址，每个IP地址所对应的电脑是唯一的。运行SIOT程序后会在电脑上建立一个SIOT服务器，其他设备要访问这个服务器，需要知道这个SIOT服务器所在电脑的IP地址。
-    
-   获取电脑IP的方法有很多，可在网页上搜索到，下面我们来介绍其中一种简易操作方法，通过以下3步获取电脑IP地址。
-
-1、同时按下键盘上“WIN”+“R”，弹出如下运行窗口。
-
-.. image:: ../image/zhangyu/Arduino/arduino-13.png
-
-2、输入“cmd”，点击确定，弹出小黑框。
-
-.. image:: ../image/zhangyu/Arduino/arduino-14.png
-
-.. image:: ../image/zhangyu/Arduino/arduino-15.png
-
-3、在小黑框中输入“ipconfig”，点击键盘“enter”，在小黑框中可以看到IP地址，如下图IP为192.168.9.191。
-
-.. image:: ../image/zhangyu/Arduino/arduino-16.png
-
-**注意：每次连接不同的WIFI，电脑的IP地址都可能会发生变化，需要通过上述方法重新获取。**
+    请参考本文档的“高级操作技巧”
 
 *STEP4 打开SIoT网页端*
 
