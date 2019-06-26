@@ -1,7 +1,7 @@
 ﻿SIOT简介
 =========================
     
-    SIOT是一个为中小学STEM教育定制的跨平台的开源MQTT服务器程序。其中，“S”是指科学（Science）、简单（Simple）的意思。SIOT重点关注物联网数据的收集和导出，我们可以利用SIOT所采集来的数据，对数据进行分析以及处理，最终实现数据的可视化。总之，SIOT是采集科学数据的最好选择之一。
+    SIoT是一个为中小学STEM教育定制的跨平台的开源MQTT服务器程序，S指科学（Science）、简单（Simple）的意思。SIoT重点关注物联网数据的收集和导出，还能够帮助中小学生理解物联网原理，并且能够基于物联网技术开发各种创意应用，是运用到“万物物联”教学中的最好选择之一。
 
 
 .. image:: ../image/zhangyu/Arduino/arduino-01.png
@@ -25,14 +25,7 @@
 .. image:: ../image/zhangyu/Arduino/arduino-03.png
 
 
-1.3 SIOT
----------------------
-
-    SIOT作为“虚谷物联”项目的核心软件，其功能是为了能够帮助中小学生理解物联网的原理，并且能够基于物联网技术开发各种创意的应用，让“物联网”不再是“高大上”的词汇，而是渗透到生活与学习中，更好地为人们提供便利。
-
-.. image:: ../image/zhangyu/Arduino/arduino-04.png 
-
-安装运行
+软件准备
 =========================
 
 2.1 SIOT软件下载
@@ -62,28 +55,7 @@
 
 .. image:: ../image/zhangyu/Arduino/arduino-06.png 
 
-2.4 Mind+软件安装
----------------------
-
-**2.4.1 安装软件**
-
-双击下载的文件完成软件安装。
-
-**2.4.2 安装驱动**
-
-*STEP1：打开Mind+软件，点击“教程”——“视频教程”打开教程。*
-
-.. image:: ../image/zhangyu/Arduino/arduino-07.png
-
-*STEP2：打开“安装驱动”视频教程。*
-   
-.. image:: ../image/zhangyu/Arduino/arduino-08.png
-
-*STEP3：根据视频悬浮窗中的教程，一键安装驱动，安装一次，一劳永逸。*
-
-.. image:: ../image/zhangyu/Arduino/arduino-09.png
-
-快速入门
+案例教程
 =========================
 
    本篇教程将以Win10系统为例，通过几个简单的程序案例，以Arduino Uno板为智能终端，分别介绍在Mind+软件中不同模式（实时模式和上传模式）下如何来运行SIOT。
@@ -91,19 +63,7 @@
 3.1 实时模式
 ---------------------
 
-**在实时模式下，按照是否连接Uno板，可分为两种情况。
-
-**3.1.1 实时模式，不连接Uno板**
-
-   在实时模式下不连接Uno板时，SIOT平台可与软件界面的舞台进行互动，也可加入相关角色进行交互。
-   
-   项目案例：在SIOT平台输入消息，舞台角色说出消息内容
-
-.. image:: ../image/zhangyu/Arduino/arduino-10.png
-
-   项目实现步骤：如下STEP1-STEP9。
-   
-   如果是第一次使用SIoT，请严格按照以下步骤进行操作。
+项目案例1：在SIoT平台输入消息，控制点亮或熄灭Uno板的LED灯。
 
 *STEP1 运行SIoT系统*
    
@@ -154,71 +114,6 @@
 .. image:: ../image/zhangyu/Arduino/arduino-19.png
 
 * SIoT网页端账号、密码都是统一的。
-
-*STEP6 Mind+编程*
-
-实现功能：在SIoT平台输入消息，舞台角色说出消息内容。
-
-1、打开Mind+软件（1.5.5及以上版本），选择“实时模式”：
-
-.. image:: ../image/zhangyu/Arduino/arduino-20.png
-
-2、点击“扩展”：
-
-.. image:: ../image/zhangyu/Arduino/arduino-21.png
-
-3、选择“网络服务”，点选“MQTT服务”后点击“返回”：
-
-.. image:: ../image/zhangyu/Arduino/arduino-22.png
-
-4、编写程序：
-
-.. image:: ../image/zhangyu/Arduino/arduino-23.png
-
-5、设置MQTT初始化参数：
-
-.. image:: ../image/zhangyu/Arduino/arduino-24.png
-
-*STEP7 运行程序*
-
-点击绿旗或主程序运行程序，可以看到角色会先说“OK”2秒，再说“hello”2秒。
-
-说“OK”表示MQTT连接成功，说“hello”表示MQTT成功发送消息“hello”到Topic_0中。
-
-.. image:: ../image/zhangyu/Arduino/arduino-25.png
-
-*STEP8 在SIoT网页端查看消息*
-    
-打开SIoT网页端，点击“设备列表”，可以看到“项目ID”、“名称”对应为程序中自定义Topic_0的信息。
-
-.. image:: ../image/zhangyu/Arduino/arduino-26.png
-
-点击“查看消息”，在弹出窗口中可以看到设备的MQTT消息记录：
-
-.. image:: ../image/zhangyu/Arduino/arduino-27.png
-
-如上图，为程序中对Topic：“arduino/a”的消息记录，可看到消息内容和发送时间。
-
-*STEP9 项目功能实现：在SIoT平台输入消息，舞台角色说出消息内容*
-
-例如：在“发送消息”栏发送“你好啊”，舞台角色对应说出“你好啊”。
-
-.. image:: ../image/zhangyu/Arduino/arduino-28.png
-.. image:: ../image/zhangyu/Arduino/arduino-29.png
-
-    至此就完成了在Mind+实时模式下SIoT与舞台的互动啦，但是所谓物联网，不连接外部硬件设备到物联网平台，又怎么能体现出它的优势呢！所以接下来，让我们通过加入Uno板一起来体验SIoT对硬件的控制。
-
-**3.1.2 实时模式，连接Uno板**
-
-    在Mind+实时模式下，加入Uno板，SIoT平台可以采集Uno板上传感器的数据，也可以控制Uno板的声、光、动输出、
-
-    项目案例：在SIoT平台输入消息，控制点亮或熄灭Uno板的LED灯。
-
-.. image:: ../image/zhangyu/Arduino/arduino-30.png
-
-    项目实现步骤：STEP1-STEP8。
-
-*STEP1-5与3.1.1相同*
     
 *STEP6 连接Uno板*
 
@@ -258,19 +153,14 @@
 3.2 上传模式
 ---------------------
 
-   想象一下，将Uno板应用在家庭物联网中：使用温度传感器进行测量房间内的温度，并将其与Uno板进行连接，并上传到SIoT中，结果将以数值与折线图的形式展现，便于主人监测数据。要如何用程序实现呢？
-
-   在3.1.2中，在Mind+实时模式下只能实时控制一块Uno板，如何在控制Uno板的同时进行温度测量呢？
-
-   Mind+的上传模式是一个很好的选择，让我们一起来学习如何实现。
-
-   实现步骤：STEP1-STEP8。
+   本教程将Uno板应用在家居物联网中，将温度传感器与Uno板连接，用于采集室内的温湿度数据，并将数据上传到SIoT中，结果将以数值与折线图的形式展现，便于主人监测室内温湿度的变化情况。
+   
+   实现步骤共分为STEP1-STEP8，其中STEP1-5与3.1相同。
 
    所需材料：Uno板，温度传感器，OBLOQ物联网模块（模块介绍详见4.3.2）。
 
-* 因为Uno板在SIoT需要通过物联网采集数据，但是Uno板不具备物联网通讯功能，因此需要借助OBLOQ物联网模块。
+* 注意：因为Uno板在SIoT需要通过物联网采集数据，但是Uno板不具备物联网通讯功能，因此需要借助OBLOQ物联网模块。
 
-*STEP1-5与3.1.1相同*
     
 *STEP6 Mind+软件设置*
     
@@ -315,7 +205,7 @@ OBLOQ模块：TX、RX、GND和VIN引脚分别连接到D10、D11、GND和VCC引�
 
    Uno板在下载完程序后，OBLOQ物联网模块指示灯显示为绿色，表示成功与Uno板连接成功正常工作。
 
-程序运行时，若无法连接OBLOQ物联网模块（指示灯不为绿色），先检查参数有没有填错，例如ip错误、Topic中有没有斜杠，依旧无法连接的话，可尝试关闭电脑防火墙，重新上传程序；若依旧不成功需要查看OBLOQ模块的接线对应的管脚是否连接正确。
+   程序运行时，若无法连接OBLOQ物联网模块（指示灯不为绿色），先检查参数有没有填错，例如ip错误、Topic中有没有斜杠，依旧无法连接的话，可尝试关闭电脑防火墙，重新上传程序；若依旧不成功需要查看OBLOQ模块的接线对应的管脚是否连接正确。
 
    打开SIoT网页端，可以在“设备列表”下看到对应的Topic信息。
    
@@ -357,7 +247,7 @@ OBLOQ模块：TX、RX、GND和VIN引脚分别连接到D10、D11、GND和VCC引�
 
 
 
-4.3 小贴士-服务器信息
+4.3 小贴士服务器信息
 ---------------------
 
 **4.3.1 服务器信息**
