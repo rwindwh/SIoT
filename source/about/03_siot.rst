@@ -53,7 +53,7 @@ SIoT下载地址
 
 | https://github.com/vvlink/SIoT/
 
-最新版本1.0。
+最新版本1.1。
 
     1.Win64位，支持Win10，Win8，Win7等64位系统。
 
