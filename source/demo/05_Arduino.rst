@@ -1,168 +1,31 @@
-﻿SIOT简介
+Arduino
 =========================
+    Arduino是一款便捷灵活、方便上手的开源电子原型平台。在创客眼里，Arduino是一个造物的神器，基于Arduino设计的创客作品不计其数。
     
-    SIoT是一个为中小学STEM教育定制的跨平台的开源MQTT服务器程序，S指科学（Science）、简单（Simple）的意思。SIoT重点关注物联网数据的收集和导出，还能够帮助中小学生理解物联网原理，并且能够基于物联网技术开发各种创意应用，是运用到“万物物联”教学中的最好选择之一。
-
-
-.. image:: ../image/zhangyu/Arduino/arduino-01.png
-
-
-那么，什么是物联网，什么又是MQTT呢？
-
-1.1 物联网
----------------------
-
-    物联网（Internet of Things，缩写IOT）是互联网的一个延伸，互联网的终端是计算机（PC、服务器），而物联网的终端是硬件设备，无论是家电、工业设备、汽车、监测仪器，都可以作为物联网的硬件终端设备，且可以进行互联，可以总结为万物互联。
-
-.. image:: ../image/zhangyu/Arduino/arduino-02.png
-
-1.2 MQTT
----------------------
-
-    MQTT（Message Queuing Telemetry Transport，消息队列遥测传输协议）是一个基于客户端-服务器的消息发布/订阅传输协议，能够让极有限的内存设备和网络宽带很低的网络实现通信的功能，非常适合物联网通信。
-    MQTT协议是轻量、简单、开放和易于实现的，这些特点使它适用范围非常广泛。
-
-.. image:: ../image/zhangyu/Arduino/arduino-03.png
-
-
-软件准备
-=========================
-
-2.1 SIOT软件下载
----------------------
-
-   下载地址：http://mindplus.dfrobot.com.cn/siot
-   
-   根据自己电脑的系统，对应下载SIOT软件压缩包，例如Windows系统下载win32。
-
-2.2 SIOT软件准备
----------------------
-
-    SIOT是一个绿色软件，将下载的压缩包解压并打开即可。
-
-.. image:: ../image/zhangyu/Arduino/arduino-05.png 
-
-   由于Mind+目前只支持Windows下Win7及以上的版本，本篇教程将以SIOT_win32为例，讲述如何使用Mind+软件以及SIOT服务器的相关操作。
-   
-2.3 Mind+软件下载
----------------------
-
-    Mind+是一款基于Scratch3.0开发的青少年编程软件，支持arduino、micro:bit、Uno板等多种开源硬件。使用mind+时，只需要拖动图形化程序块即可完成编程，还可以使用python/c/c++等高级编程语言，让大家轻松体验创造的乐趣。
-    
-   下载地址：http://mindplus.cc
-   
-**本教程使用的是Mind+1.5.5版本软件**
-
-.. image:: ../image/zhangyu/Arduino/arduino-06.png 
-
-案例教程
-=========================
-
-   本篇教程将以Win10系统为例，通过几个简单的程序案例，以Arduino Uno板为智能终端，分别介绍在Mind+软件中不同模式（实时模式和上传模式）下如何来运行SIOT。
-
-3.1 实时模式
----------------------
-
-项目案例1：在SIoT平台输入消息，控制点亮或熄灭Uno板的LED灯。
-
-*STEP1 运行SIoT系统*
-   
-  双击运行SIoT_win.exe，可以看到一个黑色的cmd窗口。
-
-  **注意：在接下来的使用过程中，不能关闭该窗口。**
-
-.. image:: ../image/zhangyu/Arduino/arduino-11.png
-.. image:: ../image/zhangyu/Arduino/arduino-12.png
-
-*STEP2 电脑连接WIFI*
-
-  将电脑连接到WIFI。
-
-  * 提供WIFI的路由器或手机热点可以不连接互联网，因为使用SIoT实现物联网应用时，只需要使用路由器或手机热点建立一个局域网即可。
-
-*STEP3 获取电脑IP*
-    请参考本文档的“高级操作技巧”
-
-*STEP4 打开SIoT网页端*
-
-1、打开电脑浏览器，在网址栏中输入在“STEP3”中获得的IP地址加上“:8080/”，如：192.168.9.191:8080/
-
-* “:” 需在在英文输入法下输入。
-
-.. image:: ../image/zhangyu/Arduino/arduino-17.png
-
-2、点击键盘enter键，打开即为SIoT网页端，如下图：
-
-.. image:: ../image/zhangyu/Arduino/arduino-18.png
-
-3、打不开怎么办？
-
-￭ 检查siot的小黑窗是否打开
-
-￭ 检查ip地址是否错误，如果有多个ip地址就一个一个尝试
-
-￭ 关闭网络防火墙
-
-*STEP5 登陆SIoT网页端*
-
-账号：siot
-
-密码：dfrobot
-
-输入账号、密码后，点击“登陆”，登陆后页面如下：
-
-.. image:: ../image/zhangyu/Arduino/arduino-19.png
-
-* SIoT网页端账号、密码都是统一的。
-    
-*STEP6 连接Uno板*
-
-   将Uno板通过USB线连接到电脑，在Mind+中“连接设备”下点击对应COM口。
-
 .. image:: ../image/zhangyu/Arduino/arduino-30.png
-
-在连接设备前可看到提示“未连接设备”。连接成功后，可看到对应COM口和提示“设备连接成功”。             。
-
-.. image:: ../image/zhangyu/Arduino/arduino-31.png
-
-*STEP7 修改程序*
     
-1、在“扩展”中“主控板”下选择“Uno板”：
+    Arduino自身没有网络模块，需要借助Wi-Fi模块才能连接网络。本教程以DFrobot出品的OBLOQ模块为例，介绍Arduino和SIoT的交互。
 
-.. image:: ../image/zhangyu/Arduino/arduino-32.png
+OBLOQ模块介绍
+--------------------------
 
-2、程序修改如下：
+    OBLOQ是一款基于ESP8266设计的串口转WIFI物联网模块，用以接收和发送物联网信息。接口简单，即插即用，适用于3.3V~5V的控制系统。OBLOQ物联网模块当没有连接wifi的时候，OBLOQ指示灯显示红色，正在连接wifi时显示蓝色，连接到wifi后，OBLOQ指示灯显示绿色。
+    
+OBLOQ物联网模块引脚说明：
 
-.. image:: ../image/zhangyu/Arduino/arduino-33.png
-
-*STEP8 功能实现*
-
-发送“on”，灯亮；发送“off”，灯灭。
-
-.. image:: ../image/zhangyu/Arduino/arduino-34.png
-
-.. image:: ../image/zhangyu/Arduino/arduino-35.png
-
-.. image:: ../image/zhangyu/Arduino/arduino-36.png
-
-.. image:: ../image/zhangyu/Arduino/arduino-37.png
-
-
-
-
-3.2 上传模式
----------------------
+.. image:: ../image/zhangyu/Arduino/arduino-51.png
+   
+典型案例
+--------------------------
 
    本教程将Uno板应用在家居物联网中，将温度传感器与Uno板连接，用于采集室内的温湿度数据，并将数据上传到SIoT中，结果将以数值与折线图的形式展现，便于主人监测室内温湿度的变化情况。
    
-   实现步骤共分为STEP1-STEP8，其中STEP1-5与3.1相同。
-
    所需材料：Uno板，温度传感器，OBLOQ物联网模块（模块介绍详见4.3.2）。
-
-* 注意：因为Uno板在SIoT需要通过物联网采集数据，但是Uno板不具备物联网通讯功能，因此需要借助OBLOQ物联网模块。
+   
+   使用软件：Mind+
 
     
-*STEP6 Mind+软件设置*
+*STEP1 Mind+软件设置*
     
    1、打开Mind+软件（1.5.5及以上版本），选择“上传模式”：
 
@@ -176,7 +39,7 @@
 
 .. image:: ../image/zhangyu/Arduino/arduino-40.png
 
-*STEP7硬件连线图*
+*STEP2硬件连线图*
 
 OBLOQ模块：TX、RX、GND和VIN引脚分别连接到D10、D11、GND和VCC引脚。
 
@@ -186,7 +49,7 @@ OBLOQ模块：TX、RX、GND和VIN引脚分别连接到D10、D11、GND和VCC引�
 
 .. image:: ../image/zhangyu/Arduino/arduino-41.png
 
-*STEP8编写程序*
+*STEP3编写程序*
 
 .. image:: ../image/zhangyu/Arduino/arduino-42.png
 .. image:: ../image/zhangyu/Arduino/arduino-43.png
@@ -201,7 +64,7 @@ OBLOQ模块：TX、RX、GND和VIN引脚分别连接到D10、D11、GND和VCC引�
 
    点击“上传到设备”将程序下载到Uno板中。	
 
-*STEP9功能实现*
+*STEP4功能实现*
 
    Uno板在下载完程序后，OBLOQ物联网模块指示灯显示为绿色，表示成功与Uno板连接成功正常工作。
 
@@ -226,17 +89,10 @@ OBLOQ模块：TX、RX、GND和VIN引脚分别连接到D10、D11、GND和VCC引�
 同理，发送消息“OFF”，可以看到Uno板子的LED被点亮。
 
 
-
-
-教程总结
+其他说明
 =========================
 
-4.1 SIOT操作流程汇总
----------------------
-
-.. image:: ../image/zhangyu/Arduino/arduino-49.png
-
-4.2 物联网框图
+物联网框图
 ---------------------
 
 以路由器建立无线局域网为例，通过下面这张图可以说明SIoT的作用原理。
@@ -246,35 +102,7 @@ OBLOQ模块：TX、RX、GND和VIN引脚分别连接到D10、D11、GND和VCC引�
 .. image:: ../image/zhangyu/Arduino/arduino-50.png
 
 
-
-4.3 小贴士服务器信息
----------------------
-
-**4.3.1 服务器信息**
-
-SIoT启动后，你的计算机就成为了一个标准的SIoT服务器，使用任何一款SIoT客户端程序就可以访问。
-
-￭ 服务器地址：计算机局域网IP地址
-
-￭ SIoT端口：1883
-
-￭ 用户名：siot（小写）
-
-￭ 默认密码：dfrobot（小写）
-
-￭ 消息主题（Topic）：项目名/设备名（可以自定义，中间的“/”为英文输入法且不可缺少。）
-
-￭ Web管理地址：http://计算机IP:8080
-
-
-
-**4.3.2 OBLOQ模块介绍**
-
-    OBLOQ是一款基于ESP8266设计的串口转WIFI物联网模块，用以接收和发送物联网信息。接口简单，即插即用，适用于3.3V~5V的控制系统。OBLOQ物联网模块当没有连接wifi的时候，OBLOQ指示灯显示红色，正在连接wifi时显示蓝色，连接到wifi后，OBLOQ指示灯显示绿色。
-    
-OBLOQ物联网模块引脚说明：
-
-.. image:: ../image/zhangyu/Arduino/arduino-51.png
+**小提示**
 
 OBLOQ物联网模块在使用中的常见问题：
 
