@@ -13,7 +13,7 @@ OBLOQ模块介绍
     
 OBLOQ物联网模块引脚说明：
 
-.. image:: ../image/zhangyu/Arduino/arduino-42.png
+.. image:: ../image/demo/obloq.png
 
 
 关于OBLOQ物联网模块的介绍：
@@ -23,7 +23,7 @@ http://www.dfrobot.com.cn/goods-1577.html
 典型案例
 --------------------------
 
-   本教程将Uno板应用在家居物联网中，将温度传感器与Uno板连接，用于采集室内的温湿度数据，并将数据上传到SIoT中，结果将以数值与折线图的形式展现，便于主人监测室内温湿度的变化情况。
+   本案例将Uno板应用在家居物联网中，将温度传感器与Uno板连接，用于采集室内的温湿度数据，并将数据上传到SIoT中，结果将以数值与折线图的形式展现，便于主人监测室内温湿度的变化情况。
    
    所需材料：Uno板，温度传感器，OBLOQ物联网模块
    
@@ -49,6 +49,8 @@ http://www.dfrobot.com.cn/goods-1577.html
 OBLOQ模块：TX、RX、GND和VIN引脚分别连接到D10、D11、GND和VCC引脚。
 
 温度传感器LM35：A0引脚。
+
+.. image:: ../image/zhangyu/Arduino/arduino-42.png
 
 可通过修改程序来自定义相关引脚。
 
@@ -129,5 +131,6 @@ OBLOQ模块的常见问题
 
 表示OBLOQ的wifi连接不成功，尝试检查是否tx和rx接反了（调换一下tx和rx接线顺序），或者是wifi有问题（使用手机开热点，不要用中文WIFI名称），然后就是参数有没有填错（物联网网站里面的参数）。 
 
-
+需要了解更多细节请参考：
+http://mc.dfrobot.com.cn/thread-281129-1-1.html
 
