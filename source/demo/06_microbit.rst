@@ -56,14 +56,14 @@ STEP2 Mind+软件设置
 
 STEP3 编写程序
 
+   请参考如下代码。
  
   .. image:: ../image/demo/microbit/image004.png
 
 
+**注意**：需要正确填写Wi-Fi的名称和密码，还有SIoT的IP，用户名和密码。
 
-	**注意**：需要正确填写Wi-Fi的名称和密码。
-
-代码说明：通过网页端发送“a”、“b”和“c”到Topic_0，点亮LED、关闭LED以及LED灯进行闪烁。
+代码说明：通过网页端发送“a”、“b”和“c”到Topic_0（“micro:bit/a”），点亮LED、关闭LED以及LED灯进行闪烁。
 
 点击“上传到设备”，将程序下载到micro:bit板中。
 
@@ -75,7 +75,7 @@ micro:bit板在下载完程序后，OBLOQ物联网模块指示灯显示为绿色
 
 * 程序运行时，若无法连接OBLOQ物联网模块（指示灯不为绿色），先检查参数有没有填错，例如ip错误、Topic中有没有斜杠，依旧无法连接的话，可尝试关闭电脑防火墙，重新上传程序；若依旧不成功需要查看OBLOQ模块的接线对应的管脚是否连接正确。
 
-打开SIoT网页端，可以在“设备列表”下看到对应的Topic信息。
+打开SIoT网页端，可以在“设备列表”下看到对应的Topic信息("micro:bit")。
 
   .. image:: ../image/demo/microbit/image005.png
 
