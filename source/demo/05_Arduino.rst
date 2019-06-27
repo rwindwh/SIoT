@@ -52,8 +52,6 @@ OBLOQ模块：TX、RX、GND和VIN引脚分别连接到D10、D11、GND和VCC引�
 
 可通过修改程序来自定义相关引脚。
 
-.. image:: ../image/zhangyu/Arduino/arduino-42.png
-
 *STEP3编写程序*
 
 .. image:: ../image/zhangyu/Arduino/arduino-43.png
