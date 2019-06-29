@@ -24,7 +24,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="8. Python" href="08_Python.html" />
-    <link rel="prev" title="6. micro:bit+OBloq" href="06_microbit.html" />
+    <link rel="prev" title="6. micro:bit" href="06_microbit.html" />
    
   <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
   
@@ -42,24 +42,22 @@
             
   <div class="section" id="app-inventor2">
 <h1>7. App Inventor2<a class="headerlink" href="#app-inventor2" title="Permalink to this headline">¶</a></h1>
-<p>　　我们可以通过App Inventor2来实现手机和SIoT之间的通信，从而实现控制掌控板等。</p>
-<div class="section" id="id1">
-<h2>7.1. App Inventor2简介<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
-<p>　　从影音播放、社交网络、聊天通讯、日常生活、办公学习、拍照、美图甚至网购支付等，Android系统的应用已经深入到我们生活中的点点滴滴。那么，你是否萌生过这样的念头：亲自动手制作一个手机应用程序，然后和家人、朋友甚至全世界的人一起分享你的应用程序。或许你底气不足，想到编程就头皮发痒。其实你无需担心，App Inventor 2为零基础代码的人们带来了福音。</p>
-<p>　　App Inventor 2是一个基于云端的，以图形化形式编程的手机应用程序开发环境。它将枯燥的代码编程方式转变为积木式的图形化编程，同时不同功能代码的积木颜色也不同，这使手机应用程序的开发变得简单而有趣。即使不懂得编程语言的人，也可以开发出属于自己的手机应用程序。</p>
-<p>　　最初的App Inventor 由Google实验室于2010年7月推出的，2011年8月对外开放源代码。随后交由麻省理工学院移动学习中心（The MIT Centre for Mobile Learning）开发，于2012年3月对外开放使用，并更名为MIT App Inventor 2。2013年12月3日，App Inventor 2 （简称AI2）问世，其新版主页口号是“Your idea, Your design, Your apps, Invent Now”。之前的版本称为App Inventor  Classic或者App Inventor 1，版本之间并不兼容。</p>
-<p>　　与App Inventor 1相比 ，App Inventor 2的最大优势在于其用Blockly取代了原来的积木编辑器。Blockly是Google发布的完全可视化的编程语言，类似MIT的儿童编程语言Scratch，并且可以很好地在浏览器端运行在浏览器里。无需其他准备，不需要任何准备，打开浏览器你就可以通过类似玩乐高玩具的方式，把一块块图形对象拼接起来构建出应用程序。</p>
-<p>　　2014年9月14日，MIT推出了App Inventor 2中文版本（含简体和繁体）。10月，在华南理工大学和美国麻省理工学院的直接支持下，广州市教育信息中心部署了国内首台App Inventor 2全功能镜像服务器。广州市教育信息中心的App Inventor 2平台取消诸多限制，界面更加友好，一经推广就受到广大好评,目前已经成为全国的App Inventor 2主要的应用中心。</p>
+<blockquote>
+<div>App Inventor 2是一个基于云端的，以图形化形式编程的手机应用程序开发环境。它将枯燥的代码编程方式转变为积木式的图形化编程，同时不同功能代码的积木颜色也不同，这使手机应用程序的开发变得简单而有趣。即使不懂得编程语言的人，也可以开发出属于自己的手机应用程序。</div></blockquote>
 <p>　　广州市教育信息中心的App Inventor 2服务器地址：<a class="reference external" href="http://app.gzjkw.net">http://app.gzjkw.net</a>。</p>
-</div>
-<div class="section" id="id2">
-<h2>7.2. 编程步骤<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<p><strong>编程准备</strong></p>
-<p>1.注册一个物联网平台账号，本案例以DFrobot公司搭建的EasyIot平台（网址：<a class="reference external" href="http://iot.dfrobot.com.cn">http://iot.dfrobot.com.cn</a>）为例进行示范。</p>
+<blockquote>
+<div>我们可以通过App Inventor2来实现手机和SIoT之间的通信，从而实现以MQTT的方式和智能终端互联。</div></blockquote>
+<div class="section" id="id1">
+<h2>7.1. 准备工作<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p>1.本案例以SIoT本地物联网平台为例进行示范(SIoT下载地址：<a class="reference external" href="https://github.com/vvlink/SIoT/tree/master/software/SIoT1.1">https://github.com/vvlink/SIoT/tree/master/software/SIoT1.1</a>)。</p>
+<blockquote>
+<div>朋友们也可以注册一个物联网平台账号进行更远距离的控制，在线版物联网平台推荐：DFrobot公司搭建的EasyIot平台（网址：<a class="reference external" href="http://iot.dfrobot.com.cn">http://iot.dfrobot.com.cn</a>）。</div></blockquote>
 <p>2.在广州市教育技术中心的App Inventor2服务器上注册一个账号，服务器网址为：<a class="reference external" href="http://app.gzjkw.net">http://app.gzjkw.net</a>。</p>
 <p>3.下载安装mind+1.5.5版本的编程软件或mpythonX 0.3.1以上的版本。</p>
 <p>4.准备一块掌控板、一根micro口数据线、一台电脑。</p>
-<p><strong>案例：手机App控制掌控板全彩LED灯</strong></p>
+</div>
+<div class="section" id="led">
+<h2>7.2. 案例：手机控制掌控板全彩LED灯<a class="headerlink" href="#led" title="Permalink to this headline">¶</a></h2>
 <p>1.手机APP端编程(工具平台：AppInventor2)：</p>
 <p>组件设计-setting屏幕组件设计图</p>
 <img alt="../_images/07_appInventor-01.png" src="../_images/07_appInventor-01.png" />
@@ -79,10 +77,19 @@
 <img alt="../_images/07_appInventor-12.png" src="../_images/07_appInventor-12.png" />
 <img alt="../_images/07_appInventor-13.png" src="../_images/07_appInventor-13.png" />
 <img alt="../_images/07_appInventor-14.png" src="../_images/07_appInventor-14.png" />
-<p>2.掌控板端编程(工具平台：mind+1.5.5)：</p>
+<p>2.本地物联网平台SIoT的运行并创建设备与主题：</p>
+<p>1）运行SIoT本地物联网平台：</p>
+<img alt="../_images/07_appInventor-18.png" src="../_images/07_appInventor-18.png" />
+<img alt="../_images/07_appInventor-19.png" src="../_images/07_appInventor-19.png" />
+<p>2）登录SIoT，并创建项目（App）与主题（lightCtr）：</p>
+<img alt="../_images/07_appInventor-20.png" src="../_images/07_appInventor-20.png" />
+<img alt="../_images/07_appInventor-21.png" src="../_images/07_appInventor-21.png" />
+<img alt="../_images/07_appInventor-22.png" src="../_images/07_appInventor-22.png" />
+<p>3.掌控板端编程(工具平台：mind+1.5.5)：</p>
 <img alt="../_images/07_appInventor-15.png" src="../_images/07_appInventor-15.png" />
-<img alt="../_images/07_appInventor-16.png" src="../_images/07_appInventor-16.png" />
+<img alt="../_images/07_appInventor-23.png" src="../_images/07_appInventor-23.png" />
 <img alt="../_images/07_appInventor-17.png" src="../_images/07_appInventor-17.png" />
+<p>4.案例下载地址：<a class="reference external" href="https://github.com/vvlink/SIoT/tree/master/examples/Appinventor/%E7%89%A9%E8%81%94%E7%BD%91%E5%85%89%E7%BA%BF%E6%8E%A7%E5%88%B6">https://github.com/vvlink/SIoT/tree/master/examples/Appinventor/%E7%89%A9%E8%81%94%E7%BD%91%E5%85%89%E7%BA%BF%E6%8E%A7%E5%88%B6</a></p>
 </div>
 </div>
 
@@ -110,15 +117,17 @@
 <li class="toctree-l2"><a class="reference internal" href="02_Node-RED.html">2. Node-RED</a></li>
 <li class="toctree-l2"><a class="reference internal" href="03_Mindplus.html">3. Mind plus</a></li>
 <li class="toctree-l2"><a class="reference internal" href="04_mPython.html">4. 掌控板（mPython）</a></li>
-<li class="toctree-l2"><a class="reference internal" href="05_Arduino.html">5. Arduino+OBloq</a></li>
-<li class="toctree-l2"><a class="reference internal" href="06_microbit.html">6. micro:bit+OBloq</a></li>
+<li class="toctree-l2"><a class="reference internal" href="05_Arduino.html">5. Arduino</a></li>
+<li class="toctree-l2"><a class="reference internal" href="06_microbit.html">6. micro:bit</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">7. App Inventor2</a></li>
 <li class="toctree-l2"><a class="reference internal" href="08_Python.html">8. Python</a></li>
 <li class="toctree-l2"><a class="reference internal" href="09_Processing.html">9. Processing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="10_other.html">10. 其他软件</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../case/index.html">典型应用案例</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../advanced/index.html">高级操作技巧</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../attach/index.html">附录</a></li>
 </ul>
 
 <div class="relations">
@@ -126,7 +135,7 @@
 <ul>
   <li><a href="../index.html">Documentation overview</a><ul>
   <li><a href="index.html">客户端连接范例</a><ul>
-      <li>Previous: <a href="06_microbit.html" title="previous chapter">6. micro:bit+OBloq</a></li>
+      <li>Previous: <a href="06_microbit.html" title="previous chapter">6. micro:bit</a></li>
       <li>Next: <a href="08_Python.html" title="next chapter">8. Python</a></li>
   </ul></li>
   </ul></li>

@@ -15,3 +15,4 @@
     demo/index
     case/index
     advanced/index
+    attach/index

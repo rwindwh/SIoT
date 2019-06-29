@@ -46,28 +46,40 @@
 <div class="section" id="siot">
 <h2>4.1. 运行SIoT系统：<a class="headerlink" href="#siot" title="Permalink to this headline">¶</a></h2>
 <p>双击运行SIoT_win.exe，将看到一个黑色的CMD窗口，不要关闭它。</p>
-<img alt="../_images/setup.PNG" src="../_images/setup.PNG" />
+<img alt="../_images/02_run_02.png" src="../_images/02_run_02.png" />
 </div>
 <div class="section" id="mpythonx">
 <h2>4.2. 编写程序（mPythonX）<a class="headerlink" href="#mpythonx" title="Permalink to this headline">¶</a></h2>
 <p>打开mPythonX，编写如下代码。</p>
-<img alt="../_images/04_quick_02.png" src="../_images/04_quick_02.png" />
+<img alt="../_images/04_quick_05.png" src="../_images/04_quick_05.png" />
 <p><strong>说明</strong>：</p>
 <blockquote>
 <div><ul class="simple">
 <li>请确保掌控板和电脑连接的是同一个无线路由器，可以相互访问。</li>
 <li>“mpythonx/001”表示项目名称为“mpythonx”，设备名称为“001”。</li>
+<li>服务器地址就是运行siot的电脑的ip地址，可以运行cmd，输入ipconfig获取</li>
 </ul>
 </div></blockquote>
 <p>给掌控板写入程序并且运行。</p>
-<p>重新启动掌控板，等屏幕显示IP地址后，按下“A”键，看看屏幕下方是否出现了“A”。</p>
+<p>重新启动掌控板，等屏幕显示IP地址后，是否会出现“mqtt-ok”。</p>
 </div>
 <div class="section" id="web">
 <h2>4.3. Web管理<a class="headerlink" href="#web" title="Permalink to this headline">¶</a></h2>
-<p>打开网址：<a class="reference external" href="http://127.0.0.1">http://127.0.0.1</a>:8080（或者使用电脑的IP地址）。</p>
-<p>输入用户名“siot”和密码“dfrobot”，就可以看到项目列表中多了“mpythonx”。</p>
-<p>在名称为“001”设备消息中，可以看到掌控板发送过来的信息“A”了。</p>
-<img alt="../_images/04_quick_04.png" src="../_images/04_quick_04.png" />
+<p>打开网址：localhost：8080（或者使用电脑的IP地址）。</p>
+<p>输入用户名“siot”和密码“dfrobot”，就可以看到项目列表中多了&quot;yy&quot;</p>
+<p>在名称为“yy”设备消息中，当按下“A”键时，在网页端就可以接收到“0”，按下“B”键，可以接收到“1”。</p>
+<img alt="../_images/04_quick_06.png" src="../_images/04_quick_06.png" />
+<p>在名称为“yy”设备消息中，当发送“01”时，就可以控制掌控板的红灯亮；发送“02”时，就可以控制掌控板亮绿灯；发送“03”时，控制掌控板亮蓝灯；发送“00”，控制掌控板灯熄灭。</p>
+<img alt="../_images/04_quick_07.png" src="../_images/04_quick_07.png" />
+</div>
+<div class="section" id="id2">
+<h2>4.4. 故障排查<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>如果接收不到数据，请关闭运行SIoT服务器的电脑的各种病毒防火墙或者网络防火墙（安全卫士）。</p>
+<p>在其他电脑使用mqtt的工具测试SIoT，推荐MqttTool（一个测试mqtt的软件，只有100k不到。）</p>
+<ul class="simple">
+<li>GitHub地址：<a class="reference external" href="https://github.com/vvlink/SIoT/tree/master/MQTT%20tools/Mqtttool">https://github.com/vvlink/SIoT/tree/master/MQTT%20tools/Mqtttool</a></li>
+<li>下载地址：<a class="reference external" href="https://github.com/vvlink/SIoT/tree/master/MQTT%20tools/Mqtttool">https://github.com/vvlink/SIoT/tree/master/MQTT%20tools/Mqtttool</a></li>
+</ul>
 </div>
 </div>
 
@@ -99,6 +111,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../demo/index.html">客户端连接范例</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../case/index.html">典型应用案例</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../advanced/index.html">高级操作技巧</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../attach/index.html">附录</a></li>
 </ul>
 
 <div class="relations">

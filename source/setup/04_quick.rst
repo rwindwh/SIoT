@@ -49,3 +49,8 @@ Web管理
 
 如果接收不到数据，请关闭运行SIoT服务器的电脑的各种病毒防火墙或者网络防火墙（安全卫士）。
 
+在其他电脑使用mqtt的工具测试SIoT，推荐MqttTool（一个测试mqtt的软件，只有100k不到。）
+
+- GitHub地址：https://github.com/vvlink/SIoT/tree/master/MQTT%20tools/Mqtttool
+- 下载地址：https://github.com/vvlink/SIoT/tree/master/MQTT%20tools/Mqtttool
+

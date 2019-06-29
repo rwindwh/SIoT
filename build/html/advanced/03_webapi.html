@@ -42,46 +42,44 @@
             
   <div class="section" id="webapi">
 <h1>3. WebAPI<a class="headerlink" href="#webapi" title="Permalink to this headline">¶</a></h1>
-<p>SIoT提供了一系列的WebAPI，供用户调用。</p>
+<p>SIoT提供了一系列的WebAPI，供用户调用。一些不支持MQTT的编程语言，如VB、S4A等，可以通过HTTP的形式和SIoT进行互动。</p>
+<p>需要强调的是，HTTP的请求/应答方式的会话都是客户端发起的，缺乏服务器通知客户端的机制，如果要获取服务器信息，客户端应用需要不断地轮询服务器。这也就是在物联网方面，MQTT比HTTP更受欢迎的原因。</p>
 <div class="section" id="api">
 <h2>3.1. API列表：<a class="headerlink" href="#api" title="Permalink to this headline">¶</a></h2>
 <blockquote>
+<div><blockquote>
 <div><ul class="simple">
 <li>发布消息</li>
 </ul>
-</div></blockquote>
 <p><a class="reference external" href="Http:/">Http:/</a>/[SIoT的IP]:8080/publish?topic=xzr/001&amp;msg=on&amp;iname=siot&amp;ipwd=dfrobot</p>
-<p><strong>说明</strong>：发送topicid（主题）“xzr/001”发送内容为“on”的消息，其中“xzr”是项目id，“001”是设备id。</p>
-<p>{&quot;code&quot;:1,&quot;msg&quot;:&quot;数据已发送&quot;}</p>
-<blockquote>
-<div><ul class="simple">
+<p><strong>说明</strong>：向topicid（主题）“xzr/001”发送内容为“on”的消息，其中“xzr”是项目id，“001”是设备id。</p>
+<p>返回数据：{&quot;code&quot;:1,&quot;msg&quot;:&quot;数据已发送&quot;}</p>
+<ul class="simple">
 <li>获取最新数据</li>
 </ul>
-</div></blockquote>
 <p><a class="reference external" href="Http:/">Http:/</a>/[SIoT的IP]:8080/lastmessage?topic=xzr/001&amp;iname=siot&amp;ipwd=dfrobot</p>
-<p><strong>说明</strong>：未通过测试</p>
-<blockquote>
-<div><ul class="simple">
+<p><strong>说明</strong>：获取topicid（主题）“xzr/001”的最新一条消息</p>
+<p>返回数据：{&quot;code&quot;:1,&quot;data&quot;:[{&quot;ID&quot;:27,&quot;Topic&quot;:&quot;xzr/001&quot;,&quot;Content&quot;:&quot;11&quot;,&quot;Created&quot;:&quot;2019-06-06 11:55:39&quot;}],&quot;msg&quot;:&quot;成功&quot;}</p>
+<ul class="simple">
 <li>获取消息列表</li>
 </ul>
-</div></blockquote>
-<p><a class="reference external" href="Http:/">Http:/</a>/[SIoT的IP]:8080/messages?topic=xzr/001&amp;iname=siot&amp;ipwd=dfrobot&amp;pnum=1&amp;psize=10&amp;begin=2019-04-03&amp;end=2019-04-05</p>
-<p><strong>说明</strong>：未通过测试</p>
-<blockquote>
-<div><ul class="simple">
+<p><a class="reference external" href="Http:/">Http:/</a>/[SIoT的IP]:8080/topic=xzr/001&amp;iname=siot&amp;ipwd=dfrobot&amp;pnum=1&amp;psize=10&amp;begin=2019-04-03+00%3A00%3A00&amp;end=2019-06-07+00%3A00%3A00</p>
+<p><strong>说明</strong>：</p>
+<p>返回数据：{&quot;code&quot;:1,&quot;data&quot;:[{&quot;ID&quot;:26,&quot;Topic&quot;:&quot;xzr/001&quot;,&quot;Content&quot;:&quot;10&quot;,&quot;Created&quot;:&quot;2019-06-06 11:55:33&quot;},{&quot;ID&quot;:27,&quot;Topic&quot;:&quot;xzr/001&quot;,&quot;Content&quot;:&quot;11&quot;,&quot;Created&quot;:&quot;2019-06-06 11:55:39&quot;}],&quot;msg&quot;:&quot;成功&quot;}</p>
+<ul class="simple">
 <li>清除消息</li>
 </ul>
-</div></blockquote>
 <p><a class="reference external" href="Http:/">Http:/</a>/[SIoT的IP]:8080/clearmsg?topic=xzr/001&amp;iname=siot&amp;ipwd=dfrobot</p>
-<p><strong>说明</strong>：未通过测试</p>
+<p><strong>说明</strong>：删除topicid（主题）“xzr/001”的所有消息</p>
+</div></blockquote>
+<p>返回数据：{&quot;code&quot;:1,&quot;data&quot;:4,&quot;msg&quot;:&quot;成功清空消息&quot;}</p>
 <blockquote>
 <div><ul class="simple">
 <li>获取项目列表</li>
 </ul>
-</div></blockquote>
 <p><a class="reference external" href="Http:/">Http:/</a>/[SIoT的IP]:8080/projects?iname=siot&amp;ipwd=dfrobot</p>
-<p><strong>说明</strong>：测试通过</p>
-<p>&quot;code&quot;:1,&quot;data&quot;:[{&quot;ID&quot;:&quot;DFRobot&quot;,&quot;Description&quot;:&quot;一个项目中包含多个设备t&quot;,&quot;Created&quot;:1556265411},{&quot;ID&quot;:&quot;abc&quot;,&quot;Description&quot;:&quot;&quot;,&quot;Created&quot;:1556939389},{&quot;ID&quot;:&quot;xzr&quot;,&quot;Description&quot;:&quot;&quot;,&quot;Created&quot;:1556941184}],&quot;msg&quot;:&quot;成功&quot;}</p>
+<p><strong>说明</strong>：</p>
+<p>返回数据：&quot;code&quot;:1,&quot;data&quot;:[{&quot;ID&quot;:&quot;DFRobot&quot;,&quot;Description&quot;:&quot;一个项目中包含多个设备t&quot;,&quot;Created&quot;:1556265411},{&quot;ID&quot;:&quot;abc&quot;,&quot;Description&quot;:&quot;&quot;,&quot;Created&quot;:1556939389},{&quot;ID&quot;:&quot;xzr&quot;,&quot;Description&quot;:&quot;&quot;,&quot;Created&quot;:1556941184}],&quot;msg&quot;:&quot;成功&quot;}</p>
 <blockquote>
 <div><ul class="simple">
 <li>更新项目</li>
@@ -89,19 +87,17 @@
 </div></blockquote>
 <p><a class="reference external" href="Http:/">Http:/</a>/[SIoT的IP]:8080/updateprj?pid=xzr&amp;iname=siot&amp;ipwd=dfrobot&amp;desc=科学测量</p>
 <p><strong>说明</strong>：将名称为“xzr”的项目的备注修改为“科学测量”</p>
-<p>{&quot;code&quot;:1,&quot;msg&quot;:&quot;成功&quot;}</p>
+</div></blockquote>
+<p>返回数据： {&quot;code&quot;:1,&quot;msg&quot;:&quot;成功&quot;}</p>
 <blockquote>
 <div><ul class="simple">
 <li>获取设备列表</li>
 </ul>
-</div></blockquote>
 <p><a class="reference external" href="Http:/">Http:/</a>/[SIoT的IP]:8080/devices?pid=xzr&amp;iname=siot&amp;ipwd=dfrobot</p>
 <p><strong>说明</strong>：返回项目名称为“xzr”的设备列表。</p>
-<blockquote>
-<div><ul class="simple">
+<ul class="simple">
 <li>更新设备</li>
 </ul>
-</div></blockquote>
 <p><a class="reference external" href="Http:/">Http:/</a>/[SIoT的IP]:8080/updatedev?pid=xzr&amp;dname=001&amp;iname=siot&amp;ipwd=dfrobot&amp;desc=台灯控制</p>
 <p><strong>说明</strong>：将项目名称为“xzr”，设备名称为“001”的设备，备注修改为“台灯控制”（发现BUG）</p>
 <p>{&quot;code&quot;:1,&quot;msg&quot;:&quot;成功&quot;}</p>
@@ -111,10 +107,13 @@
 </ul>
 </div></blockquote>
 <p><a class="reference external" href="Http:/">Http:/</a>/[SIoT的IP]:8080/deldev?topic=xzr/001&amp;iname=siot&amp;ipwd=dfrobot</p>
-<p><strong>说明</strong>：未通过测试</p>
+<p><strong>说明</strong>：</p>
+<p>返回数据：{&quot;code&quot;:1,&quot;msg&quot;:&quot;删除成功&quot;}</p>
+</div></blockquote>
+</div></blockquote>
 </div>
 <div class="section" id="id1">
-<h2>3.2. 返回数据格式说明：<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<h2>3.2. 返回数据的通用格式说明：<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
 <dl class="docutils">
 <dt>{</dt>
 <dd>code = 1,
@@ -154,8 +153,10 @@ data = {}</dd>
 <li class="toctree-l2"><a class="reference internal" href="02_dataexport.html">2. 数据导出</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">3. WebAPI</a></li>
 <li class="toctree-l2"><a class="reference internal" href="04_plug-in.html">4. 扩展插件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="05_q_a.html">5. 常见问题解答</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../attach/index.html">附录</a></li>
 </ul>
 
 <div class="relations">

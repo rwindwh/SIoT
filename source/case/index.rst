@@ -14,6 +14,5 @@
     04_Remotecontrol
     05_play
     06_smartfarm
-    07_Appinventor
-    08_DragonboatRace
+    08_DragonboatRaces
     09_subtitles
