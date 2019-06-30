@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>3. Mind plus &mdash; SIoT使用手册 1.0 documentation</title>
+  <title>4. Mind plus &mdash; SIoT使用手册 1.0 documentation</title>
   
 
   
@@ -44,8 +44,8 @@
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="4. 掌控板（mPython）" href="04_mPython.html" />
-    <link rel="prev" title="2. Node-RED" href="02_Node-RED.html" /> 
+    <link rel="next" title="5. 掌控板（mPython）" href="04_mPython.html" />
+    <link rel="prev" title="3. Node-RED" href="02_Node-RED.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -97,21 +97,24 @@
 <li class="toctree-l1"><a class="reference internal" href="../about/index.html">简介</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../setup/index.html">安装和运行</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">客户端连接范例</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="01_tool.html">1. 常见MQTT客户端</a></li>
-<li class="toctree-l2"><a class="reference internal" href="02_Node-RED.html">2. Node-RED</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">3. Mind plus</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id1">3.1. 简介与安装</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id2">3.2. 编程步骤</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id3">3.3. 参考代码</a></li>
+<li class="toctree-l2"><a class="reference internal" href="01_tool_pc.html">1. 常见MQTT客户端（PC端）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="01_tool_phone.html">2. 常见MQTT客户端（手机端）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="02_Node-RED.html">3. Node-RED</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">4. Mind plus</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id1">4.1. Mind plus的安装</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id2">编程步骤</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id3">参考代码</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="04_mPython.html">4. 掌控板（mPython）</a></li>
-<li class="toctree-l2"><a class="reference internal" href="05_Arduino.html">5. Arduino</a></li>
-<li class="toctree-l2"><a class="reference internal" href="06_microbit.html">6. micro:bit</a></li>
-<li class="toctree-l2"><a class="reference internal" href="07_Appinventor.html">7. App Inventor2</a></li>
-<li class="toctree-l2"><a class="reference internal" href="08_Python.html">8. Python</a></li>
-<li class="toctree-l2"><a class="reference internal" href="09_Processing.html">9. Processing</a></li>
-<li class="toctree-l2"><a class="reference internal" href="10_other.html">10. 其他软件</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="04_mPython.html">5. 掌控板（mPython）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="05_Arduino.html">6. Arduino</a></li>
+<li class="toctree-l2"><a class="reference internal" href="06_microbit.html">7. micro:bit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="07_Appinventor.html">8. App Inventor2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="08_Python.html">9. Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="09_Processing.html">10. Processing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="10_other.html">11. 其他软件</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../case/index.html">典型应用案例</a></li>
@@ -164,7 +167,7 @@
         
           <li><a href="index.html">客户端连接范例</a> &raquo;</li>
         
-      <li>3. Mind plus</li>
+      <li>4. Mind plus</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -184,16 +187,15 @@
            <div itemprop="articleBody">
             
   <div class="section" id="mind-plus">
-<h1>3. Mind plus<a class="headerlink" href="#mind-plus" title="Permalink to this headline">¶</a></h1>
+<h1>4. Mind plus<a class="headerlink" href="#mind-plus" title="Permalink to this headline">¶</a></h1>
+<p>Mind plus（Mind+）是著名开源硬件（创客教育）企业DFRobot推出的IDE工具。其支持两种编程模式，一是实时交互模式，二是离线下载模式。实时交互模式类似普通的Scratch程序，离线下载模式则是指给Arduino、掌控板写程序。</p>
 <div class="section" id="id1">
-<h2>3.1. 简介与安装<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
-<p>Mind plus（Mind+）支持两种编程模式，一是实时交互模式，二是离线下载模式。实时交互模式类似普通的Scratch程序，离线下载模式则是指给Arduino、掌控板写程序。</p>
+<h2>4.1. Mind plus的安装<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
 <p>这里介绍的是“”实时交互模式”下的MQTT范例。Mind+可以直接访问MQTT服务器，和其他接入MQTT服务器的智能硬件进行交互。</p>
 <p><strong>注意：</strong> Mind+在1.55版后才支持MQTT功能，请下载最新版本。</p>
 <p><a class="reference external" href="http://mindplus.cc/download.html">http://mindplus.cc/download.html</a></p>
-</div>
 <div class="section" id="id2">
-<h2>3.2. 编程步骤<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<h3>编程步骤<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
 <p><strong>实时交互模式</strong></p>
 <p>1）在“实时模式”下选择“扩展”，找到网络服务，选择MQTT。</p>
 <p>2）在MQTT中，找到相应的语句开始编程。</p>
@@ -209,13 +211,14 @@
 <p>代码功能简介</p>
 <blockquote>
 <div>发送端：当与服务器成功连接后，不断发送信息到服务器</div></blockquote>
-<img alt="../_images/Mind+Mqtt-01.png" src="../_images/Mind+Mqtt-01.png" />
+<img alt="../_images/Mind_Mqtt_01.png" src="../_images/Mind_Mqtt_01.png" />
 </div>
 <div class="section" id="id3">
-<h2>3.3. 参考代码<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<h3>参考代码<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
 <p>1）可以在软件自带的示例代码中寻找。</p>
 <p>2）更多代码下载地址：</p>
 <p><a class="reference external" href="https://github.com/vvlink/SIoT/tree/master/examples/Mind+">https://github.com/vvlink/SIoT/tree/master/examples/Mind+</a></p>
+</div>
 </div>
 </div>
 
@@ -227,10 +230,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="04_mPython.html" class="btn btn-neutral float-right" title="4. 掌控板（mPython）" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="04_mPython.html" class="btn btn-neutral float-right" title="5. 掌控板（mPython）" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="02_Node-RED.html" class="btn btn-neutral float-left" title="2. Node-RED" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="02_Node-RED.html" class="btn btn-neutral float-left" title="3. Node-RED" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

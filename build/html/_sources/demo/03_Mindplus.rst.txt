@@ -1,11 +1,12 @@
-﻿Mind plus
+Mind plus
 =========================
 
-简介与安装
-----------------------
 
+Mind plus（Mind+）是著名开源硬件（创客教育）企业DFRobot推出的IDE工具。其支持两种编程模式，一是实时交互模式，二是离线下载模式。实时交互模式类似普通的Scratch程序，离线下载模式则是指给Arduino、掌控板写程序。
 
-Mind plus（Mind+）支持两种编程模式，一是实时交互模式，二是离线下载模式。实时交互模式类似普通的Scratch程序，离线下载模式则是指给Arduino、掌控板写程序。
+--------------------------
+Mind plus的安装
+--------------------------
 
 这里介绍的是“”实时交互模式”下的MQTT范例。Mind+可以直接访问MQTT服务器，和其他接入MQTT服务器的智能硬件进行交互。
 
@@ -42,11 +43,11 @@ http://mindplus.cc/download.html
     
     发送端：当与服务器成功连接后，不断发送信息到服务器
     
-.. image:: ../image/linmiaoyan/Mind+Mqtt-03.png
+.. image:: ../image/linmiaoyan/Mind_Mqtt_03.png
 
     接受端：根据收到的不同的信息，做出对应的操作
 
-.. image:: ../image/linmiaoyan/Mind+Mqtt-01.png
+.. image:: ../image/linmiaoyan/Mind_Mqtt_01.png
 
 
 

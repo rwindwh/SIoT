@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>5. Arduino &mdash; SIoT使用手册 1.0 documentation</title>
+  <title>6. Arduino &mdash; SIoT使用手册 1.0 documentation</title>
   
 
   
@@ -44,8 +44,8 @@
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="6. micro:bit" href="06_microbit.html" />
-    <link rel="prev" title="4. 掌控板（mPython）" href="04_mPython.html" /> 
+    <link rel="next" title="7. micro:bit" href="06_microbit.html" />
+    <link rel="prev" title="5. 掌控板（mPython）" href="04_mPython.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -97,23 +97,24 @@
 <li class="toctree-l1"><a class="reference internal" href="../about/index.html">简介</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../setup/index.html">安装和运行</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">客户端连接范例</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="01_tool.html">1. 常见MQTT客户端</a></li>
-<li class="toctree-l2"><a class="reference internal" href="02_Node-RED.html">2. Node-RED</a></li>
-<li class="toctree-l2"><a class="reference internal" href="03_Mindplus.html">3. Mind plus</a></li>
-<li class="toctree-l2"><a class="reference internal" href="04_mPython.html">4. 掌控板（mPython）</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">5. Arduino</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#obloq">5.1. OBLOQ模块介绍</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id1">5.2. 典型案例</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id2">5.3. 操作流程归纳</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id3">5.4. 物联网框图</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id4">5.5. OBLOQ模块的常见问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="01_tool_pc.html">1. 常见MQTT客户端（PC端）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="01_tool_phone.html">2. 常见MQTT客户端（PC端）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="02_Node-RED.html">3. Node-RED</a></li>
+<li class="toctree-l2"><a class="reference internal" href="03_Mindplus.html">4. Mind plus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="04_mPython.html">5. 掌控板（mPython）</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">6. Arduino</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#obloq">6.1. OBLOQ模块介绍</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id1">6.2. 典型案例</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id2">6.3. 操作流程归纳</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id3">6.4. 物联网框图</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id4">6.5. OBLOQ模块的常见问题</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="06_microbit.html">6. micro:bit</a></li>
-<li class="toctree-l2"><a class="reference internal" href="07_Appinventor.html">7. App Inventor2</a></li>
-<li class="toctree-l2"><a class="reference internal" href="08_Python.html">8. Python</a></li>
-<li class="toctree-l2"><a class="reference internal" href="09_Processing.html">9. Processing</a></li>
-<li class="toctree-l2"><a class="reference internal" href="10_other.html">10. 其他软件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="06_microbit.html">7. micro:bit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="07_Appinventor.html">8. App Inventor2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="08_Python.html">9. Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="09_Processing.html">10. Processing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="10_other.html">11. 其他软件</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../case/index.html">典型应用案例</a></li>
@@ -166,7 +167,7 @@
         
           <li><a href="index.html">客户端连接范例</a> &raquo;</li>
         
-      <li>5. Arduino</li>
+      <li>6. Arduino</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -186,11 +187,11 @@
            <div itemprop="articleBody">
             
   <div class="section" id="arduino">
-<h1>5. Arduino<a class="headerlink" href="#arduino" title="Permalink to this headline">¶</a></h1>
+<h1>6. Arduino<a class="headerlink" href="#arduino" title="Permalink to this headline">¶</a></h1>
 <blockquote>
 <div>Arduino是一款便捷灵活、方便上手的开源电子原型平台。在创客眼里，Arduino是一个造物的神器，基于Arduino设计的创客作品不计其数。</div></blockquote>
 <div class="section" id="obloq">
-<h2>5.1. OBLOQ模块介绍<a class="headerlink" href="#obloq" title="Permalink to this headline">¶</a></h2>
+<h2>6.1. OBLOQ模块介绍<a class="headerlink" href="#obloq" title="Permalink to this headline">¶</a></h2>
 <blockquote>
 <div>OBLOQ是一款基于ESP8266设计的串口转WIFI物联网模块，用以接收和发送物联网信息。接口简单，即插即用，适用于3.3V~5V的控制系统。OBLOQ物联网模块当没有连接wifi的时候，OBLOQ指示灯显示红色，正在连接wifi时显示蓝色，连接到wifi后，OBLOQ指示灯显示绿色。</div></blockquote>
 <p>OBLOQ物联网模块引脚说明：</p>
@@ -199,7 +200,7 @@
 <a class="reference external" href="http://www.dfrobot.com.cn/goods-1577.html">http://www.dfrobot.com.cn/goods-1577.html</a></p>
 </div>
 <div class="section" id="id1">
-<h2>5.2. 典型案例<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<h2>6.2. 典型案例<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
 <blockquote>
 <div><p>本案例将Uno板应用在家居物联网中，将温度传感器与Uno板连接，用于采集室内的温湿度数据，并将数据上传到SIoT中，结果将以数值与折线图的形式展现，便于主人监测室内温湿度的变化情况。</p>
 <p>所需材料：Uno板，温度传感器，OBLOQ物联网模块</p>
@@ -232,18 +233,18 @@
 <p>同理，发送消息“OFF”，可以看到Uno板子的LED被点亮。</p>
 </div>
 <div class="section" id="id2">
-<h2>5.3. 操作流程归纳<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<h2>6.3. 操作流程归纳<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <p>Arduino和SIoT互联的一般过程图示。</p>
 <img alt="../_images/arduino-50.png" src="../_images/arduino-50.png" />
 </div>
 <div class="section" id="id3">
-<h2>5.4. 物联网框图<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<h2>6.4. 物联网框图<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 <p>以路由器建立无线局域网为例，通过下面这张图可以说明SIoT的作用原理。</p>
 <p>在一台电脑上建立SIoT服务器后，其他设备在知道路由器分配给这台电脑的IP地址后，可以利用WIFI访问SIoT服务器。这些设备可以是电脑、手机、Uno板等。</p>
 <img alt="../_images/arduino-51.png" src="../_images/arduino-51.png" />
 </div>
 <div class="section" id="id4">
-<h2>5.5. OBLOQ模块的常见问题<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<h2>6.5. OBLOQ模块的常见问题<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic simple">
 <li>OBLOQ指示灯一直显示蓝色：</li>
 </ol>
@@ -269,10 +270,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="06_microbit.html" class="btn btn-neutral float-right" title="6. micro:bit" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="06_microbit.html" class="btn btn-neutral float-right" title="7. micro:bit" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="04_mPython.html" class="btn btn-neutral float-left" title="4. 掌控板（mPython）" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="04_mPython.html" class="btn btn-neutral float-left" title="5. 掌控板（mPython）" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

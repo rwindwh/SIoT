@@ -8,7 +8,8 @@
     :maxdepth: 2
     :numbered: 2
 
-    01_tool
+    01_tool_pc
+    01_tool_phone
     02_Node-RED
     03_Mindplus
     04_mPython

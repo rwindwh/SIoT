@@ -1,4 +1,4 @@
-Python
+﻿Python
 =========================
 Python是一种计算机程序设计语言。是一种面向对象的动态类型语言，最初被设计用于编写自动化脚本(shell)，随着版本的不断更新和语言新功能的添加，越来越多被用于独立的、大型项目的开发。因为Python开源，很多人为Python开发了各种模块、库，老而弥坚，越来越受到关注，被誉为人工智能编程方面的第一选择。
 
@@ -148,22 +148,27 @@ Python的MQTT库简介
           grid(True)
           plt.ion()
           x.append(i)
+          i +=1
           y.append(val)
           ax.plot(x,y,'b')
           plt.pause(0.0001)
+          #mac系统请删除下方的plt.ioff()语句
+          plt.ioff()
           plt.show()
-          i +=1
+
+
 
       if __name__ == '__main__':
           global x,y,i,fig, ax
+          client = MqttClient(SERVER, 1883)
+          client.connect(username,password)
+          client.loop()          
           fig, ax= plt.subplots()
           i=0
           x=[]
           y=[]
           showplt(0)
-          client = MqttClient(SERVER, 1883)
-          client.connect(username,password)
-          client.loop()
+
 
 
 **测试效果**

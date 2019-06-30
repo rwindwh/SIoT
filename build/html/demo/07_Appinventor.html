@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>7. App Inventor2 &mdash; SIoT使用手册 1.0 documentation</title>
+  <title>8. App Inventor2 &mdash; SIoT使用手册 1.0 documentation</title>
   
 
   
@@ -44,8 +44,8 @@
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="8. Python" href="08_Python.html" />
-    <link rel="prev" title="6. micro:bit" href="06_microbit.html" /> 
+    <link rel="next" title="9. Python" href="08_Python.html" />
+    <link rel="prev" title="7. micro:bit" href="06_microbit.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -97,20 +97,21 @@
 <li class="toctree-l1"><a class="reference internal" href="../about/index.html">简介</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../setup/index.html">安装和运行</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">客户端连接范例</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="01_tool.html">1. 常见MQTT客户端</a></li>
-<li class="toctree-l2"><a class="reference internal" href="02_Node-RED.html">2. Node-RED</a></li>
-<li class="toctree-l2"><a class="reference internal" href="03_Mindplus.html">3. Mind plus</a></li>
-<li class="toctree-l2"><a class="reference internal" href="04_mPython.html">4. 掌控板（mPython）</a></li>
-<li class="toctree-l2"><a class="reference internal" href="05_Arduino.html">5. Arduino</a></li>
-<li class="toctree-l2"><a class="reference internal" href="06_microbit.html">6. micro:bit</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">7. App Inventor2</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id1">7.1. 准备工作</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#led">7.2. 案例：手机控制掌控板全彩LED灯</a></li>
+<li class="toctree-l2"><a class="reference internal" href="01_tool_pc.html">1. 常见MQTT客户端（PC端）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="01_tool_phone.html">2. 常见MQTT客户端（PC端）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="02_Node-RED.html">3. Node-RED</a></li>
+<li class="toctree-l2"><a class="reference internal" href="03_Mindplus.html">4. Mind plus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="04_mPython.html">5. 掌控板（mPython）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="05_Arduino.html">6. Arduino</a></li>
+<li class="toctree-l2"><a class="reference internal" href="06_microbit.html">7. micro:bit</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">8. App Inventor2</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id1">8.1. 准备工作</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#led">8.2. 案例：手机控制掌控板全彩LED灯</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="08_Python.html">8. Python</a></li>
-<li class="toctree-l2"><a class="reference internal" href="09_Processing.html">9. Processing</a></li>
-<li class="toctree-l2"><a class="reference internal" href="10_other.html">10. 其他软件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="08_Python.html">9. Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="09_Processing.html">10. Processing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="10_other.html">11. 其他软件</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../case/index.html">典型应用案例</a></li>
@@ -163,7 +164,7 @@
         
           <li><a href="index.html">客户端连接范例</a> &raquo;</li>
         
-      <li>7. App Inventor2</li>
+      <li>8. App Inventor2</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -183,14 +184,14 @@
            <div itemprop="articleBody">
             
   <div class="section" id="app-inventor2">
-<h1>7. App Inventor2<a class="headerlink" href="#app-inventor2" title="Permalink to this headline">¶</a></h1>
+<h1>8. App Inventor2<a class="headerlink" href="#app-inventor2" title="Permalink to this headline">¶</a></h1>
 <blockquote>
 <div>App Inventor 2是一个基于云端的，以图形化形式编程的手机应用程序开发环境。它将枯燥的代码编程方式转变为积木式的图形化编程，同时不同功能代码的积木颜色也不同，这使手机应用程序的开发变得简单而有趣。即使不懂得编程语言的人，也可以开发出属于自己的手机应用程序。</div></blockquote>
 <p>　　广州市教育信息中心的App Inventor 2服务器地址：<a class="reference external" href="http://app.gzjkw.net">http://app.gzjkw.net</a>。</p>
 <blockquote>
 <div>我们可以通过App Inventor2来实现手机和SIoT之间的通信，从而实现以MQTT的方式和智能终端互联。</div></blockquote>
 <div class="section" id="id1">
-<h2>7.1. 准备工作<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<h2>8.1. 准备工作<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
 <p>1.本案例以SIoT本地物联网平台为例进行示范(SIoT下载地址：<a class="reference external" href="https://github.com/vvlink/SIoT/tree/master/software/SIoT1.1">https://github.com/vvlink/SIoT/tree/master/software/SIoT1.1</a>)。</p>
 <blockquote>
 <div>朋友们也可以注册一个物联网平台账号进行更远距离的控制，在线版物联网平台推荐：DFrobot公司搭建的EasyIot平台（网址：<a class="reference external" href="http://iot.dfrobot.com.cn">http://iot.dfrobot.com.cn</a>）。</div></blockquote>
@@ -199,7 +200,7 @@
 <p>4.准备一块掌控板、一根micro口数据线、一台电脑。</p>
 </div>
 <div class="section" id="led">
-<h2>7.2. 案例：手机控制掌控板全彩LED灯<a class="headerlink" href="#led" title="Permalink to this headline">¶</a></h2>
+<h2>8.2. 案例：手机控制掌控板全彩LED灯<a class="headerlink" href="#led" title="Permalink to this headline">¶</a></h2>
 <p>1.手机APP端编程(工具平台：AppInventor2)：</p>
 <p>组件设计-setting屏幕组件设计图</p>
 <img alt="../_images/07_appInventor-01.png" src="../_images/07_appInventor-01.png" />
@@ -243,10 +244,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="08_Python.html" class="btn btn-neutral float-right" title="8. Python" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="08_Python.html" class="btn btn-neutral float-right" title="9. Python" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="06_microbit.html" class="btn btn-neutral float-left" title="6. micro:bit" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="06_microbit.html" class="btn btn-neutral float-left" title="7. micro:bit" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>8. Python &mdash; SIoT使用手册 1.0 documentation</title>
+  <title>9. Python &mdash; SIoT使用手册 1.0 documentation</title>
   
 
   
@@ -44,8 +44,8 @@
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="9. Processing" href="09_Processing.html" />
-    <link rel="prev" title="7. App Inventor2" href="07_Appinventor.html" /> 
+    <link rel="next" title="10. Processing" href="09_Processing.html" />
+    <link rel="prev" title="8. App Inventor2" href="07_Appinventor.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -97,21 +97,22 @@
 <li class="toctree-l1"><a class="reference internal" href="../about/index.html">简介</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../setup/index.html">安装和运行</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">客户端连接范例</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="01_tool.html">1. 常见MQTT客户端</a></li>
-<li class="toctree-l2"><a class="reference internal" href="02_Node-RED.html">2. Node-RED</a></li>
-<li class="toctree-l2"><a class="reference internal" href="03_Mindplus.html">3. Mind plus</a></li>
-<li class="toctree-l2"><a class="reference internal" href="04_mPython.html">4. 掌控板（mPython）</a></li>
-<li class="toctree-l2"><a class="reference internal" href="05_Arduino.html">5. Arduino</a></li>
-<li class="toctree-l2"><a class="reference internal" href="06_microbit.html">6. micro:bit</a></li>
-<li class="toctree-l2"><a class="reference internal" href="07_Appinventor.html">7. App Inventor2</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">8. Python</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#pythonmqtt">8.1. Python的MQTT库简介</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id1">8.2. 参考代码</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id2">8.3. 参考代码（动态绘制图表）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="01_tool_pc.html">1. 常见MQTT客户端（PC端）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="01_tool_phone.html">2. 常见MQTT客户端（PC端）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="02_Node-RED.html">3. Node-RED</a></li>
+<li class="toctree-l2"><a class="reference internal" href="03_Mindplus.html">4. Mind plus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="04_mPython.html">5. 掌控板（mPython）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="05_Arduino.html">6. Arduino</a></li>
+<li class="toctree-l2"><a class="reference internal" href="06_microbit.html">7. micro:bit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="07_Appinventor.html">8. App Inventor2</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">9. Python</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#pythonmqtt">9.1. Python的MQTT库简介</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id1">9.2. 参考代码</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id2">9.3. 参考代码（动态绘制图表）</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="09_Processing.html">9. Processing</a></li>
-<li class="toctree-l2"><a class="reference internal" href="10_other.html">10. 其他软件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="09_Processing.html">10. Processing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="10_other.html">11. 其他软件</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../case/index.html">典型应用案例</a></li>
@@ -164,7 +165,7 @@
         
           <li><a href="index.html">客户端连接范例</a> &raquo;</li>
         
-      <li>8. Python</li>
+      <li>9. Python</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -184,16 +185,16 @@
            <div itemprop="articleBody">
             
   <div class="section" id="python">
-<h1>8. Python<a class="headerlink" href="#python" title="Permalink to this headline">¶</a></h1>
+<h1>9. Python<a class="headerlink" href="#python" title="Permalink to this headline">¶</a></h1>
 <p>Python是一种计算机程序设计语言。是一种面向对象的动态类型语言，最初被设计用于编写自动化脚本(shell)，随着版本的不断更新和语言新功能的添加，越来越多被用于独立的、大型项目的开发。因为Python开源，很多人为Python开发了各种模块、库，老而弥坚，越来越受到关注，被誉为人工智能编程方面的第一选择。</p>
 <div class="section" id="pythonmqtt">
-<h2>8.1. Python的MQTT库简介<a class="headerlink" href="#pythonmqtt" title="Permalink to this headline">¶</a></h2>
+<h2>9.1. Python的MQTT库简介<a class="headerlink" href="#pythonmqtt" title="Permalink to this headline">¶</a></h2>
 <p>首先需要安装Python的MQTT库。</p>
 <blockquote>
 <div>pip install paho-mqtt</div></blockquote>
 </div>
 <div class="section" id="id1">
-<h2>8.2. 参考代码<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<h2>9.2. 参考代码<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
 <p><strong>代码功能</strong></p>
 <p>连接服务器，发送和订阅消息。</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># coding=utf-8</span>
@@ -258,7 +259,7 @@
 <img alt="../_images/08_python_01.png" src="../_images/08_python_01.png" />
 </div>
 <div class="section" id="id2">
-<h2>8.3. 参考代码（动态绘制图表）<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<h2>9.3. 参考代码（动态绘制图表）<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <p><strong>代码功能</strong></p>
 <p>连接服务器，根据订阅的消息，动态绘制出图表。</p>
 <p>需要安装 matplotlib</p>
@@ -314,22 +315,26 @@
     <span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">ion</span><span class="p">()</span>
     <span class="n">x</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+    <span class="n">i</span> <span class="o">+=</span><span class="mi">1</span>
     <span class="n">y</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">val</span><span class="p">)</span>
     <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">)</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">pause</span><span class="p">(</span><span class="mf">0.0001</span><span class="p">)</span>
+    <span class="c1">#mac系统请删除下方的plt.ioff()语句</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">ioff</span><span class="p">()</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-    <span class="n">i</span> <span class="o">+=</span><span class="mi">1</span>
+
+
 
 <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
     <span class="k">global</span> <span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">i</span><span class="p">,</span><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span>
+    <span class="n">client</span> <span class="o">=</span> <span class="n">MqttClient</span><span class="p">(</span><span class="n">SERVER</span><span class="p">,</span> <span class="mi">1883</span><span class="p">)</span>
+    <span class="n">client</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">username</span><span class="p">,</span><span class="n">password</span><span class="p">)</span>
+    <span class="n">client</span><span class="o">.</span><span class="n">loop</span><span class="p">()</span>
     <span class="n">fig</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
     <span class="n">i</span><span class="o">=</span><span class="mi">0</span>
     <span class="n">x</span><span class="o">=</span><span class="p">[]</span>
     <span class="n">y</span><span class="o">=</span><span class="p">[]</span>
     <span class="n">showplt</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
-    <span class="n">client</span> <span class="o">=</span> <span class="n">MqttClient</span><span class="p">(</span><span class="n">SERVER</span><span class="p">,</span> <span class="mi">1883</span><span class="p">)</span>
-    <span class="n">client</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">username</span><span class="p">,</span><span class="n">password</span><span class="p">)</span>
-    <span class="n">client</span><span class="o">.</span><span class="n">loop</span><span class="p">()</span>
 </pre></div>
 </div>
 <p><strong>测试效果</strong></p>
@@ -345,10 +350,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="09_Processing.html" class="btn btn-neutral float-right" title="9. Processing" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="09_Processing.html" class="btn btn-neutral float-right" title="10. Processing" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="07_Appinventor.html" class="btn btn-neutral float-left" title="7. App Inventor2" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="07_Appinventor.html" class="btn btn-neutral float-left" title="8. App Inventor2" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
