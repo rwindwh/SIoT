@@ -1,4 +1,4 @@
-﻿# MQTT工具汇集
+# MQTT工具汇集
 
 ### MQTTBox
 
@@ -16,8 +16,8 @@
 一个测试mqtt的软件，只有100k不到。
 请将程序与附带的dll文件置于同一目录下运行。
 
-- GitHub地址：https://github.com/linmiaoyan/Mqtttool
-- 下载地址：https://github.com/linmiaoyan/Mqtttool/blob/master/MqttServerTest.rar
+- GitHub地址：https://github.com/vvlink/SIoT/tree/master/MQTT%20tools/Mqtttool
+- 下载地址：https://github.com/vvlink/SIoT/tree/master/MQTT%20tools/Mqtttool
 
 
 ### Mind+

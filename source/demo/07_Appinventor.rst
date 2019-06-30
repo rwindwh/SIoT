@@ -7,9 +7,9 @@ App Inventor2
   
     我们可以通过App Inventor2来实现手机和SIoT之间的通信，从而实现以MQTT的方式和智能终端互联。
 
-编程步骤
+准备工作
 -----------------------
-**编程准备**
+
 
 1.本案例以SIoT本地物联网平台为例进行示范(SIoT下载地址：https://github.com/vvlink/SIoT/tree/master/software/SIoT1.1)。
 
@@ -22,7 +22,8 @@ App Inventor2
 4.准备一块掌控板、一根micro口数据线、一台电脑。
 
         
-**案例：手机App控制掌控板全彩LED灯**  
+案例：手机控制掌控板全彩LED灯
+-----------------------------------------------------
 
     
 1.手机APP端编程(工具平台：AppInventor2)：

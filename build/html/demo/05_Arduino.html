@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="go">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>5. Arduino+OBloq &#8212; SIoT使用手册 1.0 documentation</title>
+    <title>5. Arduino &#8212; SIoT使用手册 1.0 documentation</title>
     <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <script type="text/javascript">
@@ -23,7 +23,7 @@
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="6. micro:bit+OBloq" href="06_microbit.html" />
+    <link rel="next" title="6. micro:bit" href="06_microbit.html" />
     <link rel="prev" title="4. 掌控板（mPython）" href="04_mPython.html" />
    
   <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
@@ -40,87 +40,79 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="arduino-obloq">
-<h1>5. Arduino+OBloq<a class="headerlink" href="#arduino-obloq" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="arduino">
-<h2>5.1. Arduino简介<a class="headerlink" href="#arduino" title="Permalink to this headline">¶</a></h2>
+  <div class="section" id="arduino">
+<h1>5. Arduino<a class="headerlink" href="#arduino" title="Permalink to this headline">¶</a></h1>
 <blockquote>
-<div>Arduino是一款灵活便捷、易于上手的开源硬件，包含硬件部分（各种符合Arduino规范的电路板）和软件部分（一套整合的开发环境软件）两个部分。
-Arduino既可用来开发独立运作并具有互动性的电子产品，也可开发与PC相连的周边装置，同时能在运行时与PC上的软件进行交互。</div></blockquote>
-</div>
+<div>Arduino是一款便捷灵活、方便上手的开源电子原型平台。在创客眼里，Arduino是一个造物的神器，基于Arduino设计的创客作品不计其数。</div></blockquote>
 <div class="section" id="obloq">
-<h2>5.2. OBloq模块简介<a class="headerlink" href="#obloq" title="Permalink to this headline">¶</a></h2>
+<h2>5.1. OBLOQ模块介绍<a class="headerlink" href="#obloq" title="Permalink to this headline">¶</a></h2>
 <blockquote>
-<div><blockquote>
-<div><p>Arduino自身不能连接网络，但是借助于OBLOQ之类的扩展模块，Arduino也能轻松接入物联网。</p>
-<p>OBLOQ是一款基于ESP8266设计的串口转WIFI物联网模块，用以接收和发送物联网信息。模块尺寸紧凑，价格低，接口简单，即插即用，适用于3.3V~5V的控制系统。
-OBLOQ模块具备的两个基础功能：发送数据到物联网和接收物联网数据。即：</p>
-<blockquote>
-<div><p>1.Arduino读取温度传感器的数据，通过OBLOQ模块发送温度数据到物联网设备。</p>
-<p>2.物联网设备发送数据，OBLOQ接收数据并发送给Arduino,Arduino再通过串口显示接收的数据。</p>
-<p>OBloq模块通过wifi连接上网，收发数据。联网后，当检测到有最新版固件时，Obloq会自动升级。</p>
-<p>OBloq模块的购买链接：<a class="reference external" href="http://www.dfrobot.com.cn/goods-1577.html">http://www.dfrobot.com.cn/goods-1577.html</a></p>
-</div></blockquote>
-<p>当OBloq处于正常工作时，Obloq上LED灯为绿色常亮，升级时为白色；当Obloq升级结束后，指示灯由白色变成红色，此时需要重启主控版，使得Obloq最新固件生效。</p>
-</div></blockquote>
-<p>其端口连接如下：</p>
-</div></blockquote>
-<img alt="../_images/05-Arduino-01.png" src="../_images/05-Arduino-01.png" />
+<div>OBLOQ是一款基于ESP8266设计的串口转WIFI物联网模块，用以接收和发送物联网信息。接口简单，即插即用，适用于3.3V~5V的控制系统。OBLOQ物联网模块当没有连接wifi的时候，OBLOQ指示灯显示红色，正在连接wifi时显示蓝色，连接到wifi后，OBLOQ指示灯显示绿色。</div></blockquote>
+<p>OBLOQ物联网模块引脚说明：</p>
+<img alt="../_images/obloq.png" src="../_images/obloq.png" />
+<p>关于OBLOQ物联网模块的介绍：
+<a class="reference external" href="http://www.dfrobot.com.cn/goods-1577.html">http://www.dfrobot.com.cn/goods-1577.html</a></p>
 </div>
 <div class="section" id="id1">
-<h2>5.3. 硬件连接<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
-<p>将Arduino UNO主控板与OBloq模块结合，就等于搭建了一个智能设备。即：主控板 + 物联网模块 = 智能设备</p>
+<h2>5.2. 典型案例<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p>本案例将Uno板应用在家居物联网中，将温度传感器与Uno板连接，用于采集室内的温湿度数据，并将数据上传到SIoT中，结果将以数值与折线图的形式展现，便于主人监测室内温湿度的变化情况。</p>
+<p>所需材料：Uno板，温度传感器，OBLOQ物联网模块</p>
+<p>使用软件：Mind+（所有代码可以转成）</p>
+</div></blockquote>
+<p><em>STEP1 Mind+软件设置</em></p>
+<blockquote>
+<div>1、打开Mind+软件（1.5.5及以上版本），选择“上传模式”：</div></blockquote>
+<img alt="../_images/arduino-41.png" src="../_images/arduino-41.png" />
+<p><em>STEP2硬件连线图</em></p>
+<p>OBLOQ模块：TX、RX、GND和VIN引脚分别连接到D10、D11、GND和VCC引脚。</p>
+<p>温度传感器LM35：A0引脚。</p>
+<img alt="../_images/arduino-42.png" src="../_images/arduino-42.png" />
+<p>可通过修改程序来自定义相关引脚。</p>
+<p><em>STEP3编写程序</em></p>
+<img alt="../_images/arduino-43.png" src="../_images/arduino-43.png" />
+<p><em>STEP4功能实现</em></p>
+<blockquote>
+<div><p>Uno板在下载完程序后，OBLOQ物联网模块指示灯显示为绿色，表示成功与Uno板连接成功正常工作。</p>
+<p>程序运行时，若无法连接OBLOQ物联网模块（指示灯不为绿色），先检查参数有没有填错，例如ip错误、Topic中有没有斜杠，依旧无法连接的话，可尝试关闭电脑防火墙，重新上传程序；若依旧不成功需要查看OBLOQ模块的接线对应的管脚是否连接正确。</p>
+<p>打开SIoT网页端，可以在“设备列表”下看到对应的Topic信息。</p>
+</div></blockquote>
+<img alt="../_images/arduino-46.png" src="../_images/arduino-46.png" />
+<p>1、点击上图中“a”后的“查看消息”，可以看到温度传感器实时收集的温度值。</p>
+<img alt="../_images/arduino-47.png" src="../_images/arduino-47.png" />
+<p>2、点击“b”后的查看消息</p>
+<img alt="../_images/arduino-48.png" src="../_images/arduino-48.png" />
+<p>在弹出窗口中发送消息“ON”，可以看到Uno板子的LED被点亮。</p>
+<img alt="../_images/arduino-49.png" src="../_images/arduino-49.png" />
+<p>同理，发送消息“OFF”，可以看到Uno板子的LED被点亮。</p>
 </div>
 <div class="section" id="id2">
-<h2>5.4. 参考代码<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<p>一、Obloq发送消息</p>
-<p>1.定义函数，导入库；</p>
-<img alt="../_images/05-Arduino-11.PNG" src="../_images/05-Arduino-11.PNG" />
-<p>2.利用串口发送消息，并检查串口是否正常进行</p>
-<img alt="../_images/05-Arduino-12.PNG" src="../_images/05-Arduino-12.PNG" />
-<p>3.连接WiFi，连接设备，利用串口返回设备相关状态</p>
-<img alt="../_images/05-Arduino-13.PNG" src="../_images/05-Arduino-13.PNG" />
-<p>4.监听消息的接收，成功则串口返回。</p>
-<img alt="../_images/05-Arduino-14.PNG" src="../_images/05-Arduino-14.PNG" />
-<p>5.创建发送消息设备凭据。</p>
-<img alt="../_images/05-Arduino-15.PNG" src="../_images/05-Arduino-15.PNG" />
-<p>6.串口返回设备凭据的创建成功。</p>
-<img alt="../_images/05-Arduino-16.PNG" src="../_images/05-Arduino-16.PNG" />
-<p>7.分隔存储字符串</p>
-<img alt="../_images/05-Arduino-17.PNG" src="../_images/05-Arduino-17.PNG" />
-<p>8.处理串口消息</p>
-<img alt="../_images/05-Arduino-18.PNG" src="../_images/05-Arduino-18.PNG" />
-<p>9.验证串口是否正常通信</p>
-<img alt="../_images/05-Arduino-19.PNG" src="../_images/05-Arduino-19.PNG" />
-<p>10.根据不同状态发送不同命令，接收到传感器测得数据</p>
-<img alt="../_images/05-Arduino-20.PNG" src="../_images/05-Arduino-20.PNG" />
-<p>11.接收消息</p>
-<img alt="../_images/05-Arduino-21.PNG" src="../_images/05-Arduino-21.PNG" />
-<p>二、Obloq接收信息</p>
-<p>1.导入SoftwareSerial库，定义WiFi</p>
-<img alt="../_images/05-Arduino-21.png" src="../_images/05-Arduino-21.png" />
-<p>2.通过串口发送消息</p>
-<img alt="../_images/05-Arduino-22.png" src="../_images/05-Arduino-22.png" />
-<p>3.成功连接WiFi并返回代码</p>
-<img alt="../_images/05-Arduino-23.png" src="../_images/05-Arduino-23.png" />
-<p>4.监听设备的设置与取消</p>
-<img alt="../_images/05-Arduino-24.png" src="../_images/05-Arduino-24.png" />
-<p>5.消息发送通过串口显示</p>
-<img alt="../_images/05-Arduino-25.png" src="../_images/05-Arduino-25.png" />
-<p>6.打印</p>
-<img alt="../_images/05-Arduino-26.png" src="../_images/05-Arduino-26.png" />
-<p>7.销毁设备凭据</p>
-<img alt="../_images/05-Arduino-27.png" src="../_images/05-Arduino-27.png" />
-<p>8.分隔字符串</p>
-<img alt="../_images/05-Arduino-28.png" src="../_images/05-Arduino-28.png" />
-<p>9.处理串口数据</p>
-<img alt="../_images/05-Arduino-29.png" src="../_images/05-Arduino-29.png" />
-<img alt="../_images/05-Arduino-210.png" src="../_images/05-Arduino-210.png" />
-<p>10.检验串口是否正常</p>
-<img alt="../_images/05-Arduino-211.png" src="../_images/05-Arduino-211.png" />
-<p>11.接收信息字符串</p>
-<img alt="../_images/05-Arduino-212.png" src="../_images/05-Arduino-212.png" />
-<img alt="../_images/05-Arduino-213.png" src="../_images/05-Arduino-213.png" />
+<h2>5.3. 操作流程归纳<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>Arduino和SIoT互联的一般过程图示。</p>
+<img alt="../_images/arduino-50.png" src="../_images/arduino-50.png" />
+</div>
+<div class="section" id="id3">
+<h2>5.4. 物联网框图<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p>以路由器建立无线局域网为例，通过下面这张图可以说明SIoT的作用原理。</p>
+<p>在一台电脑上建立SIoT服务器后，其他设备在知道路由器分配给这台电脑的IP地址后，可以利用WIFI访问SIoT服务器。这些设备可以是电脑、手机、Uno板等。</p>
+<img alt="../_images/arduino-51.png" src="../_images/arduino-51.png" />
+</div>
+<div class="section" id="id4">
+<h2>5.5. OBLOQ模块的常见问题<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>OBLOQ指示灯一直显示蓝色：</li>
+</ol>
+<p>表示OBLOQ正在连接wifi，需要一定时间，如果超过一分钟依然显示蓝灯，则可能为wifi账号密码设置错误，请检查程序 。</p>
+<ol class="arabic simple" start="2">
+<li>OBLOQ指示灯一直显示紫色：</li>
+</ol>
+<p>表示OBLOQ的wifi连接成功但是mqtt异常断开，尝试检查所在wifi是否断网，也有可能easyiot服务器问题，等待一会儿再连接或联系论坛管理员。</p>
+<ol class="arabic simple" start="3">
+<li>OBLOQ指示灯一直显示红色：</li>
+</ol>
+<p>表示OBLOQ的wifi连接不成功，尝试检查是否tx和rx接反了（调换一下tx和rx接线顺序），或者是wifi有问题（使用手机开热点，不要用中文WIFI名称），然后就是参数有没有填错（物联网网站里面的参数）。</p>
+<p>需要了解更多细节请参考：
+<a class="reference external" href="http://mc.dfrobot.com.cn/thread-281129-1-1.html">http://mc.dfrobot.com.cn/thread-281129-1-1.html</a></p>
 </div>
 </div>
 
@@ -148,15 +140,17 @@ OBLOQ模块具备的两个基础功能：发送数据到物联网和接收物联
 <li class="toctree-l2"><a class="reference internal" href="02_Node-RED.html">2. Node-RED</a></li>
 <li class="toctree-l2"><a class="reference internal" href="03_Mindplus.html">3. Mind plus</a></li>
 <li class="toctree-l2"><a class="reference internal" href="04_mPython.html">4. 掌控板（mPython）</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">5. Arduino+OBloq</a></li>
-<li class="toctree-l2"><a class="reference internal" href="06_microbit.html">6. micro:bit+OBloq</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">5. Arduino</a></li>
+<li class="toctree-l2"><a class="reference internal" href="06_microbit.html">6. micro:bit</a></li>
 <li class="toctree-l2"><a class="reference internal" href="07_Appinventor.html">7. App Inventor2</a></li>
 <li class="toctree-l2"><a class="reference internal" href="08_Python.html">8. Python</a></li>
 <li class="toctree-l2"><a class="reference internal" href="09_Processing.html">9. Processing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="10_other.html">10. 其他软件</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../case/index.html">典型应用案例</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../advanced/index.html">高级操作技巧</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../attach/index.html">附录</a></li>
 </ul>
 
 <div class="relations">
@@ -165,7 +159,7 @@ OBLOQ模块具备的两个基础功能：发送数据到物联网和接收物联
   <li><a href="../index.html">Documentation overview</a><ul>
   <li><a href="index.html">客户端连接范例</a><ul>
       <li>Previous: <a href="04_mPython.html" title="previous chapter">4. 掌控板（mPython）</a></li>
-      <li>Next: <a href="06_microbit.html" title="next chapter">6. micro:bit+OBloq</a></li>
+      <li>Next: <a href="06_microbit.html" title="next chapter">6. micro:bit</a></li>
   </ul></li>
   </ul></li>
 </ul>

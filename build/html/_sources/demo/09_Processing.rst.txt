@@ -2,8 +2,6 @@ Processing
 =========================
 
 
-Processing简介
------------------------------------
 Processing是一款专为设计师和艺术家使用的编程语言，由美国麻省理工学院媒体实验室（MIT）美学与运算小组创立的。Processing的出现，被视为艺术设计创作的一场革命。利用Processing，艺术家可以将抽象的数据呈现为生动的视觉形象。它不仅可以生成唯美的图形，还能编写出功能强大的互动艺术作品。
 
 - Processing下载地址：https://processing.org/
@@ -11,7 +9,9 @@ Processing是一款专为设计师和艺术家使用的编程语言，由美国�
 
 Processing的MQTT库简介
 -----------------------------------
-Processing是一个开源的编程语言，有很多人为其开发了各种开源的库。在库文件中查找“MQTT”即可找到。
+Processing是一个开源的编程语言，有很多人为其开发了各种开源的库。借助MQTT库，Processing即可与MQTT服务器进行交互。
+
+在库文件中查找“MQTT”即可找到。
 
 .. image:: ../image/demo/09_processing_02.png
 

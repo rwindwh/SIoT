@@ -1,4 +1,4 @@
-﻿典型应用案例
+典型应用案例
 ========================
 
 这一部分主要介绍各种利用物联网技术实现的典型应用案例，重点关注如何利用物联网技术进行科学探究。
@@ -9,11 +9,11 @@
     :numbered: 2
 
     01_temperature
-    01_measure
-    02_Remotecontrol
+    02_measure
     03_dataview
-    04_Remotechat
+    04_Remotecontrol
     05_play
-    06_subtitles
-    07_Appinventor
-    08_DragonboatRace
+    06_smartfarm
+    08_DragonboatRaces
+    09_subtitles
+    00_caselist

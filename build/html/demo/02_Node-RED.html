@@ -44,8 +44,8 @@
 <h1>2. Node-RED<a class="headerlink" href="#node-red" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="id1">
 <h2>2.1. 简介与安装：<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
-<p>Node-RED是IBM开发的一个开源项目，能够通过拖动代码块实现可视化编程。它与Scratch的编程思想相近，通过节点块完成基础代码的编写，而节点间数据的传递则通过连线来创建数据流。</p>
-<p>之所以选择这个软件来搭配完成物联网项目，是由于Node-RED提供了一系列支持服务器及物联网的接口，能在传感器、服务器、路由器等设备间建模大量应用程序功能，简化了整体项目的开发。只需要简单修改节点中的参数，就能够让学生搭建出一个小有规模的客户端。</p>
+<p>Node-RED是IBM开发的一个开源项目，本来是为了满足工程师快速连接硬件和设备到Web服务和其他软件的需求。因为编程简单，流程清晰得到好评，并很快发展成为一种通用的物联网编程工具。它与Scratch的编程思想相近，通过节点块（Node）完成基础代码的编写，而节点间数据的传递则通过连线来创建数据流（Flows）。</p>
+<p>Node-RED提供了一系列支持服务器及物联网的接口，能在传感器、服务器、路由器等设备间建模大量应用程序功能，简化了整体项目的开发。只需要简单修改节点中的参数，就能够让学生搭建出一个小有规模的客户端。</p>
 <div class="line-block">
 <div class="line">进入Node.js官网，跳转至下载界面</div>
 <div class="line"><a class="reference external" href="http://nodejs.cn/download/">http://nodejs.cn/download/</a></div>
@@ -87,7 +87,7 @@
 </div>
 <div class="section" id="id4">
 <h2>2.4. 拓展应用：数据可视化<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
-<p>利用可视化dashboard控件在Node-RED中绘制图表</p>
+<p>在Node-RED中，有许多的第三方控件可以供我们使用。如果需要图表功能，则要使用Dashboard控件。</p>
 <p>Dashboard模块的安装：在右上角设置菜单中，选择节点管理，输入Dashboard进行安装，成功安装后会看到左侧的列表中出现了新的可用节点，我们可以从中选择不同的图表以及各种数据表现形式。</p>
 <img alt="../_images/02-Node-RED-08.png" src="../_images/02-Node-RED-08.png" />
 <p>将已经设置好参数的Mqtt输入与折线图控件连接起来，点击右上角的部署，保存当前节点，点击图中右上角框选部分</p>
@@ -95,7 +95,11 @@
 <p>就能得到一张简单图表。</p>
 </div>
 <div class="section" id="id5">
-<h2>2.5. 完成效果图<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<h2>2.5. 其他拓展应用<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<p>用Dashboard呈现物联网数据，仅仅是Node-RED的众多功能之一。作为物联网的一种粘合剂，Node-RED能够完成很多工作。比如，我们可以利用Node-RED监控物联网数据的传输情况，当传感器出现故障或者某个传感器数据达到阈值后，发送邮件提醒用户；可以简单的代码，按照既定的条件筛选比较数据，收集每日的温湿度峰值等；也可以根据数据的阈值，实时给某个Topic发送信息，实现物联网控制的功能。</p>
+</div>
+<div class="section" id="id6">
+<h2>2.6. 完成效果图<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
 <img alt="../_images/02-Node-RED-09.png" src="../_images/02-Node-RED-09.png" />
 </div>
 </div>
@@ -124,15 +128,17 @@
 <li class="toctree-l2 current"><a class="current reference internal" href="#">2. Node-RED</a></li>
 <li class="toctree-l2"><a class="reference internal" href="03_Mindplus.html">3. Mind plus</a></li>
 <li class="toctree-l2"><a class="reference internal" href="04_mPython.html">4. 掌控板（mPython）</a></li>
-<li class="toctree-l2"><a class="reference internal" href="05_Arduino.html">5. Arduino+OBloq</a></li>
-<li class="toctree-l2"><a class="reference internal" href="06_microbit.html">6. micro:bit+OBloq</a></li>
+<li class="toctree-l2"><a class="reference internal" href="05_Arduino.html">5. Arduino</a></li>
+<li class="toctree-l2"><a class="reference internal" href="06_microbit.html">6. micro:bit</a></li>
 <li class="toctree-l2"><a class="reference internal" href="07_Appinventor.html">7. App Inventor2</a></li>
 <li class="toctree-l2"><a class="reference internal" href="08_Python.html">8. Python</a></li>
 <li class="toctree-l2"><a class="reference internal" href="09_Processing.html">9. Processing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="10_other.html">10. 其他软件</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../example/index.html">典型应用案例</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../case/index.html">典型应用案例</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../advanced/index.html">高级操作技巧</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../attach/index.html">附录</a></li>
 </ul>
 
 <div class="relations">
