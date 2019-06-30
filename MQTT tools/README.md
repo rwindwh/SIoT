@@ -13,7 +13,7 @@
 
 简介：
 
-一个测试mqtt的软件，只有100k不到。
+一个测试mqtt的小工具，只有100k不到。
 请将程序与附带的dll文件置于同一目录下运行。
 
 - GitHub地址：https://github.com/vvlink/SIoT/tree/master/MQTT%20tools/Mqtttool
