@@ -9,6 +9,7 @@
     :numbered: 2
 
     01_temperature
+    01_heat_radiation
     02_measure
     03_dataview
     04_Remotecontrol
