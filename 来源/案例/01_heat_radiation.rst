@@ -59,38 +59,61 @@ LM35线性温度传感器   ×1
 三、SIoT服务器搭建
 
 SIoT的使用手册可通过以下地址访问：https://siot.readthedocs.io/zh_CN/latest/
+
 作为一个开源项目，SIoT存放于GitHub，点击使用手册的“文件下载”，根据电脑的操作系统选择相应版本软件包即可获得服务器程序。SIoT支持Linux、Mac、Windows，全面覆盖了常见操作系统。
-（一）硬件准备
 
-掌控板及其连接线
+.. image:: images/图片7.png 
 
-.. image:: ../image/haoqing/Mind+temperature-01.jpg
+不同于通常配置服务器的繁冗，部署SIoT服务器只需解压文件包后，双击运行服务器端程序即可。随后系统会弹出一个控制台窗口，滚屏显示日志信息，这样就算部署完毕了。
 
-扩展板及其连接线
+.. image:: images/图片8.png 
 
-.. image:: ../image/haoqing/Mind+temperature-02.jpg
+.. image:: images/图片9.png 
 
-温湿度传感器及其连接线
+四、实验装置的程序设计
 
-.. image:: ../image/haoqing/Mind+temperature-03.jpg
+实验装置的程序，使用了DFrobot的Mind+来编写。作为一款基于Scratch3.0开发的编辑器，Mind+可以让学生轻松地从Scratch迁移经验，非常适合普适性的STEM课程。将Mind+切换到“上传模式”后，依次添加掌控板、MQTT、WIFI三个模块。
 
-（二）软件准备
+.. image:: images/图片10.png 
 
-1.搭建SIoT服务器
+.. image:: images/图片11.png 
 
-直接双击点击与系统匹配的SIoT运行文件，屏幕会弹出一个黑色的CMD窗口，在配置中请不要关闭它。
+为了实验中可以将烧瓶摆放到位后再记录数据，程序设计为如果装置接收到“START”指令，才开始发送数据给SIoT，避免了通电就发送无效数据。完整程序见下图：
 
-.. image:: ../image/haoqing/Mind+temperature-04.jpg
+.. image:: images/图片12.png 
 
-2.登录SIoT平台
+.. image:: images/图片13.png 
 
-打开浏览器，输入url：http://localhost:8080。
+要确保掌控板连上SIoT，务必正确配置MQTT的初始化参数，初始化信息解读如图：
 
-.. image:: ../image/haoqing/Mind+temperature-05.jpg
+.. image:: images/图片14.png 
 
-3.打开Mind+ V1.5.5编写程序
+其中运行SIOT的服务器IP地址，可在安装了服务器的电脑上运行命令提示符，使用ipconfig命令获得。
 
-.. image:: ../image/haoqing/Mind+temperature-06.jpg
+将程序上传到掌控板后，如果配置正确，且局域网网络通畅，根据我们设计的程序，掌控板的OLED屏应显示提示信息——“SIOT已连接”。
+
+五、系统测试
+
+1. 登录服务器
+
+打开浏览器，如在服务器端，访问：http://localhost:8080，如通过局域网内其他设备访问，将地址中的“localhost”替换为服务器ip地址即可。
+
+.. image:: images/图片15.png 
+
+2. 登录后可以看到项目列表中出现了myPython，这便是我们新建的项目。在掌控向SIOT服务器发送第一条数据时（一般会将这个“握手信息”放在主程序MQTT连接成功后），便会在服务器建立掌控板程序中项目ID对应的项目。
+
+.. image:: images/图片16.png 
+
+点击“查看项目列表”——“查看消息”
+
+.. image:: images/图片17.png 
+
+3.根据我们设计的程序，发送消息“START”后，实验装置开始上传数据。刷新页面后，可以看到更新后的数据记录，还能导出为Excel表格进行数据分析。
+
+.. image:: images/图片18.png 
+
+.. image:: images/图片19.png 
+
 
 ---------------
 实施步骤
