@@ -16,11 +16,17 @@ VB（Visual Basic）程序中的Microsoft.XMLHTTP方法为VB软件与SIoT物联�
 
 Microsoft.XMLHTTP方法简介
     客户端调用XMLHTTP的过程很简单，只有5个步骤：
+    
     1、创建XMLHTTP对象
+    
     2、打开与服务端的连接，同时定义指令发送方式，服务网页(URL)和请求权限等。
+    
        客户端通过Open命令打开与服务端的服务网页的连接。与普通HTTP指令传送一样，可以用"GET"方法或"POST"方法指向服务端的服务网页。
+       
     3、发送指令。
+    
     4、等待并接收服务端返回的处理结果。
+    
     5、释放XMLHTTP对象
 
 
