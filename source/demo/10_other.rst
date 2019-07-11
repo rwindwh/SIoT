@@ -39,7 +39,7 @@ Microsoft.XMLHTTP方法简介
 
 1）第一页：设置服务器连接信息
 
-.. image:: ../image/demo/10_other-01.png
+.. image:: ../image/demo/10_other_01.png
 
 
 2）第二页：远程小钢琴界面
