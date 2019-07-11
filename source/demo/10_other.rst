@@ -46,15 +46,37 @@ Microsoft.XMLHTTP方法简介
 
 通过插入形状，制作远程小钢琴的界面
 
+.. image:: ../image/demo/10_other_02.png
+
 
 2、vba编写程序
 
 通过开发工具中的宏程序，创建7个音阶（do re mi fa sol la si）对应的程序。
 
+.. image:: ../image/demo/10_other_03.png
+
+.. image:: ../image/demo/10_other_04.png
+
+.. image:: ../image/demo/10_other_05.png
+
+.. image:: ../image/demo/10_other_06.png
+
+.. image:: ../image/demo/10_other_07.png
+
+.. image:: ../image/demo/10_other_08.png
+
+.. image:: ../image/demo/10_other_09.png
+
+.. image:: ../image/demo/10_other_10.png
+
+.. image:: ../image/demo/10_other_11.png
+
 
 3、ppt页面形状设置动作
 
 将ppt第二页中7个钢琴键的形状分别插入动作，并选择对应的运行程序。
+
+.. image:: ../image/demo/10_other_12.png
 
 
 4、掌控板端编写音乐程序
