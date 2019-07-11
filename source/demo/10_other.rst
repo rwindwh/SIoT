@@ -81,12 +81,20 @@ Microsoft.XMLHTTP方法简介
 
 4、掌控板端编写音乐程序
 
+设置掌控板连接WIFI和SIoT物联网平台
+
+.. image:: ../image/demo/10_other_13.png
+
 在掌控板端编写对应的音乐播放程序，当分别接收到7个音阶（do re mi fa sol la si）所对应的指令（1、2、3、4、5、6、7）时，播放相应的音乐。
 
+.. image:: ../image/demo/10_other_14.png
 
 5、播放ppt远程弹奏小钢琴
 
+.. image:: ../image/demo/10_other_15.png
 
+
+6、案例下载地址：下载
 
 具体例子（VB）
 -------------------------
