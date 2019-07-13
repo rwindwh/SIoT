@@ -100,21 +100,23 @@ Microsoft.XMLHTTP方法简介
 -------------------------
 1、VB程序界面设计
 
-
+.. image:: ../image/demo/10_other_16.png
 
 2、发送消息按钮编程
 
-
+.. image:: ../image/demo/10_other_17.png
 
 3、开启接收按钮编程
 
-
+.. image:: ../image/demo/10_other_18.png
 
 4、Timer事件编程
 
+.. image:: ../image/demo/10_other_19.png
 
+5、运行界面
 
-5、案例程序下载：下载
+.. image:: ../image/demo/10_other_20.png
 
-
+6、案例下载
 
