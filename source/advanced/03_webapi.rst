@@ -25,7 +25,7 @@ API列表：
 
     - 获取消息列表
 
-    Http://[SIoT的IP]:8080/topic=xzr/001&iname=siot&ipwd=dfrobot&pnum=1&psize=10&begin=2019-04-03+00%3A00%3A00&end=2019-06-07+00%3A00%3A00
+    Http://[SIoT的IP]:8080/messages?topic=xzr/001&iname=siot&ipwd=dfrobot&pnum=1&psize=10&begin=2019-04-03 00:00:00&end=2019-07-01 00:00:00
 
     **说明**：
     
