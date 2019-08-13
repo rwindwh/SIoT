@@ -7,7 +7,7 @@ SIoT提供了一系列的WebAPI，供用户调用。一些不支持MQTT的编程
 需要强调的是，HTTP的请求/应答方式的会话都是客户端发起的，缺乏服务器通知客户端的机制，如果要获取服务器信息，客户端应用需要不断地轮询服务器。这也就是在物联网方面，MQTT比HTTP更受欢迎的原因。
 
 API列表：
------------------
+-------------------
     - 发布消息
     Http://[SIoT的IP]:8080/publish?topic=xzr/001&msg=on&iname=siot&ipwd=dfrobot
 
@@ -25,9 +25,11 @@ API列表：
 
     - 获取消息列表
 
-    Http://[SIoT的IP]:8080/messages?topic=xzr/001&iname=siot&ipwd=dfrobot&pnum=1&psize=10&begin=2019-04-03 00:00:00&end=2019-07-01 00:00:00
+    Http://[SIoT的IP]:8080/messages?topic=xzr/001&iname=siot&ipwd=dfrobot&pnum=1&psize=10&begin=2019-04-04 00:00:00&end=2019-07-01 00:00:00
 
-    **说明**：
+    Http://[SIoT的IP]:8080/messages?topic=xzr/001&iname=siot&ipwd=dfrobot&pnum=1&psize=10&begin=2019-04-04&end=2019-07-01
+
+    **说明**：获取topicid（主题）“xzr/001”从“2019-04-04”到“2019-07-01”的数据。其中时间可以省略。
     
     返回数据：{"code":1,"data":[{"ID":26,"Topic":"xzr/001","Content":"10","Created":"2019-06-06 11:55:33"},{"ID":27,"Topic":"xzr/001","Content":"11","Created":"2019-06-06 11:55:39"}],"msg":"成功"}
 
@@ -79,7 +81,7 @@ API列表：
 
 
 返回数据的通用格式说明：
------------------------------------
+-------------------------------------------
 {
    code = 1,
    message = "",

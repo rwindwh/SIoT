@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>4. 智能家居之远程控制 &mdash; SIoT使用手册 1.0 documentation</title>
+  <title>5. 智能家居之远程控制 &mdash; SIoT使用手册 1.0 documentation</title>
   
 
   
@@ -44,8 +44,8 @@
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="5. 互动游戏之联机足球对战" href="05_play.html" />
-    <link rel="prev" title="3. 互动媒体之物联网数据呈现" href="03_dataview.html" /> 
+    <link rel="next" title="6. 互动游戏之联机足球对战" href="05_play.html" />
+    <link rel="prev" title="4. 互动媒体之物联网数据呈现" href="03_dataview.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -98,20 +98,21 @@
 <li class="toctree-l1"><a class="reference internal" href="../setup/index.html">安装和运行</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../demo/index.html">客户端连接范例</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">典型应用案例</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="01_temperature.html">1. 科学探究之定时测量温度</a></li>
-<li class="toctree-l2"><a class="reference internal" href="02_measure.html">2. 科学探究之通用定时测量工具</a></li>
-<li class="toctree-l2"><a class="reference internal" href="03_dataview.html">3. 互动媒体之物联网数据呈现</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">4. 智能家居之远程控制</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id2">4.1. 准备工作</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id3">4.2. 步骤</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id4">4.3. 参考代码</a></li>
+<li class="toctree-l2"><a class="reference internal" href="01_temperature.html">1. 科学探究之一天的温度分布</a></li>
+<li class="toctree-l2"><a class="reference internal" href="01_heat_radiation.html">2. 科学探究之热辐射实验</a></li>
+<li class="toctree-l2"><a class="reference internal" href="02_measure.html">3. 科学探究之通用定时测量工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="03_dataview.html">4. 互动媒体之物联网数据呈现</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">5. 智能家居之远程控制</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id2">5.1. 准备工作</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id3">5.2. 步骤</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id4">5.3. 参考代码</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="05_play.html">5. 互动游戏之联机足球对战</a></li>
-<li class="toctree-l2"><a class="reference internal" href="06_smartfarm.html">6. 互动媒体之智慧农场</a></li>
-<li class="toctree-l2"><a class="reference internal" href="08_DragonboatRaces.html">7. 互动媒体之龙舟竞赛</a></li>
-<li class="toctree-l2"><a class="reference internal" href="09_subtitles.html">8. 互动媒体之弹幕效果演示</a></li>
-<li class="toctree-l2"><a class="reference internal" href="00_caselist.html">9. 更多网络案例</a></li>
+<li class="toctree-l2"><a class="reference internal" href="05_play.html">6. 互动游戏之联机足球对战</a></li>
+<li class="toctree-l2"><a class="reference internal" href="06_smartfarm.html">7. 互动媒体之智慧农场</a></li>
+<li class="toctree-l2"><a class="reference internal" href="08_DragonboatRaces.html">8. 互动媒体之龙舟竞赛</a></li>
+<li class="toctree-l2"><a class="reference internal" href="09_subtitles.html">9. 互动媒体之弹幕效果演示</a></li>
+<li class="toctree-l2"><a class="reference internal" href="00_caselist.html">10. 更多网络案例</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../advanced/index.html">高级操作技巧</a></li>
@@ -163,7 +164,7 @@
         
           <li><a href="index.html">典型应用案例</a> &raquo;</li>
         
-      <li>4. 智能家居之远程控制</li>
+      <li>5. 智能家居之远程控制</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -183,10 +184,10 @@
            <div itemprop="articleBody">
             
   <div class="section" id="id1">
-<h1>4. 智能家居之远程控制<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<h1>5. 智能家居之远程控制<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
 <p>今天我们将分享给大家如何利用物联网平台进行远程控制，发送指令后接收端产生相应的反应。</p>
 <div class="section" id="id2">
-<h2>4.1. 准备工作<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<h2>5.1. 准备工作<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <p>在Mind+ V1.5.5的物联网模块——MQTT中，可以通过添加扩展掌控后提供的WIFI模块，与物联网平台连接，从而实现掌控板与web端、app端的互联。用户可以根据实际需要选择阿里云、Easy IoT、OneNet和SIoT四个平台物联网平台。我们在这里简单介绍如何使用SIoT平台来远程控制掌控板、Mind+，实现掌控板将数据上传到SIoT，SIoT同时将数据反馈到Mind+界面的效果。SIoT可以同时将消息发送至掌控板与Mind+。</p>
 <p>（一）硬件准备</p>
 <p>掌控板及其连接线</p>
@@ -202,7 +203,7 @@
 <img alt="../_images/Mind+yuancheng-04.png" src="../_images/Mind+yuancheng-04.png" />
 </div>
 <div class="section" id="id3">
-<h2>4.2. 步骤<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<h2>5.2. 步骤<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 <p>为了方便大家的理解，我们将远程控制实现的功能用以下系统流程图进行展示。在下方具体的操作中，文档按照**受控制端（掌控板）、控制端（mind+实时模式）**进行划分展示的。</p>
 <p><strong>系统流程图</strong></p>
 <img alt="../_images/Mind+yuancheng-30.png" src="../_images/Mind+yuancheng-30.png" />
@@ -250,7 +251,7 @@
 <img alt="../_images/Mind+yuancheng-29.jpg" src="../_images/Mind+yuancheng-29.jpg" />
 </div>
 <div class="section" id="id4">
-<h2>4.3. 参考代码<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<h2>5.3. 参考代码<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
 <p>代码下载地址：<a class="reference external" href="https://github.com/vvlink/SIoT/tree/master/examples/Mind%2B">https://github.com/vvlink/SIoT/tree/master/examples/Mind%2B</a></p>
 </div>
 </div>
@@ -263,10 +264,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="05_play.html" class="btn btn-neutral float-right" title="5. 互动游戏之联机足球对战" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="05_play.html" class="btn btn-neutral float-right" title="6. 互动游戏之联机足球对战" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="03_dataview.html" class="btn btn-neutral float-left" title="3. 互动媒体之物联网数据呈现" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="03_dataview.html" class="btn btn-neutral float-left" title="4. 互动媒体之物联网数据呈现" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

@@ -50,6 +50,64 @@ Mind+是一款基于Scratch3.0开发的青少年编程软件，让大家轻松�
 
 .. image:: ../image/linmiaoyan/Mind_Mqtt_01.png
 
+
+掌控板的MQTT代码（基于Mixly）
+-------------------------------------------------------
+Mixly是在北京师范大学教育学部创客教育实验室负责人傅骞老师的带领下，由其团队开发的一款国内自主研发，且免费开源的图形化编程工具。
+
+Mixly支持包括arduino、ESP32、ESP8266、micro:bit在内的绝大多数创客类硬件。
+
+软件下载及准备工作 ： https://mixly.readthedocs.io/zh_CN/latest/basic/01.Installation-for-Mixly.html
+
+**编程准备**
+
+下载并解压好Mixly之后，在软件右下角板卡选择中选择Arduino HandBit ，该板卡即为掌控板。
+
+右上角选择 *高级试图*。
+
+.. image:: ../image/example/Mixly.png
+
+**连接到MQTT服务器**
+
+修改WiFi信息， 填写MQTT服务器信息，程序如下图所示：
+
+.. image:: ../image/example/Mixly_connect_MQTT.png
+
+点击软件右下角 上传 ，上传程序到掌控板。
+
+在上传过程中，如果在编译信息框中看到如下信息，则需要按住掌控板的A键才能上传。（老版本掌控板有此问题，新版本可以直接上传）
+
+.. image:: ../image/example/Mixly_MQTT_upload.png
+
+上传成功后，打开串口监视器，可以看到如下信息，说明掌控板连接网络正常，首先是连接wifi正常，掌控板得到IP地址，然后是连接MQTT服务器正常。
+
+.. image:: ../image/example/Mixly_connected_MQTT.png
+
+
+**MQTT发送消息**
+
+当某事件发生时，发送消息到某个主题。
+
+.. image:: ../image/example/Mixly_MQTT_publish.png
+
+程序上传之后，按下掌控板上的A键，在网页端可以收到消息，如下图所示。
+
+.. image:: ../image/example/Mixly_MQTT_publish_result.png
+
+
+
+**MQTT订阅消息**
+
+当从某个主题接收到消息时，打印该消息。
+
+.. image:: ../image/example/Mixly_MQTT_Subscribe.png
+
+通过siot网页发送消息，可以在mixly的串口监视器中查看到接收到的值。
+
+.. image:: ../image/example/Mixly_MQTT_Subscribe_result.png
+
+
+
 掌控板的MQTT代码（基于BXY）
 -------------------------------------------------------
 

@@ -106,6 +106,7 @@
 <li class="toctree-l2 current"><a class="current reference internal" href="#">5. 常见问题解答</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#siot">5.1. 1.为什么掌控板无法连接SIoT？</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#ip">5.2. 2.如何获取电脑的IP地址？</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id2">5.3. 3.如何在虚谷号中运行SIoT</a></li>
 </ul>
 </li>
 </ul>
@@ -188,7 +189,12 @@
 <div><p>建议用MQTT客户端程序来访问SIoT，如手机端的MQTTool、电脑端的MQTTbox，确认MQTT服务是否正常。如果不正常，建议关闭各种防火墙软件，尤其是360。</p>
 </div></blockquote>
 </li>
-<li></li>
+<li><p class="first">掌控板和运行SIoT的电脑（服务器）是否可以相互访问。</p>
+<blockquote>
+<div><p>（1）使用Ping命令，在运行SIoT的电脑Ping掌控板的IP地址。
+（2）将掌控板和运行SIoT的电脑接入同一个局域网，如连接同一个无线路由器。</p>
+</div></blockquote>
+</li>
 </ul>
 </div>
 <div class="section" id="ip">
@@ -204,6 +210,15 @@
 <p>3）在小黑框中输入“ipconfig”，点击键盘“enter”，在小黑框中可以看到IP地址，如下图IP为192.168.9.191。</p>
 <img alt="../_images/arduino-16.png" src="../_images/arduino-16.png" />
 <p><strong>注意：每次连接不同的WIFI，电脑的IP地址都可能会发生变化，需要通过上述方法重新获取。</strong></p>
+</div>
+<div class="section" id="id2">
+<h2>5.3. 3.如何在虚谷号中运行SIoT<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>将SIoT（linux版本）拷贝到虚谷号中,例如/data/SIoT目录。然后，将该目录的权限设定为最高权限。方法如下:
+打开terminal(终端)输入: chmod -R 777 /data/SIoT
+双击运行虚谷号的可执行文件即可。
+如果希望这个程序能够在后台保持运行，请使用nohup命令，如：nohup ./SIoT_linux &amp;
+其中“SIoT_linux”为程序的路径。</p>
+<img alt="../_images/vvloard-siot.jpeg" src="../_images/vvloard-siot.jpeg" />
 </div>
 </div>
 

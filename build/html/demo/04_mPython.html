@@ -105,8 +105,9 @@
 <li class="toctree-l3"><a class="reference internal" href="#id1">5.1. 掌控板功能介绍</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#id2">5.2. 掌控板的编程工具介绍</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#mqtt-mind">5.3. 掌控板的MQTT代码（基于Mind+）</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#mqtt-bxy">5.4. 掌控板的MQTT代码（基于BXY）</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#mqtt-mpythonx">5.5. 掌控板的MQTT代码（基于mPythonX）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#mqtt-mixly">5.4. 掌控板的MQTT代码（基于Mixly）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#mqtt-bxy">5.5. 掌控板的MQTT代码（基于BXY）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#mqtt-mpythonx">5.6. 掌控板的MQTT代码（基于mPythonX）</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="05_Arduino.html">6. Arduino</a></li>
@@ -223,8 +224,36 @@
 <p><strong>订阅消息</strong></p>
 <img alt="../_images/Mind_Mqtt_01.png" src="../_images/Mind_Mqtt_01.png" />
 </div>
+<div class="section" id="mqtt-mixly">
+<h2>5.4. 掌控板的MQTT代码（基于Mixly）<a class="headerlink" href="#mqtt-mixly" title="Permalink to this headline">¶</a></h2>
+<p>Mixly是在北京师范大学教育学部创客教育实验室负责人傅骞老师的带领下，由其团队开发的一款国内自主研发，且免费开源的图形化编程工具。</p>
+<p>Mixly支持包括arduino、ESP32、ESP8266、micro:bit在内的绝大多数创客类硬件。</p>
+<p>软件下载及准备工作 ： <a class="reference external" href="https://mixly.readthedocs.io/zh_CN/latest/basic/01.Installation-for-Mixly.html">https://mixly.readthedocs.io/zh_CN/latest/basic/01.Installation-for-Mixly.html</a></p>
+<p><strong>编程准备</strong></p>
+<p>下载并解压好Mixly之后，在软件右下角板卡选择中选择Arduino HandBit ，该板卡即为掌控板。</p>
+<p>右上角选择 <em>高级试图</em>。</p>
+<img alt="../_images/Mixly.png" src="../_images/Mixly.png" />
+<p><strong>连接到MQTT服务器</strong></p>
+<p>修改WiFi信息， 填写MQTT服务器信息，程序如下图所示：</p>
+<img alt="../_images/Mixly_connect_MQTT.png" src="../_images/Mixly_connect_MQTT.png" />
+<p>点击软件右下角 上传 ，上传程序到掌控板。</p>
+<p>在上传过程中，如果在编译信息框中看到如下信息，则需要按住掌控板的A键才能上传。（老版本掌控板有此问题，新版本可以直接上传）</p>
+<img alt="../_images/Mixly_MQTT_upload.png" src="../_images/Mixly_MQTT_upload.png" />
+<p>上传成功后，打开串口监视器，可以看到如下信息，说明掌控板连接网络正常，首先是连接wifi正常，掌控板得到IP地址，然后是连接MQTT服务器正常。</p>
+<img alt="../_images/Mixly_connected_MQTT.png" src="../_images/Mixly_connected_MQTT.png" />
+<p><strong>MQTT发送消息</strong></p>
+<p>当某事件发生时，发送消息到某个主题。</p>
+<img alt="../_images/Mixly_MQTT_publish.png" src="../_images/Mixly_MQTT_publish.png" />
+<p>程序上传之后，按下掌控板上的A键，在网页端可以收到消息，如下图所示。</p>
+<img alt="../_images/Mixly_MQTT_publish_result.png" src="../_images/Mixly_MQTT_publish_result.png" />
+<p><strong>MQTT订阅消息</strong></p>
+<p>当从某个主题接收到消息时，打印该消息。</p>
+<img alt="../_images/Mixly_MQTT_Subscribe.png" src="../_images/Mixly_MQTT_Subscribe.png" />
+<p>通过siot网页发送消息，可以在mixly的串口监视器中查看到接收到的值。</p>
+<img alt="../_images/Mixly_MQTT_Subscribe_result.png" src="../_images/Mixly_MQTT_Subscribe_result.png" />
+</div>
 <div class="section" id="mqtt-bxy">
-<h2>5.4. 掌控板的MQTT代码（基于BXY）<a class="headerlink" href="#mqtt-bxy" title="Permalink to this headline">¶</a></h2>
+<h2>5.5. 掌控板的MQTT代码（基于BXY）<a class="headerlink" href="#mqtt-bxy" title="Permalink to this headline">¶</a></h2>
 <p>BXY是一款运行于Windows平台的MicroPython编程IDE，界面简洁，操作便利。BXY是浙教版普通高中信息技术教材的为众多micro:bit和掌控板爱好者提供了一个简洁实用的平台。</p>
 <p>下载地址：<a class="reference external" href="http://docs.dfrobot.com.cn/bxy/">http://docs.dfrobot.com.cn/bxy/</a></p>
 <p><strong>代码说明：</strong></p>
@@ -375,7 +404,7 @@
 </div>
 </div>
 <div class="section" id="mqtt-mpythonx">
-<h2>5.5. 掌控板的MQTT代码（基于mPythonX）<a class="headerlink" href="#mqtt-mpythonx" title="Permalink to this headline">¶</a></h2>
+<h2>5.6. 掌控板的MQTT代码（基于mPythonX）<a class="headerlink" href="#mqtt-mpythonx" title="Permalink to this headline">¶</a></h2>
 <p>图形化代码拖入后无法正常显示，请先检查左边控件栏中，物联网箭头下是否有MQTT模块，如无该模块请检查软件版本。</p>
 <p><strong>注意：因为MicroPython的MQTT库（simple.py）的缺陷，我们发现如果SIoT运行在Windows系统上，在mPythonX的发送消息语句后加上延时，将会导致一定时间后消息发送不成功！在MQTT库未升级之前，请使用定时器来发送消息。</strong></p>
 <p>代码下载地址：<a class="reference external" href="https://github.com/vvlink/SIoT/tree/master/examples/%E6%8E%8C%E6%8E%A7%E6%9D%BF%E4%BB%A3%E7%A0%81/mPythonX/%E5%8F%91%E9%80%81%E6%B6%88%E6%81%AF">https://github.com/vvlink/SIoT/tree/master/examples/%E6%8E%8C%E6%8E%A7%E6%9D%BF%E4%BB%A3%E7%A0%81/mPythonX/%E5%8F%91%E9%80%81%E6%B6%88%E6%81%AF</a></p>

@@ -6,19 +6,21 @@ SIoT既可以作为教师教学物联网课程的教学支持平台，也可以�
 
 下载地址：https://github.com/vvlink/SIoT/tree/master/software
 
+或者http://mindplus.dfrobot.com.cn/siot
+
 登录Web页面
 ---------------------
 如果你是Windows用户，请运行SIot_win.exe。类似的，如果你是Linux用户，请运行SIoT_linux，如果你是Mac用户，请运行SIoT_mac。
 启动软件后请不要关闭这个黑窗口，它将维持你的计算机（电脑）作为MQTT服务器。  
   
   
-.. image:: ../image/eason/setup.PNG    
+.. image:: ../image/setup/03_view_01.PNG   
 
 打开浏览器，输入：http://localhost:8080 或者 http://127.0.0.1:8080 进行登录     
 
 - 你在黑框第一行会看到1883字样，那是MQTT协议的默认端口。Web管理方面，默认使用的是8080端口。
 
-.. image:: ../image/eason/login.PNG    
+.. image:: ../image/setup/03_view_02.PNG    
 
 默认用户名（user）为：siot    
 
