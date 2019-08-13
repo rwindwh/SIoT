@@ -14,6 +14,7 @@ SIoT采用GO语言编写，具有如下特点：
 - 支持数据导出。所有的物联网消息数据都可以在线导出，系统采用SQLite数据库，同时支持Mysql数据库。
 - 支持WebAPI。系统系统了完善的WebAPI，方便各种软件以HTTP的方式调用，支持App inventor、Scratch、VB等默认不支持MQTT的中小学生常用编程软件调用。
 - 支持插件开发。
+- QoS级别为0。支持
 
 SIoT的GitHub：https://github.com/vvlink/SIoT/
 
@@ -56,7 +57,7 @@ SIoT下载地址
 
 | https://github.com/vvlink/SIoT/
 
-最新版本1.1。
+最新版本1.2。
 
     1.Win64位，支持Win10，Win8，Win7等64位系统。
 
@@ -64,5 +65,5 @@ SIoT下载地址
 
     3.Mac64，支持Mac的64位系统。
 
-    4.Linux64，支持MLinux的64位系统。
+    4.Linux64，支持Linux（虚谷号和树莓派）的64位系统。
 
