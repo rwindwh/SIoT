@@ -17,7 +17,11 @@ SIoT采用GO语言编写，最大的特点为跨平台，一键运行。只要�
 1. 支持插件开发。
 1.  QoS级别为0。
 
+## SIoTV1.2下载地址
+| https://github.com/vvlink/SIoT/tree/master/software/SIoT1.2
+
 ## 更新内容
+
 1. ### V1.2版本更新
     * #### 增加retain机制
     * #### 增加will机制
