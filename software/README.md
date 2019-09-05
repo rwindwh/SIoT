@@ -34,7 +34,7 @@ SIoT采用GO语言编写，最大的特点为跨平台，一键运行。只要�
     *  SIOT服务器一键启动
 
 ## SIoT软件资源（最新）下载地址
-| https://github.com/vvlink/SIoT/tree/master/software/SIoT1.2
+|https://github.com/vvlink/SIoT/tree/master/software/SIoT1.2
 
 
 **SIoT开发团队介绍**
@@ -55,4 +55,4 @@ SIoT采用GO语言编写，最大的特点为跨平台，一键运行。只要�
 - 夏青（上海蘑菇云）
 - ……
 
-##注：本软件得到温州市科技局2019年科技创新项目的资助，为《物联网与科学探究创意实验》项目的成果之一，采用CC协议开源。
+## 注：本软件得到温州市科技局2019年科技创新项目的资助，为《物联网与科学探究创意实验》项目的成果之一，采用CC协议开源。
