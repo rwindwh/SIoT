@@ -36,8 +36,9 @@ SIoT采用GO语言编写，最大的特点为跨平台，一键运行。只要�
 ### SIoT软件资源（最新）下载地址
 |https://github.com/vvlink/SIoT/tree/master/software/SIoT1.2
 
-### SIoT的资源GitHub：https://github.com/vvlink/SIoT/
-提供文档、案例、课程
+### SIoT文档的阅读地址
+
+  https://siot.readthedocs.io/
 
 **SIoT开发团队介绍**
 
