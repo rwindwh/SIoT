@@ -17,7 +17,7 @@ Window版本
 双击运行SIoT_win.exe（根据你的电脑，正确选择64或者32位），将看到一个黑色的CMD窗口。窗口中显示各种连接信息。
 如果你想维持你的计算机作为MQTT服务器的话，请不要关闭它。
 
-.. image:: ../image/eason/setup.PNG
+.. image:: ../image/setup/v1.2.png
 
 Mac版本
 --------------------
