@@ -3,9 +3,9 @@
 
 SIoT是一个绿色软件，将下载的压缩包解压并打开后，你能看到多个文件，如：
 
-- SIoT_win.exe（Win10版本执行文件）
-- SIoT_mac（Mac版本可执行文件）
-- SIoT_linux（Linux版本执行文件）
+- SIoT1.2_win.exe（Win10、Win7版本执行文件）
+- SIoT1.2_mac（Mac版本可执行文件）
+- SIoT1.2_linux（Linux版本执行文件）
 
 **注**：更多操作系统支持的文件在不断增加中。我们正在开发windows下的“启动助手”，让软件的使用更加方便。
 
