@@ -8,7 +8,7 @@
 
   **项目开源地址（github）：https://github.com/vvlink/SIoT/**
 
-  **国内镜像地址（码云）：https://gitee.com/xiezuoru/SIoT**
+  **码云镜像地址：https://gitee.com/xiezuoru/SIoT**
 
 ## 项目目标：
 
