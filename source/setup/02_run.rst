@@ -28,13 +28,10 @@ Mac版本
 
 **注意：** 如果提示没有权限，先添加“执行”权限。
 
-- 增加执行权限的命令：chmod a+x ./SIoT_mac
+- 增加执行权限的命令：chmod a+x ./SIoT_mac64_1_2
 
 如果担心程序运行后被中止，可以使用nohup命令运行。
 
-参考命令：nohup node /Users/xiezuoru/Desktop/iot_test/SIOT_Mac &
-
-其中“/Users/xiezuoru/Desktop/iot_test/SIOT_Mac”为程序的路径。
 
 linux版本
 -------------------
