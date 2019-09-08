@@ -24,7 +24,7 @@ Mac版本
 
 双击运行，或者打开终端转到相应目录然后执行命令，如“./SIoT_mac”。
 
-.. image:: ../image/setup/win1.2.png
+.. image:: ../image/setup/mac1.2.png
 
 **注意：** 如果提示没有权限，先添加“执行”权限。
 
