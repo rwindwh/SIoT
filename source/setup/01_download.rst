@@ -10,6 +10,9 @@ http://mindplus.dfrobot.com.cn/siot
 
 https://github.com/vvlink/SIoT/  
 
-当前软件版本：SIoT v1.1  
+当前软件版本：SIoT v1.2  
 
 直达地址：https://github.com/vvlink/SIoT/tree/master/software
+
+**注：**
+  虚谷号上已经预装了SIoT，插电后连上Wi-Fi即可使用。
