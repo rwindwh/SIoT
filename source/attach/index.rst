@@ -8,6 +8,7 @@
     :maxdepth: 2
     :numbered: 2
 
+    siotlib
     trigger
     radio
     light
