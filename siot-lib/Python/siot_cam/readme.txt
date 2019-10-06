@@ -1,0 +1,19 @@
+文件夹内各个文件的用途
+cache、pycache：缓存文件夹
+1.setup.py
+功能：
+    用于首次使用本系统时运行一次即可，以后无需运行。
+2.webapp.py
+功能：
+    用于显示当前数据
+（1）显示当前数据：http://0.0.0.0:8080
+    json格式数据样例如下：b'iVBORw0KGg=A·······'
+    数据中包括：时间、温度、图片
+3.data/data.db
+功能：数据库文件，运行setup.py自动建立，能够存储数据
+4.templates/index.html
+功能：主页样式
+5.static/image
+功能：重新编码后储存在本地的图片，可以显示在网页上
+6.simple.py
+功能：siot支持库，简化mqt物联网代码
