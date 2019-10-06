@@ -1,9 +1,17 @@
-演示视频见：https://github.com/linmiaoyan/Lins-video/blob/master/%E8%8A%B1%E7%9B%86%E4%BC%B4%E4%BE%A3%E6%BC%94%E7%A4%BA%E8%A7%86%E9%A2%91.mp4
+# 科学观察小助手
+
+## 简介
+
+科学观察活动要求学生记录各种科学数据，包括环境数据和照片。科学观察小助手利用虚谷号、摄像头和其他传感器，能够实现在线定时记录各种科学数据和图片。
+
+## 使用说明
+
 文件夹内各个文件的用途
 cache、pycache：缓存文件夹
 1.setup.py
 功能：
     用于首次使用本系统时运行一次即可，以后无需运行。
+
 2.webapp.py
 功能：
     用于显示当前数据
@@ -18,3 +26,5 @@ cache、pycache：缓存文件夹
 功能：重新编码后储存在本地的图片，可以显示在网页上
 6.simple.py
 功能：siot支持库，简化mqt物联网代码
+
+演示视频见：https://github.com/linmiaoyan/Lins-video/blob/master/%E8%8A%B1%E7%9B%86%E4%BC%B4%E4%BE%A3%E6%BC%94%E7%A4%BA%E8%A7%86%E9%A2%91.mp4
