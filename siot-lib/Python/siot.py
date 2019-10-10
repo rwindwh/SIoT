@@ -1,3 +1,14 @@
+'''
+# file siot.py
+
+# brief         download into pc or raspberryPi and run the demo
+# Copyright     Copyright (c) 2010 DFRobot Co.Ltd (http://www.dfrobot.com)
+# licence       The MIT License (MIT)
+# author        [LuoYufeng](yufeng.luo@dfrobot.com)
+# version       V1.0
+# date          2019-10-8
+'''
+
 import threading
 import paho.mqtt.client as mqtt
 import time
