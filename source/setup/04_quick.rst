@@ -47,10 +47,18 @@ Web管理
 故障排查
 ---------------------
 
-如果接收不到数据，请关闭运行SIoT服务器的电脑的各种病毒防火墙或者网络防火墙（安全卫士）。
+1、如果接收不到数据，请关闭运行SIoT服务器的电脑的各种病毒防火墙或者网络防火墙（安全卫士）。
 
-在其他电脑使用mqtt的工具测试SIoT，推荐MqttTool（一个测试mqtt的软件，只有100k不到。）
+2、在其他电脑使用MQTT客户端测试SIoT，推荐MqttTool（一个测试mqtt的软件，只有100k不到）。
 
 - GitHub地址：https://github.com/vvlink/SIoT/tree/master/MQTT%20tools/Mqtttool
 - 下载地址：https://github.com/vvlink/SIoT/tree/master/MQTT%20tools/Mqtttool
+
+3、在手机使用MQTT客户端测试SIOT，推荐MQTT Client（安卓）。
+
+-下载地址：http://www.mdpda.com/app/apk7623192.html
+
+而iPhone用户可以使用MQTTool，通过App Store即可安装MQTTool。
+
+这些软件的使用可以参考“客户端连接范例”https://siot.readthedocs.io/zh_CN/latest/demo/index.html
 
