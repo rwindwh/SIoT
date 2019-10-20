@@ -26,6 +26,7 @@ SIoT既可以作为教师教学物联网课程的教学支持平台，也可以�
 
 默认密码（pwd）为：dfrobot  
 
+**注意**：可以通过config.json文件修改用户名、密码和Web端口等信息。
 
 
 查看项目
@@ -84,3 +85,5 @@ SIoT既可以作为教师教学物联网课程的教学支持平台，也可以�
 .. image:: ../image/eason/SendMsg.PNG
 
 地址：http://localhost:8080/html/sendMsg.html
+
+当前Topic（消息）有通信记录（发送或接收均可）后，你也可以通过 设备列表-查看消息 页面左上角的“发送消息”窗口发送消息，这样省去了输入Topic的麻烦步骤。
