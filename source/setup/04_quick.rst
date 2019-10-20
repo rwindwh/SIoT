@@ -56,7 +56,7 @@ Web管理
 
 3、在手机使用MQTT客户端测试SIOT，推荐MQTT Client（安卓）。
 
--下载地址：http://www.mdpda.com/app/apk7623192.html
+- 下载地址：http://www.mdpda.com/app/apk7623192.html
 
 而iPhone用户可以使用MQTTool，通过App Store即可安装MQTTool。
 
