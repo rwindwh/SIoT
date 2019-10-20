@@ -44,7 +44,7 @@
 - MQTT tools，提供常见的MQTT调试、应用工具
 - examples，提供各种应用范例
 - essay，与物联网应用、科学测量相关的案例、论文
-- build，已经生成的SIoT文档（Html格式）
+- build，已经生成的SIoT文档（HTML格式）
 - source，SIoT文档（使用手册）的源码
 
 **虚谷物联的LOGO，设计人：邹燕儿**
