@@ -18,7 +18,7 @@ MQTT信息的发送和订阅（mPythonX）
 
 直接双击点击与系统匹配的SIoT运行文件，屏幕会弹出一个黑色的CMD窗口，在配置中请不要关闭它。
 
-.. image:: ../image/xujingyu/sasom-02.jpg
+.. image:: ../image/setup/03_view_01.JPG
 
 2.登录SIoT平台
 
