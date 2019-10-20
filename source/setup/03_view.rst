@@ -80,10 +80,16 @@ SIoT既可以作为教师教学物联网课程的教学支持平台，也可以�
 
 - Topic的格式为：项目ID/设备名。例如：Seifer/light1
 
-- 消息发送成功后，系统会自动根据topic建立“项目”和“设备”。如果项目和设备已经存在则在此设备上追加数据。
+- 消息发送成功后，系统会自动根据Topic建立“项目”和“设备”。如果项目和设备已经存在则在此设备上追加数据。
 
 .. image:: ../image/eason/SendMsg.PNG
 
 地址：http://localhost:8080/html/sendMsg.html
 
-当前Topic（消息）有通信记录（发送或接收均可）后，你也可以通过 设备列表-查看消息 页面左上角的“发送消息”窗口发送消息，这样省去了输入Topic的麻烦步骤。
+**注意**：当前Topic（消息）有通信记录（发送或接收均可）后，你也可以通过 设备列表-查看消息 页面左上角的“发送消息”窗口发送消息，这样省去了输入Topic的麻烦步骤。
+
+.. image:: ../image/eason/topicMsg.PNG
+
+地址：http://localhost:8080/html/messages.html?topic=PROGRAM_ID/TOPIC_ID
+
+请把PROGRAM_ID替换成自己的项目名，把TOPIC_ID替换成自己的消息名。
