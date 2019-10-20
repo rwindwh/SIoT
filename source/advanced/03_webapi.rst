@@ -8,6 +8,7 @@ SIoT提供了一系列的WebAPI，供用户调用。一些不支持MQTT的编程
 
 API列表：
 -------------------
+  这里的账号密码为默认的siot和dfrobot，如果您曾修改过账号或密码，这里的iname或ipwd也需要相应的修改。
     - 发布消息
     Http://[SIoT的IP]:8080/publish?topic=xzr/001&msg=on&iname=siot&ipwd=dfrobot
 
