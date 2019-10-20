@@ -14,11 +14,11 @@ SIoT既可以作为教师教学物联网课程的教学支持平台，也可以�
 启动软件后请不要关闭这个黑窗口，它将维持你的计算机（电脑）作为MQTT服务器。  
   
   
-.. image:: ../image/setup/03_view_01.PNG   
+.. image:: ../image/setup/03_view_01.JPG   
 
 打开浏览器，输入：http://localhost:8080 或者 http://127.0.0.1:8080 进行登录     
 
-- 你在黑框第一行会看到1883字样，那是MQTT协议的默认端口。Web管理方面，默认使用的是8080端口。
+- 使用v1.2版本时，在黑框可以看到所有可能的局域网IP地址，要想知道哪一个是可行的，可以尝试用这些地址发起连接。具体操作可以参考常见MQTT客户端https://siot.readthedocs.io/zh_CN/latest/demo/01_tool_phone.html
 
 .. image:: ../image/setup/03_view_02.PNG    
 
