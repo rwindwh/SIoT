@@ -10,7 +10,7 @@ http://mindplus.dfrobot.com.cn/siot
 
 https://github.com/vvlink/SIoT/  
 
-当前软件版本：SIoT v1.2  
+最新软件版本：SIoT v1.2  
 
 直达地址：https://github.com/vvlink/SIoT/tree/master/software
 
