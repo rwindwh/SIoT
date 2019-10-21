@@ -79,13 +79,13 @@ MQTT协议相关知识
 
 4.标注位（RETAIN）
 
-　　当我们使用MQTT客户端发布消息（PUBLISH）时，如果将RETAIN标志位设置为true，那么MQTT服务器会将最近收到的一条RETAIN标志位为true的消息保存在服务器端（内存或文件）。
+　　当我们使用MQTT客户端发布消息（Publish）时，如果将RETAIN标志位设置为true，那么MQTT服务器会将最近收到的一条RETAIN标志位为true的消息保存在服务器端（内存或文件）。
   
 特别注意：
 
 　　MQTT服务器只会为每一个Topic保存最近收到的一条RETAIN标志位为true的消息。也就是说，如果MQTT服务器上已经为某个Topic保存了一条Retained消息，当客户端再次发布一条新的Retained消息，那么服务器上原来的那条消息会被覆盖！
   
-　　每当MQTT客户端连接到MQTT服务器并订阅了某个topic，如果该topic下有Retained消息，那么MQTT服务器会立即向客户端推送该条Retained消息。
+　　每当MQTT客户端连接到MQTT服务器并订阅了某个Topic，如果该Topic下有Retained消息，那么MQTT服务器会立即向客户端推送该条Retained消息。
 
 
 
