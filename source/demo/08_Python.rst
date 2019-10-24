@@ -3,12 +3,12 @@ Python
 Python是一种计算机程序设计语言。是一种面向对象的动态类型语言，最初被设计用于编写自动化脚本(shell)，随着版本的不断更新和语言新功能的添加，越来越多被用于独立的、大型项目的开发。因为Python开源，很多人为Python开发了各种模块、库，老而弥坚，越来越受到关注，被誉为人工智能编程方面的第一选择。
 
 
-Python的MQTT库简介
+Python的siot库简介
 --------------------------------
 
-首先需要安装Python的MQTT库。
+首先需要安装Python的siot库。
 
-  pip install paho-mqtt
+  pip install siot
 
 
 参考代码
@@ -16,67 +16,61 @@ Python的MQTT库简介
 
 **代码功能**
 
-连接服务器，发送和订阅消息。
+连接服务器，发送消息。
 
 ::
 
-    # coding=utf-8
-
-    import threading
-    import paho.mqtt.client as mqtt
+    import siot
     import time
 
-    SERVER = "127.0.0.1"	#MQTT服务器IP
-    CLIENT_ID = "79afcb3bdb44b7aa"	#在SIoT上，CLIENT_ID可以留空
-    TOPIC = 'xzr/001'	#“topic”为“项目名称/设备名称”
-    username='siot'		#用户名
-    password='dfrobot'	#密码
+    SERVER = "127.0.0.1"            #MQTT服务器IP
+    CLIENT_ID = ""                  #在SIoT上，CLIENT_ID可以留空
+    IOT_pubTopic  = 'xzr/001'       #“topic”为“项目名称/设备名称”
+    IOT_UserName ='siot'            #用户名
+    IOT_PassWord ='dfrobot'         #密码
 
-    class MqttClient:
-        client = mqtt.Client(CLIENT_ID)
+    siot.init(CLIENT_ID, SERVER, user=IOT_UserName, password=IOT_PassWord)
+    siot.connect()
+    siot.loop()
 
-        def __init__(self, host, port):
-            self._host = host
-            self._port = port
-            self.client.on_connect = self._on_connect
-            self.client.on_message = self._on_message
+    tick = 0
 
-        def connect(self, username, password):
-            self.client.username_pw_set(username, password)
-            self.client.connect(self._host, self._port, 60)
-
-        def publish(self, topic, data):
-            self.client.publish(str(topic), str(data))
-
-        def loop(self, timeout=None):
-            thread = threading.Thread(target=self._loop, args=(timeout,))
-            # thread.setDaemon(True)
-            thread.start()
-
-        def _loop(self, timeout=None):
-            if not timeout:
-                self.client.loop_forever()
-            else:
-                self.client.loop(timeout)
-
-        def _on_connect(self, client, userdata, flags, rc):
-            print("\nConnected with result code " + str(rc))
-            client.subscribe(TOPIC)
-
-        def _on_message(self, client, userdata, msg):
-            print("\n收到Topic:" + str(msg.topic) + " Message:" + str(msg.payload))
-
-    if __name__ == '__main__':
-        tick = 0 # 要发送的数字
-        client = MqttClient(SERVER, 1883)
-        client.connect(username,password)
-        client.publish(TOPIC, 'hello')
-        client.loop()
+    try:
         while True:
-            client.publish(TOPIC,"value %d"%tick)
-            time.sleep(5) #隔5秒发送一次
+            siot.publish(IOT_pubTopic, "value %d"%tick)
+            time.sleep(1)           #隔1秒发送一次
             tick = tick+1
+    except:
+        siot.stop()
+        print("disconnect seccused")
 
+连接服务器，发送和订阅消息
+
+::
+
+    import siot
+    import time
+
+    SERVER = "127.0.0.1"        #MQTT服务器IP
+    CLIENT_ID = ""              #在SIoT上，CLIENT_ID可以留空
+    IOT_pubTopic  = 'xzr/001'   #“topic”为“项目名称/设备名称”
+    IOT_UserName ='siot'        #用户名
+    IOT_PassWord ='dfrobot'     #密码
+
+    def sub_cb(client, userdata, msg):#定义收到消息时的提示信息
+      print("\nTopic:" + str(msg.topic) + " Message:" + str(msg.payload))
+
+    siot.init(CLIENT_ID, SERVER, user=IOT_UserName, password=IOT_PassWord)
+    siot.connect()
+    siot.subscribe(IOT_pubTopic, sub_cb)
+    siot.loop()
+    
+    try:
+      while True:
+        pass
+    except:
+      siot.stop()
+      print("disconnect seccused")
 
 **测试效果**
 
@@ -98,50 +92,23 @@ Python的MQTT库简介
 
 
       from pylab import *
-      import threading
-      import paho.mqtt.client as mqtt
       import time,random
+      import siot
 
-      SERVER = "127.0.0.1"	#MQTT服务器IP
-      CLIENT_ID = "79afcb3bdb44b7aa"	#在SIoT上，CLIENT_ID可以留空
-      TOPIC = 'xzr/001'	#“topic”为“项目名称/设备名称”
-      username='siot'		#用户名
-      password='dfrobot'	#密码
+      SERVER = "127.0.0.1"        #MQTT服务器IP
+      CLIENT_ID = ""              #在SIoT上，CLIENT_ID可以留空
+      IOT_pubTopic  = 'xzr/001'   #“topic”为“项目名称/设备名称”
+      IOT_UserName ='siot'        #用户名
+      IOT_PassWord ='dfrobot'     #密码
 
-      class MqttClient:
-          client = mqtt.Client(CLIENT_ID)
+      def sub_cb(client, userdata, msg):#定义收到消息时的提示信息
+            print("\nTopic:" + str(msg.topic) + " Message:" + str(msg.payload))
+            showplt(int(msg.payload)) #开始绘图
 
-          def __init__(self, host, port):
-              self._host = host
-              self._port = port
-              self.client.on_connect = self._on_connect
-              self.client.on_message = self._on_message
-
-          def connect(self, username, password):
-              self.client.username_pw_set(username, password)
-              self.client.connect(self._host, self._port, 60)
-
-          def publish(self, topic, data):
-              self.client.publish(str(topic), str(data))
-
-          def loop(self, timeout=None):
-              thread = threading.Thread(target=self._loop, args=(timeout,))
-              # thread.setDaemon(True)
-              thread.start()
-
-          def _loop(self, timeout=None):
-              if not timeout:
-                  self.client.loop_forever()
-              else:
-                  self.client.loop(timeout)
-
-          def _on_connect(self, client, userdata, flags, rc):
-              print("\nConnected :" + str(rc))
-              client.subscribe(TOPIC)
-
-          def _on_message(self, client, userdata, msg):
-              print("\n收到Topic:" + str(msg.topic) + " Message:" + str(int(msg.payload)))
-              showplt(int(msg.payload)) #开始绘图
+      siot.init(CLIENT_ID, SERVER, user=IOT_UserName, password=IOT_PassWord)
+      siot.connect()
+      siot.subscribe(IOT_pubTopic, sub_cb)
+      siot.loop()
 
       def showplt(val):
           global x,y,i
@@ -156,20 +123,18 @@ Python的MQTT库简介
           plt.ioff()
           plt.show()
 
-
-
       if __name__ == '__main__':
-          global x,y,i,fig, ax
-          client = MqttClient(SERVER, 1883)
-          client.connect(username,password)
-          client.loop()          
-          fig, ax= plt.subplots()
-          i=0
-          x=[]
-          y=[]
-          showplt(0)
-
-
+            global x,y,i,fig, ax    
+            try:
+                  while True:
+                        fig, ax= plt.subplots()
+                        i=0
+                        x=[]
+                        y=[]
+                        showplt(0)
+                  except:
+                        siot.stop()
+                        print("disconnect seccused")
 
 **测试效果**
 
