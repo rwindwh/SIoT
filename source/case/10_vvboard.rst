@@ -145,7 +145,7 @@ Grid table:
   	siot.publish(IOT_pubTopic, "%d"%TDS)
   	time.sleep(1)
 
-代码下载地址：https://github.com/vvlink/SIoT/tree/master/examples/Mind%2B
+代码下载地址：https://github.com/vvlink/SIoT/blob/master/examples/Python/10_vvboard_TDS.py
 
 2.打开U盘模式的虚谷号，进入Python目录
 
