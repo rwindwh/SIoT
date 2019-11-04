@@ -10,6 +10,4 @@
 
     siotlib
     trigger
-    radio
-    light
     MQTT
