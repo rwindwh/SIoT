@@ -37,6 +37,8 @@ App Inventor2
 
 .. image:: ../image/demo/07_appInventor-02.png
 
+- 这里的非可视组件从左到右依次为：文件管理器、对话框、web客户端、文件管理器、计时器、对话框、微数据库。
+
 逻辑设计-setting屏幕逻辑设计图
 
 .. image:: ../image/demo/07_appInventor-03.png
