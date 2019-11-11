@@ -20,6 +20,12 @@ pip3 install siot
 
 pip install siot
 
+当权限不够时需要使用sudo
+
+sudo pip3 install siot
+
+sudo pip install siot
+
 ## 官方地址
 
 - GitHub地址：https://github.com/vvlink/SIoT/tree/master/siot-lib
