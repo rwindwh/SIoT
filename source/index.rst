@@ -10,9 +10,9 @@
     :maxdepth: 2
     :glob:
     
-    about/index
-    setup/index
-    demo/index
-    case/index
-    advanced/index
-    attach/index
+    1.about/index
+    2.setup/index
+    3.demo/index
+    4.case/index
+    5.advanced/index
+    6.attach/index
