@@ -20,12 +20,6 @@ pip3 install siot
 
 pip install siot
 
-当权限不够时需要使用sudo
-
-sudo pip3 install siot
-
-sudo pip install siot
-
 ## 官方地址
 
 - GitHub地址：https://github.com/vvlink/SIoT/tree/master/siot-lib
@@ -51,15 +45,11 @@ siot.connect()
 siot.loop()
 
 tick = 0
+while True:
+  siot.publish(IOT_pubTopic, "value %d"%tick)
+  time.sleep(1)           #隔1秒发送一次
+  tick = tick+1
 
-try:
-    while True:
-        siot.publish(IOT_pubTopic, "value %d"%tick)
-        time.sleep(1)           #隔1秒发送一次
-        tick = tick+1
-except:
-    siot.stop()
-    print("disconnect seccused")
 ```
 
 - 订阅消息：
@@ -76,16 +66,13 @@ IOT_PassWord ='dfrobot'     #密码
 
 def sub_cb(client, userdata, msg):
   print("\nTopic:" + str(msg.topic) + " Message:" + str(msg.payload))
+  # msg.payload中是消息的内容，类型是bytes，需要用解码。
+  s=msg.payload.decode()
+  print(s)
 
 siot.init(CLIENT_ID, SERVER, user=IOT_UserName, password=IOT_PassWord)
 siot.connect()
 siot.subscribe(IOT_pubTopic, sub_cb)
 siot.loop()
 
-try:
-  while True:
-    pass
-except:
-  siot.stop()
-  print("disconnect seccused")
 ```
