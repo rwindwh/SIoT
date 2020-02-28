@@ -16,9 +16,9 @@ siot库同时支持MicroPython，语法完全一致。
 
 使用pip命令安装。
 
-pip3 install siot
+	pip3 install siot
 
-pip install siot
+	pip install siot
 
 ## 官方地址
 
