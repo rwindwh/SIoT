@@ -76,3 +76,30 @@ siot.subscribe(IOT_pubTopic, sub_cb)
 siot.loop()
 
 ```
+- 订阅多条消息：
+
+```
+import siot
+import time
+
+SERVER = "127.0.0.1"         # MQTT服务器IP
+CLIENT_ID = ""               # 在SIoT上，CLIENT_ID可以留空
+IOT_pubTopic1  = 'xzr/001'   # “topic”为“项目名称/设备名称”
+IOT_pubTopic2  = 'xzr/002'   # “topic”为“项目名称/设备名称”
+IOT_UserName ='siot'         # 用户名
+IOT_PassWord ='dfrobot'      # 密码
+
+def sub_cb(client, userdata, msg):  # sub_cb函数仍然只有一个，需要在参数msg.topic中对消息加以区分
+  print("\nTopic:" + str(msg.topic) + " Message:" + str(msg.payload))
+  # msg.payload中是消息的内容，类型是bytes，需要用解码。
+  s=msg.payload.decode()
+  print(s)
+
+siot.init(CLIENT_ID, SERVER, user=IOT_UserName, password=IOT_PassWord)
+siot.connect()
+siot.set_callback(sub_cb)         
+siot.getsubscribe(IOT_pubTopic1)  # 订阅消息1
+siot.getsubscribe(IOT_pubTopic2)  # 订阅消息2
+siot.loop()
+
+```
