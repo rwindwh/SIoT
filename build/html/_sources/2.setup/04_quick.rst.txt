@@ -10,6 +10,8 @@
 
 .. image:: ../image/setup/03_view_01.JPG
 
+如图所示，显示的IP地址有多个，但是可以在局域网中使用的是“192”开头的那一个。
+
 编写程序（mPythonX）
 --------------------------------
 
@@ -25,15 +27,15 @@
 
 给掌控板写入程序并且运行。
 
-重新启动掌控板，等屏幕显示IP地址后，是否会出现“mqtt-ok”。
+重新启动掌控板，等屏幕显示IP地址后，如果出现“mqtt-ok”，说明SIoT服务器连接成功。
 
 
 Web管理
 ----------------------
 
-打开网址：localhost：8080（或者使用电脑的IP地址）。
+打开网址：localhost:8080（或者使用电脑的IP地址）。
 
-输入用户名“siot”和密码“dfrobot”，就可以看到项目列表中多了"yy"
+输入默认的用户名“siot”和密码“dfrobot”（虚谷号自带的SIoT），就可以看到项目列表中多了"yy"。
 
 在名称为“yy”设备消息中，当按下“A”键时，在网页端就可以接收到“0”，按下“B”键，可以接收到“1”。
 
@@ -53,11 +55,15 @@ Web管理
 - GitHub地址：https://github.com/vvlink/SIoT/tree/master/MQTT%20tools/Mqtttool
 - 下载地址：https://github.com/vvlink/SIoT/tree/master/MQTT%20tools/Mqtttool
 
-3、在手机使用MQTT客户端测试SIOT，推荐MQTT Client（安卓）。
+3、在手机使用MQTT客户端测试SIOT。
+
+安卓系统推荐使用MQTT Client。
 
 - 下载地址：http://www.mdpda.com/app/apk7623192.html
 
-而iPhone用户可以使用MQTTool，通过App Store即可安装MQTTool。
+iPhone系统推荐使用MQTTool，通过App Store即可安装MQTTool。
 
-这些软件的使用可以参考“客户端连接范例”https://siot.readthedocs.io/zh_CN/latest/demo/index.html
+这些软件的使用，可以参考“客户端连接范例”。
+
+https://siot.readthedocs.io/zh_CN/latest/demo/index.html
 

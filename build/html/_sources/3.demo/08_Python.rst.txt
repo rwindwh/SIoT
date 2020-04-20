@@ -1,18 +1,38 @@
 Python
 =========================
-Python是一种计算机程序设计语言。是一种面向对象的动态类型语言，最初被设计用于编写自动化脚本(shell)，随着版本的不断更新和语言新功能的添加，越来越多被用于独立的、大型项目的开发。因为Python开源，很多人为Python开发了各种模块、库，老而弥坚，越来越受到关注，被誉为人工智能编程方面的第一选择。
+Python是一种计算机程序设计语言。是一种面向对象的动态类型语言，最初被设计用于编写自动化脚本(shell)，随着版本的不断更新和语言新功能的添加，越来越多被用于独立的、大型项目的开发。因为Python开源，很多人为Python开发了各种模块或者库，老而弥坚，越来越受到关注，被誉为人工智能编程方面的第一选择。
 
+-----------------------
+Python的MQTT库
+-----------------------
 
-Python的siot库简介
---------------------------------
+用Python连接MQTT，有多个库可以选择，如paho-mqtt和siot。
 
-首先需要安装Python的siot库。
+1.paho-mqtt库
+
+paho-mqtt是一个MQTT官方团队开发的python client库，支持mqtt 3.1/ 3.1.1协议。
+
+官方网站地址：http://mqtt.org/tag/paho
+
+安装命令：
 
   pip install siot
 
+2.siot库
 
-参考代码
-----------------------------
+siot是虚谷物联团队写的一个Python库。为了让初学者能够写出更加简洁、优雅的Python代码，将paho-mqtt库进行了进一步封装。
+
+官方网站地址：https://github.com/vvlink/siot
+
+安装命令。
+
+  pip install siot
+
+--------------------------------
+siot的代码范例
+--------------------------------
+
+1.“发送消息”参考代码
 
 **代码功能**
 
@@ -31,25 +51,20 @@ Python的siot库简介
 
     siot.init(CLIENT_ID, SERVER, user=IOT_UserName, password=IOT_PassWord)
     siot.connect()
-    siot.loop()
 
     tick = 0
+    while True:
+      siot.publish(IOT_pubTopic, "value %d"%tick)
+      time.sleep(1)           #隔1秒发送一次
+      tick = tick+1
 
-    try:
-        while True:
-            siot.publish(IOT_pubTopic, "value %d"%tick)
-            time.sleep(1)           #隔1秒发送一次
-            tick = tick+1
-    except:
-        siot.stop()
-        print("disconnect seccused")
+2.“订阅消息”参考代码
 
-连接服务器，发送和订阅消息
+连接服务器，订阅消息
 
 ::
 
     import siot
-    import time
 
     SERVER = "127.0.0.1"        #MQTT服务器IP
     CLIENT_ID = ""              #在SIoT上，CLIENT_ID可以留空
@@ -64,21 +79,17 @@ Python的siot库简介
     siot.connect()
     siot.subscribe(IOT_pubTopic, sub_cb)
     siot.loop()
-    
-    try:
-      while True:
-        pass
-    except:
-      siot.stop()
-      print("disconnect seccused")
 
 **测试效果**
 
 .. image:: ../image/demo/08_python_01.png
 
 
-参考代码（动态绘制图表）
---------------------------------------
+---------------------------------
+订阅消息动态绘图
+---------------------------------
+
+1.参考代码（动态绘制图表）
 
 **代码功能**
 
@@ -126,15 +137,15 @@ Python的siot库简介
       if __name__ == '__main__':
             global x,y,i,fig, ax    
             try:
-                  while True:
-                        fig, ax= plt.subplots()
-                        i=0
-                        x=[]
-                        y=[]
-                        showplt(0)
-                  except:
-                        siot.stop()
-                        print("disconnect seccused")
+              while True:
+                    fig, ax= plt.subplots()
+                    i=0
+                    x=[]
+                    y=[]
+                    showplt(0)
+              except:
+                    siot.stop()
+                    print("disconnect seccused")
 
 **测试效果**
 

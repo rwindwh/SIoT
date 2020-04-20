@@ -176,6 +176,7 @@
 <h2>4.1. 运行SIoT系统<a class="headerlink" href="#siot" title="Permalink to this headline">¶</a></h2>
 <p>双击运行SIoT_win.exe，将看到一个黑色的CMD窗口，不要关闭它。</p>
 <img alt="../_images/03_view_01.JPG" src="../_images/03_view_01.JPG" />
+<p>如图所示，显示的IP地址有多个，但是可以在局域网中使用的是“192”开头的那一个。</p>
 </div>
 <div class="section" id="mpythonx">
 <h2>4.2. 编写程序（mPythonX）<a class="headerlink" href="#mpythonx" title="Permalink to this headline">¶</a></h2>
@@ -190,12 +191,12 @@
 </ul>
 </div></blockquote>
 <p>给掌控板写入程序并且运行。</p>
-<p>重新启动掌控板，等屏幕显示IP地址后，是否会出现“mqtt-ok”。</p>
+<p>重新启动掌控板，等屏幕显示IP地址后，如果出现“mqtt-ok”，说明SIoT服务器连接成功。</p>
 </div>
 <div class="section" id="web">
 <h2>4.3. Web管理<a class="headerlink" href="#web" title="Permalink to this headline">¶</a></h2>
-<p>打开网址：localhost：8080（或者使用电脑的IP地址）。</p>
-<p>输入用户名“siot”和密码“dfrobot”，就可以看到项目列表中多了&quot;yy&quot;</p>
+<p>打开网址：localhost:8080（或者使用电脑的IP地址）。</p>
+<p>输入默认的用户名“siot”和密码“dfrobot”（虚谷号自带的SIoT），就可以看到项目列表中多了&quot;yy&quot;。</p>
 <p>在名称为“yy”设备消息中，当按下“A”键时，在网页端就可以接收到“0”，按下“B”键，可以接收到“1”。</p>
 <img alt="../_images/04_quick_06.png" src="../_images/04_quick_06.png" />
 <p>在名称为“yy”设备消息中，当发送“01”时，就可以控制掌控板的红灯亮；发送“02”时，就可以控制掌控板亮绿灯；发送“03”时，控制掌控板亮蓝灯；发送“00”，控制掌控板灯熄灭。</p>
@@ -209,12 +210,14 @@
 <li><p>GitHub地址：<a class="reference external" href="https://github.com/vvlink/SIoT/tree/master/MQTT%20tools/Mqtttool">https://github.com/vvlink/SIoT/tree/master/MQTT%20tools/Mqtttool</a></p></li>
 <li><p>下载地址：<a class="reference external" href="https://github.com/vvlink/SIoT/tree/master/MQTT%20tools/Mqtttool">https://github.com/vvlink/SIoT/tree/master/MQTT%20tools/Mqtttool</a></p></li>
 </ul>
-<p>3、在手机使用MQTT客户端测试SIOT，推荐MQTT Client（安卓）。</p>
+<p>3、在手机使用MQTT客户端测试SIOT。</p>
+<p>安卓系统推荐使用MQTT Client。</p>
 <ul class="simple">
 <li><p>下载地址：<a class="reference external" href="http://www.mdpda.com/app/apk7623192.html">http://www.mdpda.com/app/apk7623192.html</a></p></li>
 </ul>
-<p>而iPhone用户可以使用MQTTool，通过App Store即可安装MQTTool。</p>
-<p>这些软件的使用可以参考“客户端连接范例”<a class="reference external" href="https://siot.readthedocs.io/zh_CN/latest/demo/index.html">https://siot.readthedocs.io/zh_CN/latest/demo/index.html</a></p>
+<p>iPhone系统推荐使用MQTTool，通过App Store即可安装MQTTool。</p>
+<p>这些软件的使用，可以参考“客户端连接范例”。</p>
+<p><a class="reference external" href="https://siot.readthedocs.io/zh_CN/latest/demo/index.html">https://siot.readthedocs.io/zh_CN/latest/demo/index.html</a></p>
 </div>
 </div>
 
