@@ -120,3 +120,4 @@ Microsoft.XMLHTTP方法简介
 
 6、案例下载
 
+[下载](https://github.com/vvlink/SIoT/tree/master/examples/VB/%E6%8E%8C%E6%8E%A7%E6%9D%BF%E7%BB%93%E5%90%88SIoT%E6%A8%A1%E6%8B%9F%E9%94%AE%E9%BC%A0)
