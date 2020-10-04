@@ -43,8 +43,8 @@ SIoT采用GO语言编写，最大的特点为跨平台，一键运行。只要�
 
 ### SIoT软件资源（最新）下载地址
 
-|http://mindplus.dfrobot.com.cn/siot
-|https://github.com/vvlink/SIoT/tree/master/software/SIoT1.2
+- http://mindplus.dfrobot.com.cn/siot
+- https://github.com/vvlink/SIoT/tree/master/software/SIoT1.2
 
 ### SIoT文档的阅读地址
 
